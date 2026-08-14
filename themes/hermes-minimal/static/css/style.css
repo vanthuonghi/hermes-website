@@ -20,6 +20,7 @@ main{padding:40px 0 60px}
 .lead{color:var(--muted);font-size:18px;max-width:600px;margin:0 auto 24px}
 .cta{display:inline-block;background:var(--accent);color:#1a1205;font-weight:700;padding:13px 26px;border-radius:10px;font-size:16px}
 .cta:hover{text-decoration:none;opacity:.92}
+.proof{color:var(--accent);font-size:14px;margin-top:14px;font-weight:500}
 .intro{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:26px;margin:24px 0}
 .intro p{margin-bottom:12px;color:#d6d6d6}
 .recent{margin-top:36px}
@@ -42,6 +43,12 @@ main{padding:40px 0 60px}
 .post .content li{margin-bottom:6px}
 .post .content blockquote{border-left:3px solid var(--accent);padding:6px 16px;color:var(--muted);margin:14px 0}
 .post .content code{background:#0b0d11;padding:2px 6px;border-radius:4px;font-size:14px}
+.cta-box{background:linear-gradient(135deg,#1d2230,#232a1a);border:1px solid var(--accent);border-radius:12px;padding:24px;margin:30px 0 10px;text-align:center}
+.cta-box h3{font-size:20px;margin-bottom:8px;color:var(--fg)}
+.cta-box p{color:#d6d6d6;margin-bottom:16px;font-size:15px}
+.cta-box .cta{font-size:16px}
+.nav a.cta-nav{color:#1a1205;background:var(--accent);padding:7px 14px;border-radius:8px;font-weight:700}
+.nav a.cta-nav:hover{text-decoration:none;opacity:.92}
 .post .back{margin-top:30px}
 .site-footer{border-top:1px solid var(--border);padding:24px 0;color:var(--muted);font-size:14px;text-align:center}
 @media(max-width:600px){
