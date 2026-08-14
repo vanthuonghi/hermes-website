@@ -1,5 +1,5 @@
 ---
-title: "1 tháng dùng Hermes: tiết kiệm bao nhiêu & làm được gì"
+title: "1 tháng dùng Hermes: tiết kiệm 25 tiếng/tuần và 8–10 triệu"
 date: 2026-08-08
 draft: false
 description: "Dùng nhân sự ảo Hermes 1 tháng được gì? 30 bài content, 400 email, tiết kiệm 25h/tuần và 8-10 triệu/tháng. Con số thực tế từ người không chuyên môn."
@@ -13,11 +13,11 @@ Tôi ghi chép mọi thứ Hermes làm được trong 31 ngày. Con số cuối 
 - **Content:** ~30 bài viết đăng tải.
 - **Email:** ~400 email đã soạn/trả.
 - **Báo cáo:** 4 cái tổng hợp tuần/tháng.
-- **Thời gian rảnh thêm:** ~25 tiếng/tuần.
+- **Thời gian rảnh thêm:** ~25 tiếng/tuần — gần một ngày làm việc rưỡi.
 
 ## Tiền bạc
 
-Nếu thuê người làm mấy việc này, tôi mất tầm 8–10 triệu/tháng. Hermes: vài trăm nghìn. Chênh lệch đủ gối đầu mỗi sáng.
+Nếu thuê người làm mấy việc này, tôi mất tầm **8–10 triệu/tháng**. Hermes: vài trăm nghìn. Chênh lệch đủ gối đầu mỗi sáng.
 
 ## Sự thật thú vị
 
