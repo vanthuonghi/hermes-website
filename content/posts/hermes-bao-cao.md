@@ -1,32 +1,38 @@
 ---
-title: "Hermes tổng hợp file Excel thành báo cáo tuần trong 5 phút"
+title: "Hermes tự tổng hợp báo cáo mỗi tuần — thứ Hai nào cũng có sẵn, tôi ngủ nó vẫn chạy"
 date: 2026-08-11
 draft: false
-description: "Ngại tổng hợp số liệu bán hàng? Hermes biến file Excel thành báo cáo gọn gàng trong 5 phút. Cách dùng AI làm báo cáo cho chủ shop."
+description: "Hermes không phải tool gõ báo cáo. Giao 1 lần, nó tự đọc Excel, tổng hợp, vẽ biểu đồ chữ, lên lịch gửi, báo cáo — chạy hoài mỗi tuần. Thực tế Agent làm báo cáo."
 image: "https://vanthuonghi.github.io/hermes-website/covers/hermes-bao-cao.webp"
 ---
 
-Cuối tuần nào cũng ám ảnh việc tổng hợp số liệu bán hàng. Tuần trước tôi giao hẳn cho Hermes và rảnh hẳn nửa ngày Chủ Nhật.
+Tưởng Hermes như ChatGPT: dán file Excel, bảo "tóm tắt giúp" — được 1 lần. Tuần sau dán lại. Đó là chatbot. Hermes là **Agent tự chạy cả chuỗi báo cáo thay bạn**.
 
-## Quy trình 3 bước
+## Chatbot vs Agent — cùng một file Excel
 
-1. Tôi xuất file Excel đơn giản từ shop (đơn hàng, doanh thu).
-2. Gửi cho Hermes kèm yêu cầu: *"Tóm tắt tuần này: tổng doanh thu, sản phẩm bán chạy, 3 việc cần làm tuần tới."*
-3. 5 phút sau có báo cáo gọn gàng, kèm biểu đồ mô tả bằng chữ.
+- **Chatbot:** bạn dán → nó trả báo cáo → xong. Lần sau bạn dán lại từ đầu.
+- **Hermes Agent:** bạn giao *"mỗi thứ Hai tổng hợp tuần"* → nó: **đọc file → tính doanh thu → tìm sp bán chạy → tự check số → viết báo cáo + biểu đồ chữ → lên lịch gửi → báo cáo bạn**. Thứ Hai mở ra có sẵn, chỉ đọc.
 
-## Kết quả
+## Quy trình thực tế tôi giao
 
-Tôi không còn ngồi lật từng dòng Excel. Tiết kiệm **khoảng 2 tiếng mỗi tuần** chỉ riêng việc này. Có báo cáo nhanh, ra quyết định nhanh.
+> "Mỗi thứ Hai 8h, đọc file Excel đơn hàng tuần. Tổng doanh thu, top 3 sản phẩm, 3 việc cần làm tuần tới. Trước khi gửi, tự check: số có khớp với file không. Lưu vào folder 'báo cáo', gửi tôi tóm tắt qua Telegram."
 
-> Quan trọng: Hermes không thay thế tư duy kinh doanh của bạn — nó chỉ làm phần "nhặt thông tin" nhàm chán.
+## Cái WOW
 
-## Mẹo nhỏ
+- **Tôi ngủ, nó làm:** đặt Chủ Nhật, thứ Hai có báo cáo — đúng giờ kể cả tôi không mở máy.
+- **Tự kiểm tra:** quality gate đối soát số trước khi gửi, không đưa báo cáo sai.
+- **Tự báo cáo:** xong việc nó nhắn "báo cáo tuần này xong, đây tóm tắt" — đúng kiểu nhân viên báo sếp.
+- **Không hỏi lại:** giao 1 lần, lặp mãi.
 
-Điền sẵn cấu trúc bạn muốn vào câu lệnh (doanh thu / sản phẩm / việc cần làm). AI sẽ theo form đó, báo cáo ra chuẩn hơn.
+Trước tôi mất **2 tiếng cuối tuần** lật Excel. Giờ **5 phút đọc/tuần**.
+
+## Mẹo giao việc kiểu CEO
+
+Đừng *"tổng hợp giúp tôi"*. Hãy: **tần suất + đọc gì + tính gì + tự check cái gì + báo cáo thế nào**. Bạn đầu não, Hermes cánh tay.
 
 ## Kết luận
 
-Báo cáo là để ra quyết định, không phải để mệt. Để Hermes nhặt số, bạn lo phần nghĩ.
+Hermes viết báo cáo không phải điểm mạnh. Điểm mạnh là **nó vận hành cả quy trình báo cáo thay bạn, lặp lại, có kiểm tra, có báo cáo** — bạn rảnh lo nghĩ.
 
 👉 Chi tiết trong khoá: [speedreading.vn/pshermes](https://speedreading.vn/pshermes)
 
