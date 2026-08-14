@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="hero">
+  <h1>Nhân sự ảo làm việc 24/7<br>— không cần biết code</h1>
+  <p class="lead">{{ .Site.Params.description }}</p>
+  <a class="cta" href="https://speedreading.vn/pshermes" target="_blank" rel="noopener">🎓 Học khoá Hermes (Presale 199K)</a>
+</section>
+
+<section class="intro">
+  {{ .Content }}
+</section>
+
+<section class="recent">
+  <h2>Bài viết mới nhất</h2>
+  <ul class="post-list">
+    {{ $posts := where .Site.RegularPages "Type" "posts" }}
+    {{ range first 5 $posts.ByDate.Reverse }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="date">{{ .Date.Format "02/01/2006" }}</span>
+      </li>
+    {{ end }}
+  </ul>
+  <a class="more" href="/posts/">Xem tất cả bài viết →</a>
+</section>
+{{ end }}

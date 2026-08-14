@@ -1,0 +1,4 @@
+name = "Hermes Minimal"
+license = "MIT"
+description = "Theme tối giản cho blog Hermes — nhẹ, tối, thân thiện mobile."
+min_version = "0.100.0"
