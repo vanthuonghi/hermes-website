@@ -59,9 +59,8 @@
   <div class="container">
     <a href="{{ "/" | relURL }}" class="logo">{{ .Site.Title }}</a>
     <nav>
-      {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}" {{ if .Params.external }}target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a>
-      {{ end }}
+      <a href="/posts/">Blog</a>
+      <a href="https://speedreading.vn/pshermes" target="_blank" rel="noopener" class="cta-nav">Học Hermes 199K</a>
     </nav>
   </div>
 </header>
