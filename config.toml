@@ -10,6 +10,8 @@ enableGitInfo = false
 [params]
   description = "Trợ lý AI Hermes làm việc 24/7 thay bạn — viết content, trả email, lên kế hoạch. Không cần biết code."
   author = "Văn Hỉ"
+  ogImage = "https://vanthuonghi.github.io/hermes-website/og-image.png"
+  favicon = "favicon.svg"
 
 [menu]
   [[menu.main]]
@@ -26,3 +28,14 @@ enableGitInfo = false
     weight = 3
     [menu.main.params]
       external = true
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[services]
+  [services.googleAnalytics]
+    # điền ID nếu cần: ID = "G-XXXX"
+
+[robots]
+  userAgent = "*"
+  sitemap = "https://vanthuonghi.github.io/hermes-website/sitemap.xml"
