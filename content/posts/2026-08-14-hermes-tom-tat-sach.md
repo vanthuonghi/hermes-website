@@ -2,6 +2,8 @@
 title: "Hermes tóm tắt sách trong vài phút — đọc nhanh gấp 4 lần"
 date: 2026-08-14
 draft: false
+description: "Mua sách tự giúp mà không đọc nổi? Hermes tóm tắt sách thành 10 ý chính chỉ vài phút. Cách sai việc tóm tắt sách bằng AI cho người bận rộn."
+image: "https://vanthuonghi.github.io/hermes-website/covers/hermes-tom-tat-sach.webp"
 ---
 
 Bạn mua đống sách tự giúp bản thân nhưng tháng nào cũng chỉ lật được vài trang? Tôi cũng thế. Cho đến khi thử sai nhân sự ảo Hermes tóm tắt hộ.
@@ -22,6 +24,12 @@ Vài phút sau, tôi có bản tóm tắt súc tích nắm trọn cốt lõi. Bi
 
 ## Mẹo nhỏ
 
-Đừng bảo chung chung "tóm tắt giúp tôi". Hãy nói rõ góc bạn cần: *"tóm tắt cho dân kinh doanh, ưu tiên phần về quản lý thời gian"*. Nhân sự ảo hiểu đúng hướng và bám theo.
+Đừng bảo chung chung *"tóm tắt giúp tôi"*. Hãy nói rõ góc bạn cần: *"tóm tắt cho dân kinh doanh, ưu tiên phần về quản lý thời gian"*. Nhân sự ảo hiểu đúng hướng và bám theo.
+
+## Kết luận
+
+Đọc ít nhưng đọc đúng — đó là cách người bận rộn học nhanh. Hermes giúp bạn lọc được cái hay trước khi cam kết thời gian.
 
 👉 Học cách sai việc cho Hermes: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
+
+📎 Đọc thêm: [Hermes khác gì ChatGPT?](/posts/hermes-khac-chatgpt/)
