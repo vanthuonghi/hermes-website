@@ -1,33 +1,36 @@
 ---
-title: "Không biết code vẫn có nhân sự ảo riêng trong 15 phút"
+title: "Không biết code vẫn có đội nhân sự ảo: giao 1 lần, chúng nó tự chạy hoài"
 date: 2026-08-09
 draft: false
-description: "Không biết lập trình vẫn dùng AI được không? Câu chuyện thật từ người không code, có nhân sự ảo đầu tiên trong 15 phút. Dành cho người không chuyên môn."
+description: "Hermes không phải app cần code. Bạn giao việc bằng tiếng Việt, Agent tự vận hành, nhớ, báo cáo — không dòng code nào. Thực tế người không chuyên dùng Agent."
 image: "https://vanthuonghi.github.io/hermes-website/covers/hermes-khong-can-code.webp"
 ---
 
-Tôi không biết lập trình. Trước đây nghĩ mấy tool AI là của dân IT. Cho đến khi thử Hermes và nhận ra mình đã bỏ lỡ quá lâu.
+Ai cũng nghĩ mấy tool AI là của dân IT viết code. Hermes phá cái định kiến đó: nó là **Agent bạn giao việc bằng lời nói**, không cần biết lập trình.
 
-## Sự thật
+## Chatbot vs Agent — cùng một người không code
 
-Hermes dùng bằng ngôn ngữ bình thường. Bạn "sai việc" như sai một nhân viên thật — bằng tiếng Việt, bằng câu nói chuyện. Không có dòng code nào.
+- **Chatbot (cần prompt khéo):** bạn phải hỏi đúng, nó trả 1 câu. Lặp lại mãi.
+- **Hermes Agent:** bạn giao *"từ nay nhắc tôi uống nước 9h sáng, tổng hợp chi tiêu cuối tháng"* → nó: **ghi nhớ → đặt lịch → tự chạy → tự báo cáo**. Không code, không thuật ngữ, chỉ tiếng Việt bình thường.
 
-## 15 phút đầu tiên
+## Quy trình thực tế tôi giao (15 phút đầu)
 
-Tôi mất đúng 15 phút để có nhân sự ảo đầu tiên:
-1. Mở Hermes.
-2. Đặt tên (tôi đặt là "Trợ lý").
-3. Giao việc mẫu: *"Viết giúp tôi 3 ý chính cho bài đăng ngày mai."*
+1. Mở Hermes, đặt tên ("Trợ lý").
+2. Giao: *"Mỗi sáng 9h nhắc tôi uống nước. Cuối tháng, tự tổng hợp chi tiêu từ file tôi gửi, gửi báo cáo qua Telegram."*
+3. Xong. Không cài phần mềm, không học code.
 
-Xong. Không cài phần mềm rối rắm, không học thuật ngữ.
+## Cái WOW
 
-## Ai hợp dùng?
+- **Không code:** giao bằng câu nói chuyện, Agent tự dịch thành hành động.
+- **Có trí nhớ:** nó nhớ bạn muốn gì, không cần dặn lại.
+- **Tự chạy hoài:** giao 1 lần, lặp mãi — kể cả khi bạn không mở máy.
+- **Tự báo cáo:** xong việc nhắn kết quả — đúng kiểu nhân viên báo sếp.
 
-Bà nội trợ quản lý gia đình, chủ shop, dân văn phòng, freelancer... ai cũng dùng được. Đó là lý do tôi làm khoá này — để chứng minh AI không phải đặc quyền dân kỹ thuật.
+Bà nội trợ, chủ shop, dân văn phòng, freelancer — ai cũng có đội nhân sự ảo riêng mà không cần biết code.
 
 ## Kết luận
 
-Rào cản duy nhất là nghĩ mình "không đủ trình". Hermes sinh ra để gỡ rào cản đó.
+Rào cản duy nhất là nghĩ mình "không đủ trình". Hermes sinh ra để gỡ rào cản đó — bạn làm sếp, Agent làm thuê.
 
 👉 Tham gia presale: [speedreading.vn/pshermes](https://speedreading.vn/pshermes)
 
