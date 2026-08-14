@@ -1,50 +1,40 @@
 ---
-title: "Chủ shop viết kịch bản TikTok 3 phút nhờ Hermes — từ ý tưởng đến quay chỉ 5 phút"
+title: "Giao Hermes làm đạo diễn video: sáng nào cũng có kịch bản, tôi ngủ nó vẫn chạy"
 date: 2026-08-14
 draft: false
-description: "Chủ shop ngại viết kịch bản video? Hermes biến 1 ý tưởng thành kịch bản TikTok hoàn chỉnh — hook, cảnh quay, lời thoại — chỉ từ 1 câu lệnh."
+description: "Hermes không phải chatbot viết chữ. Giao 1 lần, nó tự tìm chủ đề, viết kịch bản, check, lưu, lên lịch — chạy hoài kể cả khi bạn ngủ. Thực tế tự động hoá video."
 image: "https://vanthuonghi.github.io/hermes-website/covers/hermes-kich-ban-tiktok-tu-y-tuong.webp"
 ---
 
-Bạn có ý tưởng hay cho 1 clip TikTok, nhưng ngồi trước giấy cả tiếng vẫn chưa nghĩ ra câu mở đầu? Đừng vội bỏ. Giờ bạn chỉ cần nói với Hermes, 5 phút sau có nguyên kịch bản để cầm điện thoại lên quay.
+Cái sai hay mắc: nghĩ Hermes như ChatGPT, hỏi "viết giúp tôi 1 kịch bản" rồi lần sau hỏi lại từ đầu. Đó là chatbot. Hermes là **Agent — giao 1 lần, nó tự chạy cả quy trình**.
 
-TikTok Shop năm qua tăng tới **66%** doanh số, với **70 triệu** người dùng Việt lướt mỗi tháng và hơn **6 triệu** người đang kiếm tiền trên nền tảng này. Nghĩa là: ai có content ngắn hút mắt, người đó hốt đơn. Vấn đề là — không phải chủ shop nào cũng rành viết kịch bản.
+## Khác biệt cốt lõi
 
-## Thử thách
+Cùng cần content TikTok:
+- **Chatbot:** bạn hỏi → nó trả lời 1 cái → xong. Lần sau bạn phải hỏi lại.
+- **Hermes Agent:** bạn giao *"mỗi sáng giúp tôi 1 kịch bản TikTok cho shop"* → nó tự chạy chuỗi: **tìm chủ đề → nghiên cứu trend → viết kịch bản → tự kiểm tra (quality gate) → lưu file → lên lịch → báo cáo cho bạn**. Sáng nào cũng có, bạn chỉ duyệt.
 
-Tôi bán trà sữa, muốn làm 1 clip chủ đề "mùa hè uống gì cho mát" đánh vào học sinh sinh viên. Tôi chỉ có ý tưởng lõi, chưa biết mở đầu sao cho người ta không lướt qua, quay mấy cảnh, nói gì. Thay vì tự vật vã, tôi gõ cho Hermes:
+## Quy trình thực tế tôi giao
 
-> "Viết kịch bản video TikTok 60 giây cho shop bán trà sữa, chủ đề 'mùa hè uống gì cho mát', đối tượng học sinh sinh viên, giọng vui vẻ Miền Bắc. Gồm: cú mở đầu 3 giây gây tò mò, 4 cảnh quay, lời thoại từng cảnh, dòng chữ hiển thị trên màn hình, và câu chốt kêu gọi inbox shop."
+> "Mỗi sáng 8h, hãy chuẩn bị 1 kịch bản TikTok 60s cho shop trà sữa: tự tìm chủ đề hot hôm nay, viết hook 3s + 4 cảnh + lời thoại + chữ màn hình + câu chốt. Trước khi lưu, tự check: hook có giữ chân 3s không, giọng có đúng Miền Bắc không. Lưu vào folder 'kịch bản', nhắn tôi tóm tắt để duyệt."
 
-## Kết quả thực tế
+## Kết quả — cái WOW
 
-5 phút sau, tôi có nguyên kịch bản sẵn sàng:
-- **Cú mở đầu 3 giây:** "Nóng như đổ lửa mà vẫn uống trà sữa nóng à? Xem này." — kiểu hỏi trái chiều khiến người ta dừng tay lướt.
-- **4 cảnh quay** chia rõ: cảnh cầm ly trước nắng → cảnh rót trà đá cực đã → cảnh uống ngụm đầu tròn mắt → cảnh giơ ly chốt đơn.
-- **Lời thoại + dòng chữ màn hình** cho từng cảnh, không cần tự bịa.
-- **Câu chốt:** "Inbox shop lấy mã MUAO mát lạnh nhé, chỉ hôm nay thôi."
+- **Tôi ngủ, nó làm:** đặt lúc 8h tối, sáng mở mắt có sẵn kịch bản chờ duyệt. Đúng giờ chạy kể cả khi tôi không mở máy (tự động hoá theo lịch).
+- **Không hỏi lại:** giao 1 lần, nó lặp mãi. Không như chatbot phải niệm chú từ đầu mỗi lần.
+- **Tự kiểm tra:** có quality gate — nó loại kịch bản dở trước khi đưa cho tôi, không phải nhặt rác.
+- **Tự báo cáo:** xong việc nó nhắn "hôm nay xong, đây tóm tắt" — đúng kiểu nhân viên báo cáo sếp.
 
-Trước đây tôi mất 2–3 tiếng tự nghĩ, giờ **5 phút**. Một ý tưởng còn có thể nhờ Hermes phán thêm 2–3 biến thể để test xem người xem thích kiểu nào.
+Trước tôi mất 2–3 tiếng/tuần tự vắt óc. Giờ **5 phút duyệt/tuần**.
 
-## 🔥 WOW — cái ít ai nói
+## Mẹo giao việc kiểu CEO
 
-Nhiều người tưởng AI chỉ viết được "cái chữ". Hermes còn viết được **cả một kịch bản quay**: cú hook 3 giây, từng cảnh, lời thoại, dòng text chạy trên màn hình, và cả lời kêu gọi mua. Chủ shop chỉ việc cầm điện thoại quay theo — như có một đạo diễn ngồi cạnh chỉ việc.
-
-## Lợi ích thực tế
-
-- **Tiết kiệm thời gian:** 5 phút thay vì 2–3 tiếng tự vắt óc.
-- **Không lo hụt ý:** hook, cảnh, lời thoại, chốt đơn — đủ bộ, không sót phần.
-- **Test nhanh:** 1 ý tưởng → 3 kịch bản khác góc để lên nhiều video.
-- **Đúng giọng shop:** Miền Bắc hay Nam, vui hay chill — bạn nói, nó viết theo.
-
-## Mẹo sai việc
-
-Đừng bảo *"viết kịch bản TikTok giúp tôi"*. Hãy nói rõ: **sản phẩm**, **chủ đề**, **đối tượng**, **giọng điệu**, và **có cần chữ trên màn hình + câu chốt hay không**. Nhân sự ảo viết sát ý hơn hẳn. Muốn thêm biến thể, cứ thêm: *"viết thêm 2 phiên bản khác góc mở đầu"*.
+Đừng nói *"viết kịch bản giúp tôi"* (kiểu hỏi AI). Hãy nói: **bối cảnh + kết quả mong + giới hạn + cách nó tự check + cách báo cáo**. Bạn là đầu não, Hermes là cánh tay — giao, nhận, duyệt.
 
 ## Kết luận
 
-Short video đang là kênh hốt đơn rẻ nhất hiện nay, nhưng cản trở lớn nhất là… không biết viết kịch bản. Giao phần đó cho Hermes, bạn tập trung vào quay và lên đơn. Ý tưởng thì ai cũng có — còn kịch bản để quay, để Hermes lo.
+Hermes viết kịch bản không phải điểm mạnh. Điểm mạnh là **nó làm cả quy trình thay bạn, lặp lại, có kiểm tra, có báo cáo** — bạn rảnh tay làm đạo diễn thật ngoài đời.
 
-👉 Học chi tiết cách sai việc cho Hermes: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
+👉 Học bài bản cách giao việc cho Agent: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
 
-📎 Đọc thêm: [Hermes viết 10 caption TikTok chỉ 2 phút](/posts/hermes-viet-caption/)
+📎 Đọc thêm: [1 người giao 4 việc, Hermes xong trong 1 giờ](/posts/hermes-phan-than/)
