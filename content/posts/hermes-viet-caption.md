@@ -1,37 +1,39 @@
 ---
-title: "Hermes viết 10 caption TikTok chỉ 2 phút — chủ shop không còn đau đầu"
+title: "Giao Hermes lo caption: mỗi clip có 10 phiên bản, tôi ngủ nó vẫn viết"
 date: 2026-08-14
 draft: false
-description: "Chủ shop ngại viết caption video? Hermes viết 10 caption TikTok/Reels chỉ từ 1 câu lệnh, đúng giọng shop. Hướng dẫn + ví dụ câu lệnh thực tế."
+description: "Hermes không phải tool viết caption. Giao 1 lần, nó tự viết 10 biến thể, lên lịch, test A/B, báo cáo — chạy hoài. Thực tế Agent lo caption video."
 image: "https://vanthuonghi.github.io/hermes-website/covers/hermes-viet-caption.webp"
 ---
 
-Short video đang là xu hướng, nhưng mỗi lần quay xong lại ngồi hàng tiếng nghĩ caption? Tôi từng thế. Giờ tôi để Hermes lo phần chữ.
+Nghĩ Hermes như ChatGPT: "viết 10 caption giúp tôi" — được 10 cái, lần sau hỏi lại. Đó là chatbot. Hermes là **Agent vận hành cả mảng caption thay bạn**.
 
-## Thử thách
+## Chatbot vs Agent — cùng cần caption
 
-Tôi có 1 clip review son môi, cần 10 caption đăng luân phiên cả tuần. Thay vì ngồi vắt óc, tôi gõ:
+- **Chatbot:** bạn hỏi → nó trả 10 caption → xong. Tuần sau dán lại.
+- **Hermes Agent:** bạn giao *"mỗi clip, chuẩn bị 10 caption A/B, tự lên lịch đăng, theo dõi cái nào ăn view"* → nó: **viết 10 biến → chia A/B → lên lịch → theo dõi → tự báo cáo cái nào hot**. Bạn chỉ duyệt.
 
-> "Viết 10 caption TikTok cho clip review son môi shop mỹ phẩm, giọng vui vẻ, có emoji, mỗi caption dưới 150 chữ, kèm 3 hashtag phù hợp."
+## Quy trình thực tế tôi giao
 
-## Kết quả
+> "Mỗi video mới, viết 10 caption TikTok/Reels, 3 góc: tò mò / giá / hỏi khách. Tự chia làm 2 bản A/B test. Lên lịch đăng cách nhau 2 tiếng. Sau 24h, tự tổng hợp caption nào view cao nhất, gửi tôi báo cáo."
 
-2 phút sau, 10 caption hiện ra — mỗi cái một góc khác nhau: có cái đánh vào tò mò, có cái đánh vào giá, có cái hỏi khách. Trước đây tôi mất cả buổi sáng cho việc này.
+## Cái WOW
 
-## Lợi ích thực tế
+- **Tôi ngủ, nó viết:** đặt lịch, sáng có 10 caption chờ — đúng giờ kể cả tôi không mở máy.
+- **Tự A/B test:** không phải bạn đoàn đoán, nó chạy thử rồi báo cái nào thắng.
+- **Tự báo cáo:** xong việc nhắn "caption X ăn 3x view, dùng lại" — đúng kiểu nhân viên báo sếp.
+- **Giao 1 lần, lặp mãi.**
 
-- **Tiết kiệm thời gian:** vài phút thay vì vài tiếng.
-- **Đa dạng góc:** không bị lặp một kiểu mỗi ngày.
-- **Hashtag chuẩn:** Hermes gợi ý tag đúng ngách thay vì tag bừa.
+Trước tôi mất **30 phút/clip** nghĩ caption. Giờ **2 phút duyệt**.
 
-## Mẹo nhỏ
+## Mẹo giao việc kiểu CEO
 
-Đừng bảo *"viết caption giúp tôi"*. Hãy nói rõ: nền tảng (TikTok/Reels), giọng (vui/hài/bình dân), độ dài, và có hashtag hay không. Nhân sự ảo viết sát ý hơn hẳn.
+Đừng *"viết caption giúp tôi"*. Hãy: **số lượng + góc + test thế nào + tự check + báo cáo ra sao**. Bạn đầu não, Hermes cánh tay.
 
 ## Kết luận
 
-Video hay mà thiếu chữ hay thì cũng uổng. Giao phần caption cho Hermes, bạn tập trung vào quay — việc còn lại để nó lo.
+Hermes viết caption không phải điểm mạnh. Điểm mạnh là **nó vận hành cả quy trình caption thay bạn, lặp lại, có test, có báo cáo** — bạn rảnh quay video.
 
-👉 Học chi tiết cách sai việc cho Hermes: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
+👉 Học chi tiết: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
 
-📎 Đọc thêm: [Hermes viết 7 bài content từ 1 câu lệnh](/posts/hermes-viet-content/)
+📎 Đọc thêm: [Hermes làm đạo diễn video tự động](/posts/hermes-kich-ban-tiktok-tu-y-tuong/)
