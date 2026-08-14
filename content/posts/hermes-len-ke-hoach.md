@@ -1,33 +1,38 @@
 ---
-title: "Sai Hermes lên kế hoạch tháng 9 — rảnh tay làm việc lớn"
+title: "Hermes lên kế hoạch tháng 9, rồi tự nhắc từng tuần — tôi chỉ duyệt"
 date: 2026-08-10
 draft: false
-description: "Làm chủ mà ngập việc nhỏ? Hermes lên kế hoạch content và chăm sóc khách tháng 9 chỉ từ 1 câu lệnh. Cách giao việc lập kế hoạch cho AI."
+description: "Hermes không phải tool viết kế hoạch. Giao 1 lần, nó tự lập plan, chia việc theo tuần, lên lịch nhắc, báo cáo tiến độ — chạy hoài. Thực tế Agent lập kế hoạch."
 image: "https://vanthuonghi.github.io/hermes-website/covers/hermes-len-ke-hoach.webp"
 ---
 
-Làm chủ mà vẫn ngập trong việc nhỏ? Tôi thử để Hermes làm "trợ lý lập kế hoạch" đầu tháng và thấy đầu óc nhẹ hẳn.
+Dùng Hermes như ChatGPT: "lên kế hoạch tháng 9 giúp tôi" — nó đưa 1 cái lịch, xong. Tháng sau bạn hỏi lại. Đó là chatbot. Hermes là **Agent vận hành cả tháng kế hoạch thay bạn**.
 
-## Câu lệnh tôi dùng
+## Chatbot vs Agent — cùng một kế hoạch
 
-> "Lên kế hoạch content và chăm sóc khách cho shop mỹ phẩm tháng 9, mục tiêu tăng 20% đơn. Gồm: lịch đăng bài theo ngày, chủ đề từng tuần, kịch bản trả lời khách theo giai đoạn."
+- **Chatbot:** bạn hỏi → nó trả lịch → bạn tự làm tiếp, tự nhắc, tự quên.
+- **Hermes Agent:** bạn giao *"lên kế hoạch tháng 9, tự nhắc từng tuần, cuối tháng tổng kết"* → nó: **lập plan → chia task theo tuần → đặt lịch nhắc → theo dõi tiến độ → cuối tháng tự tổng kết → báo cáo**. Bạn chỉ duyệt, không ôm.
 
-Hermes trả về:
-- Lịch đăng bài theo ngày.
-- Chủ đề từng tuần.
-- Kịch bản trả lời khách theo giai đoạn.
+## Quy trình thực tế tôi giao
 
-## Cảm nhận
+> "Lên kế hoạch content + chăm sóc khách shop mỹ phẩm tháng 9, mục tiêu tăng 20% đơn. Chia task theo tuần, mỗi sáng nhắc tôi việc hôm nay. Cuối tháng, tự tổng kết đạt bao nhiêu %, gửi tôi báo cáo."
 
-Tôi không phải nghĩ từng bước nữa. Có khung sẵn, tôi chỉ tinh chỉnh. Tiết kiệm **khoảng 3 tiếng mỗi đầu tháng** ôm kế hoạch. Đầu óc rảnh ra để lo chiến lược — cái máy không làm thay được.
+## Cái WOW
 
-## Mẹo nhỏ
+- **Tự nhắc đều đặn:** không bao giờ bạn quên việc — nó nhắc đúng giờ mỗi sáng.
+- **Tự theo dõi:** nó biết tuần nào bạn lệch plan, tự điều chỉnh hoặc báo bạn.
+- **Tự báo cáo:** cuối tháng gửi bảng thành tích — đúng kiểu trợ lý báo sếp.
+- **Giao 1 lần, chạy cả tháng:** không hỏi lại.
 
-Cho Hermes **mục tiêu rõ** (tăng 20% đơn), không chỉ "lên kế hoạch giúp tôi". AI định hướng tốt hơn khi biết bạn muốn đi đâu.
+Trước tôi mất **3 tiếng đầu tháng** ôm kế hoạch, rồi quên béng giữa tháng. Giờ **rảnh hoàn toàn**.
+
+## Mẹo giao việc kiểu CEO
+
+Đừng *"lên kế hoạch giúp tôi"*. Hãy: **mục tiêu + chia thế nào + nhắc khi nào + tự check gì + báo cáo ra sao**. Bạn đầu não, Hermes cánh tay.
 
 ## Kết luận
 
-Kế hoạch không phải thứ bạn phải ôm một mình. Giao khung cho nhân sự ảo, bạn giữ quyền quyết định.
+Hermes lập kế hoạch không phải điểm mạnh. Điểm mạnh là **nó vận hành cả quy trình kế hoạch thay bạn, lặp lại, có nhắc, có báo cáo** — bạn giữ quyền quyết định.
 
 👉 Học cách giao việc hiệu quả: [khoá Hermes](https://speedreading.vn/pshermes)
 
