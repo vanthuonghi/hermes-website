@@ -1,30 +1,37 @@
 ---
-title: "Tự động trả 50 email khách hàng — không cần ngồi gõ"
+title: "Hermes tự trả 50 email khách chỉ trong 15 phút"
 date: 2026-08-13
 draft: false
-description: "Inbox tràn 50 mail hỏi hàng? Hermes soạn 50 phản hồi trong vài phút, bạn chỉ duyệt. Hướng dẫn quy trình trả email tự động bằng AI."
+description: "Inbox tràn 50 mail hỏi hàng? Hermes soạn 50 phản hồi trong vài phút, bạn chỉ duyệt. Hướng dẫn dùng AI trả email cho chủ shop."
 image: "https://vanthuonghi.github.io/hermes-website/covers/hermes-tra-email.webp"
 ---
 
-Inbox tràn 50 mail hỏi *"còn hàng không"*, *"ship bao lâu"*, *"có giảm giá không"*? Trước đây tôi mất cả tiếng để trả. Giờ tôi để Hermes lo.
+Inbox sáng mở ra đã 50 email khách hỏi hàng, khiếu nại, báo giá. Tuần trước tôi để Hermes lo thử.
 
-## Cách làm
+## Quy trình
 
-Tôi đưa Hermes 3 thứ:
-1. Danh sách câu hỏi khách hay hỏi.
-2. Cách shop trả lời chuẩn (giọng, chính sách).
-3. Yêu cầu: *"Soạn phản hồi cho từng email, tôi sẽ duyệt trước khi gửi."*
+1. Tôi copy 50 email đó dán vào Hermes.
+2. Giao: *"Trả từng email sau: xác nhận đơn, báo phí ship, xin lỗi trễ hàng, hẹn gọi lại. Giữ giọng niềm nở, ngắn gọn."*
+3. 15 phút sau có 50 bản nháp. Tôi lướt duyệt, bấm gửi.
 
 ## Kết quả
 
-Nó soạn 50 phản hồi trong vài phút. Tôi chỉ đọc lướt, sửa vài chỗ, rồi bấm gửi. Tiết kiệm khoảng 1 tiếng mỗi ngày — tương đương một buổi sáng mỗi tuần.
+Thay vì **2 tiếng** ngồi gõ từng cái, tôi chỉ mất **15 phút duyệt**. Khách nhận phản hồi nhanh, tỉ lệ huỷ đơn giảm rõ.
 
-**Lưu ý:** Luôn đọc lại trước khi gửi. AI giỏi nhưng bạn là người chịu trách nhiệm cuối cùng với khách.
+## Lợi ích thực tế
+
+- **Nhanh:** 50 email trong 15 phút thay vì cả buổi sáng.
+- **Đều giọng:** không lúc nóng lúc lạnh tuỳ tâm trạng.
+- **Không sót:** AI xử lý hết, bạn chỉ việc duyệt.
+
+## Mẹo nhỏ
+
+Cho Hermes vài mẫu câu chuẩn của shop để nó bắt chước. Càng cụ thể, email ra càng giống "chính chủ".
 
 ## Kết luận
 
-Chăm sóc khách không còn nghĩa là ngồi gõ từng chữ. Giao phần nhàm chán cho nhân sự ảo, giữ phần con người cho mình.
+Email là việc lặp lại nhất của chủ shop. Giao cho nhân sự ảo, bạn giữ cái đầu lạnh để bán.
 
-👉 Xem khoá học: [speedreading.vn/pshermes](https://speedreading.vn/pshermes)
+👉 Chi tiết trong khoá: [speedreading.vn/pshermes](https://speedreading.vn/pshermes)
 
-📎 Đọc thêm: [Hermes viết 7 bài content từ 1 câu lệnh](/posts/hermes-viet-content/)
+📎 Đọc thêm: [1 tháng dùng Hermes: tiết kiệm bao nhiêu](/posts/hermes-tiet-kiem/)
