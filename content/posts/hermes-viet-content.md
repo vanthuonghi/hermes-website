@@ -1,35 +1,39 @@
 ---
-title: "Hermes viết 7 bài content chỉ 1 câu lệnh — chủ shop rảnh nửa ngày"
+title: "Giao Hermes lo content: sáng nào cũng có 7 bài đăng, tôi ngủ nó vẫn viết"
 date: 2026-08-14
 draft: false
-description: "Chủ shop ngại viết content? Hermes viết 7 bài đăng Facebook chỉ từ 1 câu lệnh, tiết kiệm nửa ngày. Hướng dẫn chi tiết + ví dụ câu lệnh."
+description: "Hermes không phải tool viết content. Giao 1 lần, nó tự tìm chủ đề, nghiên cứu, viết, check, lên lịch, báo cáo — chạy hoài mỗi tuần. Thực tế tự động hoá content."
 image: "https://vanthuonghi.github.io/hermes-website/covers/hermes-viet-content.webp"
 ---
 
-Sáng thứ Hai, thay vì ngồi cắn bút nghĩ status, tôi gõ một câu cho Hermes và đi uống cà phê.
+Sai lầm phổ biến: dùng Hermes như ChatGPT — "viết giúp tôi 7 bài Facebook" rồi tuần sau hỏi lại từ đầu. Đó là chatbot. Hermes là **Agent làm cả quy trình content thay bạn**.
 
-## Câu lệnh tôi dùng
+## Chatbot vs Agent — cùng cần content
 
-> "Viết 7 bài content Facebook cho shop mỹ phẩm tuần này, mỗi bài 1 góc khác nhau: khuyến mãi, tip làm đẹp, feedback khách, behind-the-scenes, ngày lễ, FAQ, câu hỏi mở. Giọng thân thiện, có emoji, mỗi bài dưới 200 chữ."
+- **Chatbot:** bạn hỏi → nó trả 7 bài → xong. Tuần sau bạn niệm chú lại.
+- **Hermes Agent:** bạn giao *"mỗi tuần chuẩn bị 7 bài FB cho shop"* → nó tự chạy: **tìm chủ đề → nghiên cứu trend → chọn góc → viết → tự kiểm tra (quality gate) → lưu → lên lịch → báo cáo**. Sáng thứ Hai bạn mở ra có sẵn 7 bài chờ đăng.
 
-## Kết quả
+## Quy trình thực tế tôi giao
 
-Nửa tiếng sau có 7 bài sẵn sàng. Trước đây tôi mất **nửa ngày** cho việc này — giờ **30 phút**, nhàn hẳn.
+> "Mỗi thứ Hai, chuẩn bị 7 bài FB cho shop mỹ phẩm tuần này. Tự tìm chủ đề hot, ưu tiên góc: khuyến mãi, tip, feedback, behind-scenes. Trước khi lưu, tự check: giọng có thân thiện không, có emoji không. Lên lịch đăng 9h sáng hàng ngày, cuối tuần nhắn tôi tóm tắt để duyệt."
 
-## Lợi ích thực tế
+## Cái WOW
 
-- **Tiết kiệm thời gian:** nửa ngày rảnh để lo hàng hoá, chăm khách.
-- **Đều đặn:** 7 bài phủ đủ góc, page không bị trống.
-- **Giữ giọng:** bảo rõ "thân thiện, có emoji" là nó viết đúng tông shop.
+- **Tôi ngủ, nó làm:** đặt lịch Chủ Nhật, thứ Hai có sẵn 7 bài — đúng giờ kể cả khi tôi không mở máy.
+- **Không hỏi lại:** giao 1 lần, lặp mãi. Không như chatbot phải niệm từ đầu.
+- **Tự kiểm tra:** có quality gate — loại bài dở trước khi đưa tôi duyệt.
+- **Tự báo cáo:** xong việc nhắn "tuần này 7 bài xong, đây tóm tắt" — đúng kiểu nhân viên báo sếp.
 
-## Mẹo nhỏ
+Trước tôi mất **nửa ngày/tuần** tự vắt óc. Giờ **30 phút duyệt/tuần**.
 
-Đừng nói *"viết content giúp tôi"*. Hãy liệt kê rõ: nền tảng, số lượng, các góc, độ dài, giọng. Nhân sự ảo viết sát ý hơn hẳn.
+## Mẹo giao việc kiểu CEO
+
+Đừng *"viết content giúp tôi"*. Hãy: **tần suất + đối tượng + góc + cách tự check + cách báo cáo**. Bạn đầu não, Hermes cánh tay.
 
 ## Kết luận
 
-Content đều đặn là gốc của bán hàng online. Giao phần viết cho Hermes, bạn giữ phần bán.
+Hermes viết content không phải điểm mạnh. Điểm mạnh là **nó vận hành cả dây chuyền content thay bạn, lặp lại, có kiểm tra, có báo cáo** — bạn rảnh bán hàng.
 
-👉 Học cách sai việc cho Hermes: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
+👉 Học chi tiết: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
 
-📎 Đọc thêm: [Hermes viết 10 caption TikTok chỉ 2 phút](/posts/hermes-viet-caption/)
+📎 Đọc thêm: [Hermes viết kịch bản video tự động](/posts/hermes-kich-ban-tiktok-tu-y-tuong/)
