@@ -10,7 +10,7 @@ enableGitInfo = false
 [params]
   description = "Trợ lý AI Hermes làm việc 24/7 thay bạn — viết content, trả email, lên kế hoạch. Không cần biết code."
   author = "Văn Hỉ"
-  ogImage = "https://vanthuonghi.github.io/hermes-website/og-image.jpg"
+  ogImage = "https://vanthuonghi.github.io/hermes-website/og-image.webp"
   favicon = "favicon.svg"
 
 [menu]
