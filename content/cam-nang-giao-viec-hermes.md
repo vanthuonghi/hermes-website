@@ -29,4 +29,4 @@ Vì 90% người mới thất bại ở bước giao việc. Có mẫu chuẩn, 
 
 Khoá **Nhân Sự Toàn Năng Hermes** (37 bài) dạy xây Agent từ đầu. Presale **199K** (sau 499K), hoàn tiền 7 ngày.
 
-👉 [Học khoá tại speedreading.vn/pshermes](https://speedreading.vn/pshermes)
+👉 [Học khoá tại speedreading.vn/shermes](https://speedreading.vn/shermes)
