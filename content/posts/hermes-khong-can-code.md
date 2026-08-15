@@ -23,4 +23,4 @@ Tôi mất đúng 15 phút để có nhân sự ảo đầu tiên: mở, đặt 
 
 Bà nội trợ quản lý gia đình, chủ shop, dân văn phòng, freelancer... ai cũng dùng được. Đó là lý do tôi làm khoá này — để chứng minh AI không phải đặc quyền dân kỹ thuật.
 
-👉 Tham gia presale: [speedreading.vn/pshermes](https://speedreading.vn/pshermes)
+👉 Tham gia presale: [speedreading.vn/shermes](https://speedreading.vn/shermes)
