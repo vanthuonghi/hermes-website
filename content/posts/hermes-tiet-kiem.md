@@ -26,4 +26,4 @@ Nếu thuê người làm mấy việc này, tôi mất tầm 8–10 triệu/th�
 
 Không phải lúc nào cũng mượt. Có hôm nó hiểu sai, tôi sửa. Nhưng nhìn chung — đổi đời thật.
 
-👉 Gom hết bí quyết này thành khoá: [speedreading.vn/pshermes](https://speedreading.vn/pshermes)
+👉 Gom hết bí quyết này thành khoá: [speedreading.vn/shermes](https://speedreading.vn/shermes)
