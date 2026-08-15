@@ -4,7 +4,18 @@ date: 2026-08-14
 draft: false
 description: "Chatbot làm 1 việc. Hermes phân thân: bạn giao 4 việc 1 lúc, nó chạy song song, 1 tiếng xong. Thực tế nhân sự ảo thay bạn thuê người."
 image: "https://vanthuonghi.github.io/hermes-website/covers/hermes-phan-than.webp"
+share_teaser: |
+  Cái 'phân thân' này Hỉ khoái nhất: giao 4 việc 1 lúc, 1 tiếng xong. 🌀
+  Chatbot làm 1 việc. Hermes chạy song song như có 4 người — bạn không cần thuê thêm ai cả.
+  AI Agent (nhân sự ảo) = bản sao bạn, làm nhiều việc cùng lúc, không lương không nghỉ.
+  👉 Hermes đang làm cái này rất tốt — chi tiết + link ở BÌNH LUẬN, ai đang 'bơi' trong việc xem thử.
 ---
+share_teaser: |
+  Cái 'phân thân' này Hỉ khoái nhất: giao 4 việc 1 lúc, 1 tiếng xong. 🌀
+  Chatbot làm 1 việc. Hermes chạy song song như có 4 người — bạn không cần thuê thêm ai cả.
+  AI Agent (nhân sự ảo) = bản sao bạn, làm nhiều việc cùng lúc, không lương không nghỉ.
+  👉 Hermes đang làm cái này rất tốt — chi tiết + link ở BÌNH LUẬN, ai đang 'bơi' trong việc xem thử.
+
 
 Sáng thứ Hai mở máy, trước mặt là cả đống: viết bài đăng web, trả 20 email khách, lên kế hoạch đợt sale cuối tháng, và tóm tắt cuộc họp hôm qua thành biên bản. Làm tay thì mất cả ngày. Thuê thêm người thì tốn tiền, rồi lại mất thời gian hướng dẫn.
 
