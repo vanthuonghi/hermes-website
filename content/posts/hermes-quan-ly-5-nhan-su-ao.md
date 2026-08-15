@@ -4,7 +4,18 @@ date: 2026-08-14
 draft: false
 description: "Chatbot làm 1 việc. Hermes làm như 5 nhân sự ảo: bạn giao 5 đầu việc, nó chạy song song, báo cáo từng cái — không lương, không nghỉ."
 image: "https://vanthuonghi.github.io/hermes-website/covers/hermes-quan-ly-5-nhan-su-ao.webp"
+share_teaser: |
+  Hỉ giờ 'sếp' của 5 nhân sự ảo luôn, mà chả tốn đồng lương nào. 🤯💼
+  Giao 5 đầu việc, Hermes chạy song song, báo cáo từng cái. Chatbot thì lẹt đẹt 1 việc.
+  AI Agent = đội ngũ nhân sự ảo thay bạn thuê người. Đây là khác biệt căn bản với mấy con chatbot chỉ biết 'nói'.
+  👉 Hermes đang làm cái này rất tốt — chi tiết + link ở BÌNH LUẬN nhé.
 ---
+share_teaser: |
+  Hỉ giờ 'sếp' của 5 nhân sự ảo luôn, mà chả tốn đồng lương nào. 🤯💼
+  Giao 5 đầu việc, Hermes chạy song song, báo cáo từng cái. Chatbot thì lẹt đẹt 1 việc.
+  AI Agent = đội ngũ nhân sự ảo thay bạn thuê người. Đây là khác biệt căn bản với mấy con chatbot chỉ biết 'nói'.
+  👉 Hermes đang làm cái này rất tốt — chi tiết + link ở BÌNH LUẬN nhé.
+
 
 Bạn là chủ shop online nhỏ. Sáng mở máy ra, trước mặt là 5 việc đang chờ: trả 50 email khách, đăng bài mỗi sáng, cập nhật tồn kho, gửi email nhắc đơn chưa thanh toán, tổng hợp doanh thu tuần. Làm tay thì hết cả ngày. Thuê 5 người thì tốn tiền lương, bảo hiểm, rồi lại mất thời gian hướng dẫn.
 
