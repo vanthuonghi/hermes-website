@@ -45,6 +45,6 @@ Trước tôi mất **30 phút/clip** nghĩ caption. Giờ **2 phút duyệt**.
 
 Hermes viết caption không phải điểm mạnh. Điểm mạnh là **nó vận hành cả quy trình caption thay bạn, lặp lại, có test, có báo cáo** — bạn rảnh quay video.
 
-👉 Học chi tiết: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
+👉 Học chi tiết: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/shermes)
 
 📎 Đọc thêm: [Hermes làm đạo diễn video tự động](/posts/hermes-kich-ban-tiktok-tu-y-tuong/)
