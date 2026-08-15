@@ -4,7 +4,18 @@ date: 2026-08-14
 draft: false
 description: "Hermes không phải chatbot viết chữ. Giao 1 lần, nó tự tìm chủ đề, viết kịch bản, check, lưu, lên lịch — chạy hoài kể cả khi bạn ngủ. Thực tế tự động hoá video."
 image: "https://vanthuonghi.github.io/hermes-website/covers/hermes-kich-ban-tiktok-tu-y-tuong.webp"
+share_teaser: |
+  Hỉ giao nó làm 'đạo diễn' kênh video luôn, xong cái này tiện quá. 🎬
+  Sáng nào dậy là có kịch bản sẵn — giao 1 lần, nó tự tìm chủ đề, viết, check, lên lịch, chạy hoài kể cả lúc ngủ.
+  Đây là AI Agent tự động hoá: không phải chatbot viết chữ rồi thôi, mà là 'nhân viên' tự vận hành cả quy trình.
+  👉 Hermes đang làm cái này rất tốt — chi tiết + link ở BÌNH LUẬN, ai làm content xem phát thèm.
 ---
+share_teaser: |
+  Hỉ giao nó làm 'đạo diễn' kênh video luôn, xong cái này tiện quá. 🎬
+  Sáng nào dậy là có kịch bản sẵn — giao 1 lần, nó tự tìm chủ đề, viết, check, lên lịch, chạy hoài kể cả lúc ngủ.
+  Đây là AI Agent tự động hoá: không phải chatbot viết chữ rồi thôi, mà là 'nhân viên' tự vận hành cả quy trình.
+  👉 Hermes đang làm cái này rất tốt — chi tiết + link ở BÌNH LUẬN, ai làm content xem phát thèm.
+
 
 Cái sai hay mắc: nghĩ Hermes như ChatGPT, hỏi "viết giúp tôi 1 kịch bản" rồi lần sau hỏi lại từ đầu. Đó là chatbot. Hermes là **Agent — giao 1 lần, nó tự chạy cả quy trình**.
 
