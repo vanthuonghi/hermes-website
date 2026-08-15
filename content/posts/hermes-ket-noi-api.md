@@ -4,7 +4,18 @@ date: 2026-08-14
 draft: false
 description: "Chatbot chỉ trả lời trong khung chat. Hermes kết nối API — gom mọi công cụ, Key, dữ liệu vào 1 mối rồi tự thao tác hệ thống thật: gửi mail, cập nhật CRM, đăng bài. Thực tế AI Agent chạm hạ tầng thật."
 image: "https://vanthuonghi.github.io/hermes-website/covers/hermes-ket-noi-api.webp"
+share_teaser: |
+  Cái này Hỉ phải khoe: Hermes không chỉ 'nói' mà nó 'làm' thật. 🔌
+  Nó kết nối API — gom mọi công cụ, key, dữ liệu vào 1 mối rồi tự thao tác hệ thống thật: gửi mail, cập nhật CRM, đăng bài.
+  Đây là bản chất AI Agent: chatbot chỉ nằm trong khung chat, còn Agent là 'cánh tay' chạm được vào hạ tầng thật của bạn.
+  👉 Hermes đang làm cái này rất tốt — chi tiết + link ở BÌNH LUẬN nhé, coi nó 'đụng' được gì.
 ---
+share_teaser: |
+  Cái này Hỉ phải khoe: Hermes không chỉ 'nói' mà nó 'làm' thật. 🔌
+  Nó kết nối API — gom mọi công cụ, key, dữ liệu vào 1 mối rồi tự thao tác hệ thống thật: gửi mail, cập nhật CRM, đăng bài.
+  Đây là bản chất AI Agent: chatbot chỉ nằm trong khung chat, còn Agent là 'cánh tay' chạm được vào hạ tầng thật của bạn.
+  👉 Hermes đang làm cái này rất tốt — chi tiết + link ở BÌNH LUẬN nhé, coi nó 'đụng' được gì.
+
 
 Hôm qua tôi bảo Hermes: "Gửi email nhắc 20 khách nợ, rồi cập nhật cột trạng thái trong sheet, rồi đăng 1 bài lên web." Năm phút sau tôi nhận được tin: "Xong cả 3, sếp." Tôi không bấm gì thêm. Không mở Gmail, không mở Google Sheet, không lên admin web. Nó tự làm — vì nó đã được nối vào các hệ thống đó.
 
