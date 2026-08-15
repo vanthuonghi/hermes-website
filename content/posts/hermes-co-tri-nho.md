@@ -63,6 +63,6 @@ Khi bạn giao Hermes, bên trong nó chạy một chuỗi bộ nhớ, không ph
 
 Chatbot là trang giấy trắng mỗi lần mở. Hermes là cộng sự có trí nhớ — giao 1 lần, lần sau tự hiểu, bạn không lặp lại chính mình. Muốn có nhân sự ảo "nhớ bạn hơn bạn nhớ mình" mà không cần biết code?
 
-👉 Học bài bản: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
+👉 Học bài bản: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/shermes)
 
 📎 Đọc thêm: [Hermes khác ChatGPT ở chỗ nào](/posts/hermes-khac-chatgpt/)
