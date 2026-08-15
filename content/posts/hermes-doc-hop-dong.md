@@ -91,6 +91,6 @@ Hợp đồng là ví dụ. Cái thật sự đáng chú ý không phải "AI đ
 
 Nếu bạn đang tự làm hết mọi thứ vì "thuê người thì không đủ tiền, mà tự làm thì không đủ giờ" — thì cái bạn cần không phải thêm một app AI nữa. Là một Agent biết nhận việc.
 
-👉 Tôi gói toàn bộ cách cài và giao việc cho Hermes vào khoá **Nhân Sự Toàn Năng Hermes** — 37 bài, làm theo là chạy được, không cần biết code. Early-bird **199K** (sau đó 499K), hoàn tiền trong 7 ngày nếu bạn thấy không dùng được: **[speedreading.vn/pshermes](https://speedreading.vn/pshermes)**
+👉 Tôi gói toàn bộ cách cài và giao việc cho Hermes vào khoá **Nhân Sự Toàn Năng Hermes** — 37 bài, làm theo là chạy được, không cần biết code. Early-bird **199K** (sau đó 499K), hoàn tiền trong 7 ngày nếu bạn thấy không dùng được: **[speedreading.vn/shermes](https://speedreading.vn/shermes)**
 
 Đừng để một dòng ở trang 31 dạy bạn bài học đắt hơn cả khoá học.
