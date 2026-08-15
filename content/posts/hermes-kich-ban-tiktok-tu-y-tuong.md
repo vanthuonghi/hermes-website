@@ -46,6 +46,6 @@ Trước tôi mất 2–3 tiếng/tuần tự vắt óc. Giờ **5 phút duyệt
 
 Hermes viết kịch bản không phải điểm mạnh. Điểm mạnh là **nó làm cả quy trình thay bạn, lặp lại, có kiểm tra, có báo cáo** — bạn rảnh tay làm đạo diễn thật ngoài đời.
 
-👉 Học bài bản cách giao việc cho Agent: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
+👉 Học bài bản cách giao việc cho Agent: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/shermes)
 
 📎 Đọc thêm: [1 người giao 4 việc, Hermes xong trong 1 giờ](/posts/hermes-phan-than/)
