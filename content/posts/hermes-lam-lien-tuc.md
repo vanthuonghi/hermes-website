@@ -4,7 +4,18 @@ date: 2026-08-15
 draft: false
 description: "Hermes không dừng khi bạn rời máy. Giao 1 mẻ 20 việc lúc 10h tối, sáng 7h dậy có đống kết quả — nó chạy xuyên đêm, nhiều luồng, không cần nghỉ. Thực tế AI Agent tự động hoá thay nhân sự."
 image: "https://vanthuonghi.github.io/hermes-website/covers/hermes-lam-lien-tuc.webp"
+share_teaser: |
+  Giao 1 mẻ 20 việc lúc 10h tối, sáng 7h dậy có đống kết quả. Hỉ thực sự sướng cái này. 😴→🌅
+  Nó chạy xuyên đêm, nhiều luồng, không nghỉ, không than. Chatbot thì 'nói' xong là ngưng.
+  AI Agent = nhân sự ảo thay bạn làm việc thật, không cần ngủ. Khác biệt căn bản với mấy con AI chỉ biết chat.
+  👉 Hermes đang làm cái này rất tốt — chi tiết + link ở BÌNH LUẬN nhé.
 ---
+share_teaser: |
+  Giao 1 mẻ 20 việc lúc 10h tối, sáng 7h dậy có đống kết quả. Hỉ thực sự sướng cái này. 😴→🌅
+  Nó chạy xuyên đêm, nhiều luồng, không nghỉ, không than. Chatbot thì 'nói' xong là ngưng.
+  AI Agent = nhân sự ảo thay bạn làm việc thật, không cần ngủ. Khác biệt căn bản với mấy con AI chỉ biết chat.
+  👉 Hermes đang làm cái này rất tốt — chi tiết + link ở BÌNH LUẬN nhé.
+
 
 Nhiều người tưởng AI chỉ giỏi lúc bạn ngồi trước màn hình niệm chú. Giao xong, nó làm xong 1 việc rồi... đứng yên. Hermes không vậy. Giao 1 mẻ 20 việc lúc 10h tối, sáng 7h dậy tôi có đống kết quả — nó chạy xuyên đêm, không cần cà phê, không cần nghỉ trưa, không than một tiếng.
 
