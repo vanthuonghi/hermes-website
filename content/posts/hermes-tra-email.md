@@ -24,4 +24,4 @@ Nó soạn 50 phản hồi trong vài phút. Tôi chỉ đọc lướt, sửa v�
 
 **Lưu ý:** Luôn đọc lại trước khi gửi. AI giỏi nhưng bạn là người chịu trách nhiệm cuối cùng với khách.
 
-👉 Xem khoá học: [speedreading.vn/pshermes](https://speedreading.vn/pshermes)
+👉 Xem khoá học: [speedreading.vn/shermes](https://speedreading.vn/shermes)
