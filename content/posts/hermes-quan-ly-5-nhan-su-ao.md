@@ -65,6 +65,6 @@ Khi bạn giao Hermes 5 đầu việc, bên trong nó dựng 5 vòng lặp chạ
 
 Chatbot là 1 cánh tay làm 1 việc. Hermes là đội ngũ ảo của bạn, chạy nhiều đầu việc cùng lúc rồi báo cáo — không lương, không nghỉ, không cần bạn ngồi canh. Muốn có 5 "nhân sự ảo" mà không biết code, không ký hợp đồng lao động?
 
-👉 Học bài bản: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
+👉 Học bài bản: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/shermes)
 
 📎 Đọc thêm: [Hermes phân thân: giao 4 việc cùng lúc, 1 tiếng xong](/posts/hermes-phan-than/)
