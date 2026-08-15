@@ -64,6 +64,6 @@ Khi bạn giao Hermes 4 việc, bên trong nó chạy vòng lặp cho **từng v
 
 Chatbot là 1 cánh tay làm 1 việc. Hermes là bản sao của bạn, làm nhiều việc cùng lúc rồi báo cáo. Muốn có nhân sự ảo phân thân mà không cần biết code?
 
-👉 Học bài bản: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
+👉 Học bài bản: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/shermes)
 
 📎 Đọc thêm: [Hermes khác ChatGPT ở chỗ nào](/posts/hermes-khac-chatgpt/)
