@@ -1,6 +1,7 @@
 {{ define "main" }}
 <article class="post">
   <h1>{{ .Title }}</h1>
+  {{ with .Params.share_teaser }}<div id="share-teaser" style="display:none">{{ . | plainify | safeHTML }}</div>{{ end }}
   <p class="date">{{ .Date.Format "02/01/2006" }}</p>
   {{ with .Params.image }}<img class="cover" src="{{ . }}" alt="{{ $.Title }}" loading="lazy">{{ end }}
   <div class="content">
