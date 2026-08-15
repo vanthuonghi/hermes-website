@@ -25,4 +25,4 @@ Tôi mở Hermes và gõ đúng một câu:
 
 Muốn nó viết đúng "chất" shop, hãy nói rõ giọng: *"viết như chủ shop 30 tuổi, thân thiện, hay dùng emoji"*. AI hiểu giọng đó và bám theo.
 
-👉 Học chi tiết cách sai việc cho Hermes: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
+👉 Học chi tiết cách sai việc cho Hermes: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/shermes)
