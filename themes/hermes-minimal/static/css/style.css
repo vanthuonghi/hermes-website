@@ -32,6 +32,15 @@ main{padding:40px 0 60px}
 .card .kit-num{font-size:22px;font-weight:700;color:var(--accent);margin-bottom:8px}
 .card h3{font-size:18px;margin-bottom:8px;color:var(--fg)}
 .card p{color:#d6d6d6;font-size:14px;line-height:1.6}
+.card ul{margin:10px 0 0 18px;color:#d6d6d6;font-size:13px}
+.card ul li{margin-bottom:4px}
+.testi,.road,.faq{margin-top:48px}
+.testi h2,.road h2,.faq h2{font-size:24px;margin-bottom:10px;text-align:center}
+.testi .sub,.road .sub{text-align:center;color:var(--muted);font-size:14px;margin-bottom:22px}
+.quote{color:#e6e6e6;font-style:italic;line-height:1.6;margin-bottom:10px}
+.who{color:var(--accent);font-size:13px;font-weight:600}
+.faq .q{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:12px}
+.faq .q p{color:#d6d6d6;font-size:14px;margin-top:6px}
 .cta-final{margin-top:48px;text-align:center;background:linear-gradient(135deg,#1d2230,#232a1a);border:1px solid var(--accent);border-radius:14px;padding:32px}
 .cta-final h2{font-size:24px;margin-bottom:10px;color:var(--fg)}
 .cta-final p{color:#d6d6d6;margin-bottom:18px}
