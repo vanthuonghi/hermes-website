@@ -21,4 +21,4 @@ Cuối tuần nào cũng ám ảnh việc tổng hợp số liệu bán hàng. T
 
 Tôi không còn ngồi lật từng dòng Excel. Có báo cáo nhanh, ra quyết định nhanh. Quan trọng: Hermes không thay thế tư duy kinh doanh của bạn — nó chỉ làm phần "nhặt thông tin" nhàm chán.
 
-👉 Chi tiết trong khoá: [speedreading.vn/pshermes](https://speedreading.vn/pshermes)
+👉 Chi tiết trong khoá: [speedreading.vn/shermes](https://speedreading.vn/shermes)
