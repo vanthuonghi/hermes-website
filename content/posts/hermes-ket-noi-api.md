@@ -64,6 +64,6 @@ Bạn không còn lục lọi 10 chỗ để tìm mật khẩu. Mọi "cánh tay
 
 Chatbot nằm trong khung chat. Hermes chạm được vào **hệ thống thật** của bạn — vì nó được nối API. Bạn cấp quyền 1 lần, nó tự vận hành mọi công cụ, tự báo cáo. Muốn có "cánh tay" chạm thật mà không biết code?
 
-👉 Học bài bản: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
+👉 Học bài bản: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/shermes)
 
 📎 Đọc thêm: [Hermes quản lý 5 nhân sự ảo cùng lúc](/posts/hermes-quan-ly-5-nhan-su-ao/)
