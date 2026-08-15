@@ -29,4 +29,4 @@ Vài phút sau, tôi có bản tóm tắt súc tích nắm trọn cốt lõi. Bi
 
 Đừng bảo chung chung "tóm tắt giúp tôi". Hãy nói rõ góc bạn cần: *"tóm tắt cho dân kinh doanh, ưu tiên phần về quản lý thời gian"*. Nhân sự ảo hiểu đúng hướng và bám theo.
 
-👉 Học cách sai việc cho Hermes: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
+👉 Học cách sai việc cho Hermes: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/shermes)
