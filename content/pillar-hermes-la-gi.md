@@ -65,6 +65,6 @@ Bạn là đầu não, Hermes là cánh tay.
 
 Khoá **Nhân Sự Toàn Năng Hermes** (37 bài thực chiến) dạy bạn xây và giao việc cho Agent từ con số 0. Giá presale **199K** (sau lên 499K), hoàn tiền 7 ngày.
 
-👉 [Nhận khoá ngay tại speedreading.vn/pshermes](https://speedreading.vn/pshermes)
+👉 [Nhận khoá ngay tại speedreading.vn/shermes](https://speedreading.vn/shermes)
 
 📥 Hoặc nhận miễn phí **35 mẫu câu lệnh giao việc Hermes** qua email: [đăng ký tại đây](/cam-nang-giao-viec-hermes/)
