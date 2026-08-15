@@ -72,7 +72,8 @@
 <div class="share">
   <p>📤 Thích nội dung này? Share để bạn bè cùng học Hermes:</p>
   <a class="btn fb" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" rel="noopener">📘 Share Facebook</a>
-  <a class="btn zalo" href="https://zalo.me/share?u={{ .Permalink }}" target="_blank" rel="noopener">💬 Share Zalo</a>
+  <a class="btn fb" href="https://www.facebook.com/dialog/share?app_id=0000000000&display=popup&href={{ .Permalink }}&quote={{ .Title }}%20-%20đọc%20tại%20{{ .Permalink }}" target="_blank" rel="noopener">💬 Share kèm lời</a>
+  <a class="btn zalo" href="https://zalo.me/share/?url={{ .Permalink }}" target="_blank" rel="noopener">💬 Share Zalo</a>
   <button class="copy" id="copyBtn" onclick="copyLink()">📋 Copy link</button>
 </div>
 <script>
