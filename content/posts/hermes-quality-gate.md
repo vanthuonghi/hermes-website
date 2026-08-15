@@ -4,7 +4,18 @@ date: 2026-08-15
 draft: false
 description: "ChatGPT trả lời xong là bạn tự đọc tự sửa. Hermes thì khác — nó tự check, tự vứt bản dở, giao bạn bản sạch. Đó là quality gate, linh hồn của một AI Agent thật sự tự vận hành."
 image: "https://vanthuonghi.github.io/hermes-website/covers/hermes-quality-gate.webp"
+share_teaser: |
+  Hỉ để ý một điểm làm nên 'hạng người' của Hermes: nó tự soi lỗi trước khi giao bạn. 🛡️
+  ChatGPT trả lời xong bạn tự đọc tự sửa. Hermes thì tự check, tự vứt bản dở, đưa bạn bản sạch.
+  Cái gọi là 'quality gate' — linh hồn của một AI Agent thật sự: tự vận hành chứ không chỉ 'nói'.
+  👉 Hermes đang làm cái này rất tốt — chi tiết + link ở BÌNH LUẬN, ai hay nhận 'rác' từ AI xem phát hiểu.
 ---
+share_teaser: |
+  Hỉ để ý một điểm làm nên 'hạng người' của Hermes: nó tự soi lỗi trước khi giao bạn. 🛡️
+  ChatGPT trả lời xong bạn tự đọc tự sửa. Hermes thì tự check, tự vứt bản dở, đưa bạn bản sạch.
+  Cái gọi là 'quality gate' — linh hồn của một AI Agent thật sự: tự vận hành chứ không chỉ 'nói'.
+  👉 Hermes đang làm cái này rất tốt — chi tiết + link ở BÌNH LUẬN, ai hay nhận 'rác' từ AI xem phát hiểu.
+
 
 Năm 2023 thiên hạ học ChatGPT. Năm 2026 người ta bắt đầu xây cả đội AI Agent tự làm việc thay mình. Nhưng có một chữ ít ai nhắc: Agent tự làm xong thì **ai đứng ra check**?
 
