@@ -76,9 +76,13 @@
   <button class="copy" onclick="copyShare()">📋 Copy nội dung</button>
 </div>
 <script>
+function shareTitle(){
+  var h1 = document.querySelector('article.post h1') || document.querySelector('h1');
+  var t = h1 ? h1.textContent : document.title;
+  return (t || '').trim();
+}
 function shareText(){
-  var title = "{{ .Title | js }}";
-  return "🔥 " + title + "\n\nMình vừa làm xong và thấy cực kỳ hữu dụng — mà ít ai chỉ bạn cách này.\n\n👉 Chi tiết từng bước + link mình để sẵn ở BÌNH LUẬN bên dưới. Xem rồi làm thử luôn nhé!";
+  return "🔥 " + shareTitle() + "\n\nMình vừa làm xong và thấy cực kỳ hữu dụng — mà ít ai chỉ bạn cách này.\n\n👉 Chi tiết từng bước + link mình để sẵn ở BÌNH LUẬN bên dưới. Xem rồi làm thử luôn nhé!";
 }
 function shareFB(e){ if(e) e.preventDefault(); var t=shareText(); try{ navigator.clipboard.writeText(t); }catch(err){} window.open("https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.href), "_blank"); showToast("Đã copy nội dung chia sẻ 📋 — dán (Ctrl+V) vào status Facebook rồi đăng nhé!"); }
 function copyShare(){ var t=shareText(); try{ navigator.clipboard.writeText(t); showToast("Đã copy nội dung chia sẻ 📋"); }catch(err){ showToast("Không copy được, hãy bôi đen và copy thủ công nhé"); } }
