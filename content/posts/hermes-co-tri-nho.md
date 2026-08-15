@@ -4,7 +4,18 @@ date: 2026-08-15
 draft: false
 description: "Chatbot quên sau mỗi phiên. Hermes (Agent) nhớ giọng văn, thói quen, quyết định cũ — bạn giao 1 lần, lần sau tự hiểu. Thực tế nhân sự ảo có trí nhớ."
 image: "https://vanthuonghi.github.io/hermes-website/covers/hermes-co-tri-nho.webp"
+share_teaser: |
+  Phát hiện một cái khiến Hỉ thích quá: nó nhớ mình hơn mình nhớ nó luôn. 🧠
+  Chatbot thì quên sạch sau mỗi lần chat. Còn Hermes (AI Agent) nhớ giọng văn, thói quen, quyết định cũ — giao 1 lần, lần sau tự hiểu, không cần nhắc lại.
+  AI Agent = nhân sự ảo có trí nhớ, khác hẳn mấy con chatbot hay 'ngáo' quên việc.
+  👉 Hermes đang làm cái này rất tốt — chi tiết + link mình để ở BÌNH LUẬN nhé.
 ---
+share_teaser: |
+  Phát hiện một cái khiến Hỉ thích quá: nó nhớ mình hơn mình nhớ nó luôn. 🧠
+  Chatbot thì quên sạch sau mỗi lần chat. Còn Hermes (AI Agent) nhớ giọng văn, thói quen, quyết định cũ — giao 1 lần, lần sau tự hiểu, không cần nhắc lại.
+  AI Agent = nhân sự ảo có trí nhớ, khác hẳn mấy con chatbot hay 'ngáo' quên việc.
+  👉 Hermes đang làm cái này rất tốt — chi tiết + link mình để ở BÌNH LUẬN nhé.
+
 
 Bạn có bao giờ mở ChatGPT, gõ lại từ đầu: *"Tôi là chủ shop mỹ phẩm, giọng thân thiện, khách hay hỏi giá..."* rồi lần sau mở lại, nó lại hỏi *"Bạn là ai ạ?"*. Mệt. Mỗi lần chat là một lần bắt đầu lại từ số 0.
 
