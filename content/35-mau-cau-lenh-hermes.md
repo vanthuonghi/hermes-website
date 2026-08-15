@@ -62,4 +62,4 @@ image: "https://vanthuonghi.github.io/hermes-website/og-image.webp"
 
 📥 **Muốn nhận bản này qua email + bài giao việc sâu mỗi tuần?** Đăng ký tại [trang thu email](/cam-nang-giao-viec-hermes/).
 
-🎓 **Học bài bản xây Agent:** [khoá Nhân Sự Toàn Năng Hermes (199K)](https://speedreading.vn/pshermes)
+🎓 **Học bài bản xây Agent:** [khoá Nhân Sự Toàn Năng Hermes (199K)](https://speedreading.vn/shermes)
