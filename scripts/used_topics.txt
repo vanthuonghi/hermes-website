@@ -6,3 +6,4 @@ Hermes kết nối API: gom mọi Key vào 1 mối
 Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
 7|Hermes quality gate: tự check trước khi giao
 Hermes làm liên tục không mệt không than
+Hermes đọc 300 trang hợp đồng trích điều quan trọng
