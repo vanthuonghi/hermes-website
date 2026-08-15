@@ -70,14 +70,19 @@
   {{ block "main" . }}{{ end }}
 </main>
 <div class="share">
-  <p>📤 Thích nội dung này? Share để bạn bè cùng học Hermes:</p>
-  <a class="btn fb" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" rel="noopener">📘 Share Facebook</a>
-  <a class="btn fb" href="https://www.facebook.com/dialog/share?app_id=0000000000&display=popup&href={{ .Permalink }}&quote={{ .Title }}%20-%20đọc%20tại%20{{ .Permalink }}" target="_blank" rel="noopener">💬 Share kèm lời</a>
+  <p>📤 Thích nội dung này? Share lên Facebook cho bạn bè cùng học Hermes:</p>
+  <a class="btn fb" href="#" onclick="shareFB(event)">📘 Share Facebook</a>
   <a class="btn zalo" href="https://zalo.me/share/?url={{ .Permalink }}" target="_blank" rel="noopener">💬 Share Zalo</a>
-  <button class="copy" id="copyBtn" onclick="copyLink()">📋 Copy link</button>
+  <button class="copy" onclick="copyShare()">📋 Copy nội dung</button>
 </div>
 <script>
-function copyLink(){try{navigator.clipboard.writeText(window.location.href);var b=document.getElementById('copyBtn');b.innerText='Đã copy!';setTimeout(function(){b.innerText='📋 Copy link'},1500);}catch(e){}}
+function shareText(){
+  var title = "{{ .Title | js }}";
+  return "🔥 " + title + "\n\nMình vừa làm xong và thấy cực kỳ hữu dụng — mà ít ai chỉ bạn cách này.\n\n👉 Chi tiết từng bước + link mình để sẵn ở BÌNH LUẬN bên dưới. Xem rồi làm thử luôn nhé!";
+}
+function shareFB(e){ if(e) e.preventDefault(); var t=shareText(); try{ navigator.clipboard.writeText(t); }catch(err){} window.open("https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.href), "_blank"); showToast("Đã copy nội dung chia sẻ 📋 — dán (Ctrl+V) vào status Facebook rồi đăng nhé!"); }
+function copyShare(){ var t=shareText(); try{ navigator.clipboard.writeText(t); showToast("Đã copy nội dung chia sẻ 📋"); }catch(err){ showToast("Không copy được, hãy bôi đen và copy thủ công nhé"); } }
+function showToast(msg){ var t=document.createElement('div'); t.textContent=msg; t.style.cssText='position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#1877f2;color:#fff;padding:12px 18px;border-radius:10px;font-size:14px;z-index:9999;box-shadow:0 4px 14px rgba(0,0,0,.25);max-width:90%;text-align:center;line-height:1.5'; document.body.appendChild(t); setTimeout(function(){ t.remove(); }, 3800); }
 </script>
 <footer class="site-footer">
   <div class="container">
