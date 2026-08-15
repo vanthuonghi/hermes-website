@@ -62,6 +62,6 @@ Giao 1 lần, nó chạy hoài. Đó là lúc bạn thấy AI không phải "ng�
 
 Sức mạnh của Hermes không phải viết giỏi. Là **nó tự vận hành cả quy trình thay bạn, lặp lại, có kiểm tra, có báo cáo** — bạn rảnh làm việc lớn.
 
-👉 Học chi tiết: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
+👉 Học chi tiết: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/shermes)
 
 📎 Đọc thêm: [Hermes khác ChatGPT ở chỗ nào](/posts/hermes-khac-chatgpt/)
