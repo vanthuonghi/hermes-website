@@ -4,7 +4,18 @@ date: 2026-08-14
 draft: false
 description: "Hermes không dừng ở viết 1 câu trả lời. Giao 1 việc, nó tự chạy vòng lặp 8 bước rồi báo cáo cho bạn — đúng kiểu nhân viên biết tự vận hành. Thực tế tự động hoá AI Agent."
 image: "https://vanthuonghi.github.io/hermes-website/covers/hermes-vong-lap-8-buoc.webp"
+share_teaser: |
+  Hỉ thấy cái hay nhất của Hermes là nó không 'trả lời 1 câu' rồi ngưng. 🔁
+  Giao 1 việc, nó tự chạy vòng lặp 8 bước: tìm → nghiên cứu → viết → check → lưu → lịch → báo cáo, rồi đưa bạn kết quả.
+  Đó là AI Agent thật: tự vận hành cả quy trình, không phải chatbot sinh chữ rập khuôn.
+  👉 Hermes đang làm cái này rất tốt — chi tiết + link ở BÌNH LUẬN, đọc xong tự thấy khác biệt.
 ---
+share_teaser: |
+  Hỉ thấy cái hay nhất của Hermes là nó không 'trả lời 1 câu' rồi ngưng. 🔁
+  Giao 1 việc, nó tự chạy vòng lặp 8 bước: tìm → nghiên cứu → viết → check → lưu → lịch → báo cáo, rồi đưa bạn kết quả.
+  Đó là AI Agent thật: tự vận hành cả quy trình, không phải chatbot sinh chữ rập khuôn.
+  👉 Hermes đang làm cái này rất tốt — chi tiết + link ở BÌNH LUẬN, đọc xong tự thấy khác biệt.
+
 
 Nhiều người hỏi tôi: "Hermes với ChatGPT khác gì, đều là AI viết chữ mà?". Câu trả lời nằm ở một chữ: **vòng lặp**. ChatGPT trả lời xong là hết. Hermes giao 1 việc, nó tự chạy cả một chu trình rồi quay lại báo bạn.
 
