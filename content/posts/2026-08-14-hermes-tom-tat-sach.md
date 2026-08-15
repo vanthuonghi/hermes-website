@@ -1,39 +1,32 @@
 ---
-title: "Hermes đọc xong 300 trang sách, sáng nào cũng nhắc bạn ý chính — không phải app tóm tắt"
+title: "Hermes tóm tắt sách trong vài phút — đọc nhanh gấp 4 lần"
 date: 2026-08-14
 draft: false
-description: "Hermes không phải tool tóm tắt sách. Giao 1 lần, nó đọc toàn bộ, trích ý chính, lên lịch ôn mỗi sáng và báo cáo — Agent làm việc, không phải chatbot sinh chữ."
-image: "https://vanthuonghi.github.io/hermes-website/covers/hermes-tom-tat-sach.webp"
+share_teaser: |
+  Mới thử xong một cái mà Hỉ phải nói là... ồ hay thật. 🤯
+  Mình giao nó đọc nguyên cuốn sách 300 trang, sáng nào nó cũng tự nhắc ý chính — chứ không phải mấy app tóm tắt chết nhách.
+  Thực ra đây là 'AI Agent' (nhân sự ảo): khác hẳn ChatGPT. ChatGPT trả lời xong là thôi, còn Agent là 'cánh tay' tự làm việc: giao 1 lần, nó tự chạy, tự nhắc, tự báo cáo luôn.
+  👉 Hermes đang làm cái này rất tốt — chi tiết + link mình để ở BÌNH LUẬN nhé, xem rồi thử luôn.
 ---
 
-Nhiều người tưởng Hermes như mấy app tóm tắt sách: dán đoạn văn, nó gọt lại thành vài dòng. Đó là chatbot. Hermes là **Agent — đọc nguyên cuốn, nhớ, rồi tự vận hành cả quy trình học**.
+Bạn mua đống sách tự giúp bản thân nhưng tháng nào cũng chỉ lật được vài trang? Tôi cũng thế. Cho đến khi thử sai nhân sự ảo Hermes tóm tắt hộ.
 
-## Chatbot vs Agent — cùng một cuốn sách
+## Thử nghiệm
 
-- **App tóm tắt:** bạn dán 1 chương → nó trả lời tóm tắt chương đó → xong. Lần sau bạn dán tiếp.
-- **Hermes Agent:** bạn giao *"đọc xong cuốn này, trích 10 ý chính, mỗi sáng nhắc tôi 1 ý, cuối tuần tổng hợp lại"* → nó: **đọc toàn bộ → trích ý → lưu → đặt lịch nhắc hàng ngày → cuối tuần tự tổng hợp → báo cáo cho bạn**. Bạn không động tay lần hai.
+Tôi lấy cuốn sách dày 300 trang mình mua cả năm chưa đọc. Thay vì ngồi đọc từ đầu, tôi giao cho Hermes:
 
-## Quy trình thực tế tôi giao
+> "Tóm tắt cuốn sách này thành 10 ý chính, mỗi ý 2–3 câu, kèm 3 việc tôi nên làm ngay sau khi đọc."
 
-> "Đọc cuốn sách 300 trang này. Trích 10 ý chính, mỗi ý 2–3 câu. Mỗi sáng 7h, nhắc tôi 1 ý qua Telegram. Cuối tuần, tự tổng hợp thành 1 bản nhớ dài 1 trang. Trước khi nhắc, tự check ý đó có thực hành được không. Xong thì báo cáo tôi."
+Vài phút sau, tôi có bản tóm tắt súc tích nắm trọn cốt lõi. Biết hết ý chính trước khi quyết định có đọc kỹ hay không.
 
-## Cái WOW
+## Lợi ích thực tế
 
-- **Đọc thật, không lướt:** nó xử lý toàn bộ 300 trang, không phải vài đoạn bạn copy.
-- **Tự chạy hoài:** giao 1 lần, mỗi sáng có ý mới tự động — kể cả khi bạn bận quên béng.
-- **Có trí nhớ:** tuần sau nó nhớ bạn đã học ý nào, không nhắc lại.
-- **Tự báo cáo:** cuối tuần gửi bản tổng hợp, đúng kiểu nhân viên báo cáo sếp.
+- **Tiết kiệm thời gian:** thay vì 5 tiếng đọc, 10 phút đã nắm được tinh thần cuốn sách.
+- **Chọn lọc thông minh:** sách nào hay mới đọc sâu, sách nào hời hợt bỏ qua luôn.
+- **Nhớ lâu hơn:** tóm tắt theo ý chính dễ "ót" vào đầu hơn là lướt trang mòn mỏi.
 
-Trước tôi mua sách cả năm không đọc xong 1 cuốn. Giờ **5 phút giao việc, sách "tự học" cùng tôi**.
+## Mẹo nhỏ
 
-## Mẹo giao việc kiểu CEO
+Đừng bảo chung chung "tóm tắt giúp tôi". Hãy nói rõ góc bạn cần: *"tóm tắt cho dân kinh doanh, ưu tiên phần về quản lý thời gian"*. Nhân sự ảo hiểu đúng hướng và bám theo.
 
-Đừng nói *"tóm tắt giúp tôi"* (kiểu hỏi AI). Hãy nói: **đọc gì + trích gì + nhắc khi nào + tự check cái gì + báo cáo thế nào**. Bạn là đầu não, Hermes là cánh tay.
-
-## Kết luận
-
-Hermes tóm tắt không phải điểm mạnh. Điểm mạnh là **nó đọc, nhớ, lên lịch, nhắc, tổng hợp và báo cáo thay bạn** — bạn rảnh học, không rảnh gõ prompt.
-
-👉 Học bài bản cách giao việc cho Agent: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
-
-📎 Đọc thêm: [Hermes khác gì ChatGPT?](/posts/hermes-khac-chatgpt/)
+👉 Học cách sai việc cho Hermes: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
