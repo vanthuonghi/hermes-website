@@ -64,6 +64,6 @@ Giao kèm cái cổng, nó không dám đưa bạn bản đầu tiên lởm kh�
 
 Sức mạnh của Hermes không phải viết giỏi. Là **nó tự đứng ra kiểm soát chất lượng trước khi giao bạn** — giống hệt một nhân sự biết tự rà trước khi báo sếp. Bạn rảnh, kết quả vẫn sạch.
 
-👉 Học chi tiết: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
+👉 Học chi tiết: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/shermes)
 
 📎 Đọc thêm: [Vòng lặp 8 bước Hermes tự chạy](/posts/hermes-vong-lap-8-buoc/)
