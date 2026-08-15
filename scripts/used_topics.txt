@@ -1,9 +1,1 @@
-Hermes tự động hoá: giao 1 lần chạy hoài, đúng giờ kể cả ngủ (kịch bản TikTok)
-Hermes vong lap 8 buoc: tim nghien cuu viet check luu lich bao cao (tu dong chay)
-Hermes phan than: 1 nguoi giao 4 viec xong trong 1 gio
-4|Hermes quản lý 5 nhân sự ảo cùng lúc
-Hermes kết nối API: gom mọi Key vào 1 mối
-Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
-7|Hermes quality gate: tự check trước khi giao
-Hermes làm liên tục không mệt không than
-Hermes đọc 300 trang hợp đồng trích điều quan trọng
+Hermes tóm tắt tin tức ngành mỗi sáng
