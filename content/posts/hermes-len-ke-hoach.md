@@ -22,4 +22,4 @@ Làm chủ mà vẫn ngập trong việc nhỏ? Tôi thử để Hermes làm "tr
 
 Tôi không phải nghĩ từng bước nữa. Có khung sẵn, tôi chỉ tinh chỉnh. Đầu óc rảnh ra để lo chiến lược — cái máy không làm thay được.
 
-👉 Học cách giao việc hiệu quả: [khoá Hermes](https://speedreading.vn/pshermes)
+👉 Học cách giao việc hiệu quả: [khoá Hermes](https://speedreading.vn/shermes)
