@@ -56,6 +56,13 @@ main{padding:40px 0 60px}
 .nav a.cta-nav:hover{text-decoration:none;opacity:.92}
 .post .back{margin-top:30px}
 .site-footer{border-top:1px solid var(--border);padding:24px 0;color:var(--muted);font-size:14px;text-align:center}
+.share{max-width:760px;margin:0 auto;padding:24px 20px;border-top:1px solid var(--border);text-align:center}
+.share p{margin-bottom:12px;color:var(--muted);font-size:15px}
+.share .btn,.share .copy{display:inline-block;margin:6px;padding:10px 18px;border-radius:8px;font-weight:700;font-size:15px;cursor:pointer;border:none}
+.share .btn.fb{background:#1877f2;color:#fff}
+.share .btn.zalo{background:#0068ff;color:#fff}
+.share .copy{background:var(--card);color:var(--accent);border:1px solid var(--border)!important}
+.share .btn:hover,.share .copy:hover{opacity:.9;text-decoration:none}
 @media(max-width:600px){
   .hero h1{font-size:26px}
   .post-list li{flex-direction:column;gap:4px}
