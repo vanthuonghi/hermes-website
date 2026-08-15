@@ -69,6 +69,15 @@
 <main class="container">
   {{ block "main" . }}{{ end }}
 </main>
+<div class="share">
+  <p>📤 Thích nội dung này? Share để bạn bè cùng học Hermes:</p>
+  <a class="btn fb" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" rel="noopener">📘 Share Facebook</a>
+  <a class="btn zalo" href="https://zalo.me/share?u={{ .Permalink }}" target="_blank" rel="noopener">💬 Share Zalo</a>
+  <button class="copy" id="copyBtn" onclick="copyLink()">📋 Copy link</button>
+</div>
+<script>
+function copyLink(){try{navigator.clipboard.writeText(window.location.href);var b=document.getElementById('copyBtn');b.innerText='Đã copy!';setTimeout(function(){b.innerText='📋 Copy link'},1500);}catch(e){}}
+</script>
 <footer class="site-footer">
   <div class="container">
     <p>© {{ now.Year }} {{ .Site.Title }} · Xây bởi Hermes AI · <a href="https://speedreading.vn/pshermes" target="_blank" rel="noopener">Học khoá Hermes</a></p>
