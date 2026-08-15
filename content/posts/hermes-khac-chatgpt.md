@@ -23,4 +23,4 @@ Bạn giao việc, nó tự chia bước, tự làm, tự báo cáo. Cùng câu 
 
 Vì nó thay thế được mấy việc thuê người tốn tiền: viết content, trả mail, tổng hợp báo cáo. Và bạn **không cần biết code** để dùng.
 
-👉 Học bài bản: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
+👉 Học bài bản: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/shermes)
