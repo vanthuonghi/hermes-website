@@ -57,6 +57,6 @@ Giao 1 lần, nó chạy hoài. Sáng dậy bạn có kết quả, không có *"
 
 Sức mạnh Hermes không phải viết nhanh. Là **nó làm liên tục thay bạn, nhiều việc một lúc, có kiểm tra, có báo cáo — kể cả lúc bạn không online**. Bạn là sếp, nó là đội ngũ chạy không nghỉ.
 
-👉 Học chi tiết: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/pshermes)
+👉 Học chi tiết: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/shermes)
 
 📎 Đọc thêm: [Hermes khác ChatGPT ở chỗ nào](/posts/hermes-khac-chatgpt/) · [Vòng lặp 8 bước Hermes tự chạy](/posts/hermes-vong-lap-8-buoc/)
