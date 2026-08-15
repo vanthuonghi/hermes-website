@@ -4,7 +4,18 @@ date: 2026-08-14
 draft: false
 description: "Hermes không phải tool viết caption. Giao 1 lần, nó tự viết 10 biến thể, lên lịch, test A/B, báo cáo — chạy hoài. Thực tế Agent lo caption video."
 image: "https://vanthuonghi.github.io/hermes-website/covers/hermes-viet-caption.webp"
+share_teaser: |
+  Mỗi clip Hỉ giờ có tận 10 cái caption, mà lúc ngủ nó vẫn viết. 😴✍️
+  Giao 1 lần, nó tự viết 10 biến thể, lên lịch, test A/B, báo cáo — chạy hoài.
+  AI Agent lo caption: không phải chatbot viết 1 câu rồi thôi, mà là 'đội content' tự vận hành.
+  👉 Hermes đang làm cái này rất tốt — chi tiết + link ở BÌNH LUẬN, ai làm video xem phát thèm.
 ---
+share_teaser: |
+  Mỗi clip Hỉ giờ có tận 10 cái caption, mà lúc ngủ nó vẫn viết. 😴✍️
+  Giao 1 lần, nó tự viết 10 biến thể, lên lịch, test A/B, báo cáo — chạy hoài.
+  AI Agent lo caption: không phải chatbot viết 1 câu rồi thôi, mà là 'đội content' tự vận hành.
+  👉 Hermes đang làm cái này rất tốt — chi tiết + link ở BÌNH LUẬN, ai làm video xem phát thèm.
+
 
 Nghĩ Hermes như ChatGPT: "viết 10 caption giúp tôi" — được 10 cái, lần sau hỏi lại. Đó là chatbot. Hermes là **Agent vận hành cả mảng caption thay bạn**.
 
