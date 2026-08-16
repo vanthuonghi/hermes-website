@@ -47,7 +47,7 @@ $TEASER
 Bài chi tiết mình viết ở đây nhé 👇
 $URL
 
-Ai muốn tự dựng "nhân sự ảo" kiểu này mà không cần biết code: khoá Nhân Sự Toàn Năng Hermes — 37 bài, early-bird 199K (sau 499K), hoàn tiền 7 ngày → https://speedreading.vn/pshermes
+Ai muốn tự dựng "nhân sự ảo" kiểu này mà không cần biết code: khoá Nhân Sự Toàn Năng Hermes — 37 bài, 239K, hoàn tiền 7 ngày → https://speedreading.vn/shermes
 
 ---
 
