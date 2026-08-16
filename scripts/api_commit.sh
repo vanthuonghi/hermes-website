@@ -61,13 +61,13 @@ while IFS= read -r f; do
   [ -z "$f" ] && continue
   B64TMP=$(mktemp)
   base64 -w0 "$f" > "$B64TMP"
-  SHA=$(curl -s -H "Authorization: Bearer $TOKEN" "$API/$f" 2>/dev/null | python3 -c "import sys,json;d=json.load(sys.stdin);print(d.get('sha',''))" 2>/dev/null)
+  SHA=$(curl -s --max-time 40 -H "Authorization: Bearer $TOKEN" "$API/$f" 2>/dev/null | python3 -c "import sys,json;d=json.load(sys.stdin);print(d.get('sha',''))" 2>/dev/null)
   if [ -n "$SHA" ]; then
     BODY="{\"message\":\"Daily update $TODAY: $f\",\"sha\":\"$SHA\",\"content\":\"$(cat "$B64TMP")\"}"
   else
     BODY="{\"message\":\"Daily add $TODAY: $f\",\"content\":\"$(cat "$B64TMP")\"}"
   fi
-  RESP=$(echo "$BODY" | curl -s -X PUT -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
+  RESP=$(echo "$BODY" | curl -s --max-time 40 -X PUT -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
     --data @- "$API/$f" 2>/dev/null | python3 -c "import sys,json;d=json.load(sys.stdin);print('OK' if ('content' in d or 'commit' in d) else d.get('message','ERR'))" 2>/dev/null)
   rm -f "$B64TMP"
   echo "  $f -> $RESP"
@@ -81,13 +81,13 @@ if [ -n "$FAILED" ]; then
   for f in $FAILED; do
     B64TMP=$(mktemp)
     base64 -w0 "$f" > "$B64TMP"
-    SHA=$(curl -s -H "Authorization: Bearer $TOKEN" "$API/$f" 2>/dev/null | python3 -c "import sys,json;d=json.load(sys.stdin);print(d.get('sha',''))" 2>/dev/null || true)
+    SHA=$(curl -s --max-time 40 -H "Authorization: Bearer $TOKEN" "$API/$f" 2>/dev/null | python3 -c "import sys,json;d=json.load(sys.stdin);print(d.get('sha',''))" 2>/dev/null || true)
     if [ -n "$SHA" ]; then
       BODY="{\"message\":\"Retry $TODAY: $f\",\"sha\":\"$SHA\",\"content\":\"$(cat "$B64TMP")\"}"
     else
       BODY="{\"message\":\"Retry add $TODAY: $f\",\"content\":\"$(cat "$B64TMP")\"}"
     fi
-    R2=$(echo "$BODY" | curl -s -X PUT -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
+    R2=$(echo "$BODY" | curl -s --max-time 40 -X PUT -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
       --data @- "$API/$f" 2>/dev/null | python3 -c "import sys,json;d=json.load(sys.stdin);print('OK' if ('content' in d or 'commit' in d) else d.get('message','ERR'))" 2>/dev/null || echo ERR)
     rm -f "$B64TMP"
     echo "  RETRY $f -> $R2"
