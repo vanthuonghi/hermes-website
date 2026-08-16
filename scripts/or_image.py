@@ -76,7 +76,7 @@ def main():
     if not a.out:
         h = hashlib.md5((a.topic + str(os.urandom(4))).encode()).hexdigest()[:8]
         a.out = f"ai-{a.topic}-{h}.webp"
-    out_path = a.out if os.path.isabs(a.out) else os.path.join(OUT_DIR, a.out)
+    out_path = a.out if (os.path.isabs(a.out) or a.out.startswith("static/")) else os.path.join(OUT_DIR, a.out)
     # convert to webp
     try:
         from PIL import Image
