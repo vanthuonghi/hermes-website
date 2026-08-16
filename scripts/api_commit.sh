@@ -59,16 +59,19 @@ set +e
 FAILED=""
 while IFS= read -r f; do
   [ -z "$f" ] && continue
-  CONTENT=$(base64 -w0 "$f")
-  SHA=$(curl -s -H "Authorization: Bearer $TOKEN" "$API/$f" 2>/dev/null | python3 -c "import sys,json;d=json.load(sys.stdin);print(d.get('sha',''))" 2>/dev/null)
+  B64TMP=$(mktemp)
+  base64 -w0 "$f" > "$B64TMP"
+  SHA=$(curl -s -H "Authorization: Bearer ***" "$API/$f" 2>/dev/null | python3 -c "import sys,json;d=json.load(sys.stdin);print(d.get('sha',''))" 2>/dev/null)
   if [ -n "$SHA" ]; then
-    BODY="{\"message\":\"Daily update $TODAY: $f\",\"sha\":\"$SHA\",\"content\":\"$CONTENT\"}"
+    BODY="{\"message\":\"Daily update $TODAY: $f\",\"sha\":\"$SHA\",\"content\":\"$(cat "$B64TMP")\"}"
   else
-    BODY="{\"message\":\"Daily add $TODAY: $f\",\"content\":\"$CONTENT\"}"
+    BODY="{\"message\":\"Daily add $TODAY: $f\",\"content\":\"$(cat "$B64TMP")\"}"
   fi
-  RESP=$(curl -s -X PUT -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
-    -d "$BODY" "$API/$f" 2>/dev/null | python3 -c "import sys,json;d=json.load(sys.stdin);print('OK' if ('content' in d or 'commit' in d) else d.get('message','ERR'))" 2>/dev/null)
+  RESP=$(echo "$BODY" | curl -s -X PUT -H "Authorization: Bearer ***" -H "Accept: application/vnd.github+json" \
+    --data @- "$API/$f" 2>/dev/null | python3 -c "import sys,json;d=json.load(sys.stdin);print('OK' if ('content' in d or 'commit' in d) else d.get('message','ERR'))" 2>/dev/null)
+  rm -f "$B64TMP"
   echo "  $f -> $RESP"
+  sleep 1
   [ "$RESP" != "OK" ] && FAILED+="$f "
 done <<< "$TO_PUSH"
 set -e
@@ -76,15 +79,17 @@ set -e
 if [ -n "$FAILED" ]; then
   echo "RETRY_FAILED_FILES: $FAILED"
   for f in $FAILED; do
-    CONTENT=$(base64 -w0 "$f")
-    SHA=$(curl -s -H "Authorization: Bearer $TOKEN" "$API/$f" 2>/dev/null | python3 -c "import sys,json;d=json.load(sys.stdin);print(d.get('sha',''))" 2>/dev/null || true)
+    B64TMP=$(mktemp)
+    base64 -w0 "$f" > "$B64TMP"
+    SHA=$(curl -s -H "Authorization: Bearer ***" "$API/$f" 2>/dev/null | python3 -c "import sys,json;d=json.load(sys.stdin);print(d.get('sha',''))" 2>/dev/null || true)
     if [ -n "$SHA" ]; then
-      BODY="{\"message\":\"Retry $TODAY: $f\",\"sha\":\"$SHA\",\"content\":\"$CONTENT\"}"
+      BODY="{\"message\":\"Retry $TODAY: $f\",\"sha\":\"$SHA\",\"content\":\"$(cat "$B64TMP")\"}"
     else
-      BODY="{\"message\":\"Retry add $TODAY: $f\",\"content\":\"$CONTENT\"}"
+      BODY="{\"message\":\"Retry add $TODAY: $f\",\"content\":\"$(cat "$B64TMP")\"}"
     fi
-    R2=$(curl -s -X PUT -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
-      -d "$BODY" "$API/$f" 2>/dev/null | python3 -c "import sys,json;d=json.load(sys.stdin);print('OK' if ('content' in d or 'commit' in d) else d.get('message','ERR'))" 2>/dev/null || echo ERR)
+    R2=$(echo "$BODY" | curl -s -X PUT -H "Authorization: Bearer ***" -H "Accept: application/vnd.github+json" \
+      --data @- "$API/$f" 2>/dev/null | python3 -c "import sys,json;d=json.load(sys.stdin);print('OK' if ('content' in d or 'commit' in d) else d.get('message','ERR'))" 2>/dev/null || echo ERR)
+    rm -f "$B64TMP"
     echo "  RETRY $f -> $R2"
   done
 fi
