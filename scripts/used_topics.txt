@@ -7,3 +7,4 @@ Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
 7|Hermes phân tích feedback khách tìm lỗi
 Hermes viết email xin lỗi khách giận
 Hermes tự động hoá: giao 1 lần chạy hoài, đúng giờ kể cả ngủ
+Hermes viết mô tả sản phẩm shop đẹp
