@@ -85,4 +85,4 @@ Việc thứ tư — mở file, lọc, cộng, viết bảng, nhớ hạn, lặp
 
 Nếu bạn đang một mình gánh cả shop, đây là thứ đáng học trước tiên: không phải học viết prompt cho hay, mà học **giao việc cho một cái Agent biết tự chạy**.
 
-👉 Khoá **Nhân Sự Toàn Năng Hermes** — 37 bài, dạy đúng cách giao việc kiểu này cho người không biết code. Đang early-bird **199K** (sau 499K), **hoàn tiền trong 7 ngày** nếu bạn thấy không dùng được: [speedreading.vn/pshermes](https://speedreading.vn/pshermes)
+👉 Khoá **Nhân Sự Toàn Năng Hermes** — 37 bài, dạy đúng cách giao việc kiểu này cho người không biết code. Giá **239K**, **hoàn tiền trong 7 ngày** nếu bạn thấy không dùng được: [speedreading.vn/shermes](https://speedreading.vn/shermes)
