@@ -47,7 +47,7 @@ draft: true
 
 ## Kết luận
 
-👉 Học khoá Nhân Sự Toàn Năng Hermes: https://speedreading.vn/pshermes
+👉 Học khoá Nhân Sự Toàn Năng Hermes: https://speedreading.vn/shermes
 EOF
 
 echo "ĐÃ TẠO: $FILENAME"
