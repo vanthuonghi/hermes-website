@@ -1,2 +1,3 @@
 Hermes tóm tắt tin tức ngành mỗi sáng
 Hermes dự báo tồn kho từ lịch sử bán
+Hermes xếp ưu tiên công việc: 41 việc → 5 việc mỗi 6h sáng
