@@ -1,0 +1,25 @@
+{
+  "used": [
+    {
+      "t": "Hermes phân thân: giao 4 việc cùng lúc, 1 tiếng xong",
+      "topic": "phan-than",
+      "f": "/covers/auto-phan-than-f6ba6264.webp"
+    },
+    {
+      "t": "Hermes tự tổng hợp báo cáo mỗi tuần, tôi ngủ nó vẫn chạy",
+      "topic": "bao-cao",
+      "f": "/covers/auto-bao-cao-5c838dd3.webp"
+    },
+    {
+      "t": "Hermes kết nối API: gom mọi Key vào 1 mối",
+      "topic": "api",
+      "f": "/covers/auto-api-27a8da3c.webp"
+    },
+    {
+      "t": "Hermes làm liên tục không mệt: giao 1 mẻ 20 việc, sáng dậy có đống kết quả",
+      "topic": "tiet-kiem",
+      "f": "/covers/auto-tiet-kiem-6fd490ed.webp"
+    }
+  ],
+  "count": 4
+}
