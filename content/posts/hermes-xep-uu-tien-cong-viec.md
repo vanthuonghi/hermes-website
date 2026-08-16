@@ -3,7 +3,7 @@ title: "Hermes xếp thứ tự 41 việc trước 6h sáng: tôi mở máy là 
 date: 2026-08-16
 draft: false
 description: "Chatbot dạy bạn ma trận Eisenhower rồi để bạn tự ngồi phân loại. Hermes tự gom việc từ 4 nơi (mail, Zalo, Sheet, ghi chú), tự chấm điểm gấp–quan trọng, tự xếp lịch vào khung giờ trống, 6h sáng gửi 1 danh sách 5 việc — và tự lặp lại mỗi ngày, kể cả hôm tôi ngủ nướng."
-image: "https://vanthuonghi.github.io/hermes-website/covers/auto-ke-hoach-05e33f9c.webp"
+image: "https://vanthuonghi.github.io/hermes-website/covers/ai-ke-hoach-1786854433.webp"
 share_teaser: |
   Hỉ vừa được thứ xịn mà nói ra hơi ngại: sáng thứ Ba tuần trước Hỉ ngồi trước máy đúng 22 phút mà chưa làm được việc nào. Không phải lười. Là vì có 41 việc đang nằm rải ở mail, Zalo, Google Sheet và cuốn sổ tay — Hỉ không biết nên bắt đầu từ cái nào, nên cứ mở ra đóng vào.
   Giờ 6h sáng, trước khi Hỉ dậy, trên điện thoại đã có sẵn 1 danh sách gọn: 5 việc làm hôm nay, xếp theo thứ tự, mỗi việc ghi rõ vì sao nó nằm ở vị trí đó, việc nào deadline hôm nay, việc nào đẩy sang mai được. Hỉ không phân loại một phút nào.
