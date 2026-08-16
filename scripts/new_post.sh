@@ -14,7 +14,7 @@ POST="content/posts/$SLUG.md"
 
 # Download + convert cover webp (no-text image)
 COVER="static/covers/$SLUG.webp"
-if [[ "$IMG" == http* ]]; then curl -sS -m 40 -o /tmp/$SLUG.png "$IMG" 2>/dev/null; else cp "$IMG" /tmp/$SLUG.png 2>/dev/null; fi
+if [[ "$IMG" == http* ]]; then curl -sS -m 40 -o /tmp/$SLUG.png "$IMG" 2>/dev/null || true; else [ "$(readlink -f "$IMG")" = "/tmp/$SLUG.png" ] || cp "$IMG" /tmp/$SLUG.png 2>/dev/null || true; fi
 if python3 -c "from PIL import Image; im=Image.open('/tmp/$SLUG.png').convert('RGB'); im=im.resize((1200,630)); im.save('$COVER',format='WEBP',quality=72,method=4)" 2>/dev/null; then
   echo "cover ok"
 else
