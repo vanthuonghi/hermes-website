@@ -52,6 +52,11 @@ if [ -z "$TO_PUSH" ]; then echo "NO_CHANGES_TO_PUSH"; exit 0; fi
 
 echo "Files to push:"; echo "$TO_PUSH"
 
+# Không để 1 lỗi lẻ (curl hiccup / JSON rỗng) giết cả vòng lặp (set -e).
+# Trước đây lỗi này làm các file static/covers/*.webp cuối danh sách KHÔNG được push
+# → bài mới bị mất ảnh cover trên web. Giữ set +e trong vòng lặp, đếm lỗi ở cuối.
+set +e
+FAILED=""
 while IFS= read -r f; do
   [ -z "$f" ] && continue
   CONTENT=$(base64 -w0 "$f")
@@ -64,6 +69,24 @@ while IFS= read -r f; do
   RESP=$(curl -s -X PUT -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
     -d "$BODY" "$API/$f" 2>/dev/null | python3 -c "import sys,json;d=json.load(sys.stdin);print('OK' if ('content' in d or 'commit' in d) else d.get('message','ERR'))" 2>/dev/null)
   echo "  $f -> $RESP"
+  [ "$RESP" != "OK" ] && FAILED+="$f "
 done <<< "$TO_PUSH"
+set -e
+
+if [ -n "$FAILED" ]; then
+  echo "RETRY_FAILED_FILES: $FAILED"
+  for f in $FAILED; do
+    CONTENT=$(base64 -w0 "$f")
+    SHA=$(curl -s -H "Authorization: Bearer $TOKEN" "$API/$f" 2>/dev/null | python3 -c "import sys,json;d=json.load(sys.stdin);print(d.get('sha',''))" 2>/dev/null || true)
+    if [ -n "$SHA" ]; then
+      BODY="{\"message\":\"Retry $TODAY: $f\",\"sha\":\"$SHA\",\"content\":\"$CONTENT\"}"
+    else
+      BODY="{\"message\":\"Retry add $TODAY: $f\",\"content\":\"$CONTENT\"}"
+    fi
+    R2=$(curl -s -X PUT -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
+      -d "$BODY" "$API/$f" 2>/dev/null | python3 -c "import sys,json;d=json.load(sys.stdin);print('OK' if ('content' in d or 'commit' in d) else d.get('message','ERR'))" 2>/dev/null || echo ERR)
+    echo "  RETRY $f -> $R2"
+  done
+fi
 
 echo "API_PUSH_DONE_$TODAY"
