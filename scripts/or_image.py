@@ -1,38 +1,41 @@
 #!/usr/bin/env python3
 """
-or_image.py — Sinh cover AI thật qua OpenRouter (RẺ NHẤT: google/gemini-3.1-flash-lite-image).
-Giá ảnh thực tế ~0đ (img price=0, chỉ tốn prompt token nhỏ). Key đọc từ ~/.hermes/.env OPENROUTER_API_KEY.
-Ảnh trả về dạng data url trong message.images[0].image_url.url -> lưu .webp.
+or_image.py — Sinh cover AI thật qua OpenRouter (gemini-3.1-flash-lite-image) + đè TEXT tiêu đề/badge bằng PIL.
+Mục tiêu: SIÊU CHẤT LƯỢNG (đã tốn ~$0.034/ảnh thì phải đẹp).
+- Ảnh nền: Gemini sinh cảnh cinematic ấm, người + dashboard, KHÔNG chữ (tránh lỗi text lộn xộn)
+- Overlay: gradient tối đáy + tiêu đề bài (DejaVu Bold) + badge WOW-Agent + footer brand
+- Output: WebP 1200x630 (chuẩn OG/blog cover)
 
 Usage:
-  python3 or_image.py --topic "phan-than" --out static/covers/ai-xxx.webp
-Nếu không truyền --out, tự đặt tên theo hash(topic+time).
-Prompt: cảnh ấm, người + dashboard tự chạy, KHÔNG chữ (tránh lỗi text).
+  python3 or_image.py --title "..." --topic "phan-than" --badge "PHÂN THÂN SONG SONG" --out static/covers/ai-xxx.webp
 """
-import sys, os, json, base64, argparse, hashlib, urllib.request, urllib.error
+import sys, os, json, base64, argparse, hashlib, urllib.request, io
+from PIL import Image, ImageDraw, ImageFont
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(BASE, "..", "static", "covers")
 ENV = os.path.join(os.path.expanduser("~"), ".hermes", ".env")
 MODEL = "google/gemini-3.1-flash-lite-image"
 API = "https://openrouter.ai/api/v1/chat/completions"
+W, H = 1200, 630
 
-# Prompt theo chủ đề (cảnh ấm, người thong dong, máy tự chạy, KHÔNG chữ)
 TOPIC_PROMPTS = {
-    "default": "Warm cozy minimalist scene: a relaxed person drinking coffee while multiple screens show automated dashboards running by themselves. Soft amber home-office lighting. NO text, NO words, NO letters.",
-    "phan-than": "Warm scene: one person relaxed while several translucent clone silhouettes work on separate screens in parallel. Cozy room, amber light. NO text.",
-    "memory": "Warm scene: a person calmly reviewing a floating glowing memory timeline of past tasks, screens showing remembered context. Cozy. NO text.",
-    "api": "Warm scene: a person connecting many app icons into one hub, data flowing automatically. Cozy desk, amber light. NO text.",
-    "tiet-kiem": "Warm scene: a person sleeping peacefully while screens quietly finish a pile of tasks overnight. Cozy bedroom, moonlight + amber lamp. NO text.",
-    "bao-cao": "Warm scene: a person wakes to a ready weekly report on screen, dashboard auto-generated. Cozy morning light. NO text.",
-    "email": "Warm scene: a person sipping tea while inbox self-sorts and drafts emails on screen. Cozy. NO text.",
-    "ke-hoach": "Warm scene: a person reviews a calm monthly plan on screen while AI arranges weekly cards. Cozy. NO text.",
-    "vong-lap": "Warm scene: circular flow of tasks (find->research->do->check) animated on screens around a relaxed person. Cozy. NO text.",
-    "quality": "Warm scene: a gatekeeper checking a draft then passing a clean version to a relaxed person. Cozy. NO text.",
-    "content": "Warm scene: screens auto-writing blog posts and social cards while person relaxes. Cozy. NO text.",
-    "kit": "Warm scene: three glowing toolkits (starter, life, business) floating around a happy person. Cozy. NO text.",
-    "khac-chatgpt": "Warm split scene: left a person typing to a chatbot, right a person relaxing while an agent does the work. Cozy. NO text.",
+    "default": "Cinematic warm lifestyle photography: a relaxed person drinking coffee while multiple screens show automated dashboards running by themselves, soft amber home-office light, shallow depth of field, professional color grading, bokeh. NO text, NO words, NO letters, NO logos.",
+    "phan-than": "Cinematic warm scene: one person relaxed in armchair while several glowing translucent clone silhouettes work on separate screens in parallel, cozy room amber light, depth of field, professional photography. NO text, NO words.",
+    "memory": "Cinematic warm scene: a person calmly reviewing a floating glowing memory timeline of past tasks, screens showing remembered context, cozy room, soft light, photographic. NO text, NO words.",
+    "api": "Cinematic warm scene: a person connecting many glowing app icons into one central hub, data flowing automatically, cozy desk amber light, photographic. NO text, NO words.",
+    "tiet-kiem": "Cinematic warm night scene: a person sleeping peacefully while screens quietly finish a pile of tasks overnight, cozy bedroom moonlight + amber lamp, photographic. NO text, NO words.",
+    "bao-cao": "Cinematic warm morning scene: a person wakes to a ready weekly report on screen, dashboard auto-generated, cozy morning light, photographic. NO text, NO words.",
+    "email": "Cinematic warm scene: a person sipping tea while inbox self-sorts and drafts emails on screen, cozy, photographic. NO text, NO words.",
+    "ke-hoach": "Cinematic warm scene: a person reviews a calm monthly plan on screen while AI arranges weekly cards, cozy desk, amber light, photographic. NO text, NO words.",
+    "vong-lap": "Cinematic warm scene: circular flow of tasks animated on screens around a relaxed person, cozy room, photographic. NO text, NO words.",
+    "quality": "Cinematic warm scene: a gatekeeper checking a draft then passing a clean version to a relaxed person, cozy, photographic. NO text, NO words.",
+    "content": "Cinematic warm scene: screens auto-writing blog posts and social cards while person relaxes, cozy, photographic. NO text, NO words.",
+    "kit": "Cinematic warm scene: three glowing toolkits floating around a happy person, cozy, photographic. NO text, NO words.",
+    "khac-chatgpt": "Cinematic split scene: left a person typing to a chatbot, right a person relaxing while an agent does the work, cozy, photographic. NO text, NO words.",
 }
+
+FONT_DIR = "/usr/share/fonts/truetype/dejavu"
 
 def get_key():
     try:
@@ -43,7 +46,7 @@ def get_key():
         pass
     return os.environ.get("OPENROUTER_API_KEY", "")
 
-def gen(topic):
+def gen_image(topic):
     prompt = TOPIC_PROMPTS.get(topic, TOPIC_PROMPTS["default"])
     key = get_key()
     if not key:
@@ -61,32 +64,68 @@ def gen(topic):
     msg = d["choices"][0]["message"]
     imgs = msg.get("images", [])
     if not imgs:
-        raise RuntimeError("no image returned: " + json.dumps(msg, ensure_ascii=False)[:200])
+        raise RuntimeError("no image: " + json.dumps(msg, ensure_ascii=False)[:200])
     iu = imgs[0].get("image_url")
     url = iu["url"] if isinstance(iu, dict) else iu
     raw = url.split(",", 1)[1] if url.startswith("data:") else url
     return base64.b64decode(raw)
 
+def wrap(text, font, max_w, draw):
+    words = text.split()
+    lines, cur = [], ""
+    for w in words:
+        t = (cur + " " + w).strip()
+        if draw.textlength(t, font=font) <= max_w:
+            cur = t
+        else:
+            lines.append(cur); cur = w
+    if cur:
+        lines.append(cur)
+    return lines
+
+def overlay(img_bytes, title, badge):
+    img = Image.open(io.BytesIO(img_bytes)).convert("RGB")
+    img = img.resize((W, H))
+    d = ImageDraw.Draw(img)
+    # bottom gradient dark
+    for i in range(220):
+        a = int(150 * (i / 220))
+        d.rectangle([0, H - 220 + i, W, H - 220 + i + 1], fill=(10, 8, 6, a))
+    # badge top-left
+    try: f_b = ImageFont.truetype(f"{FONT_DIR}/DejaVuSans-Bold.ttf", 26)
+    except: f_b = ImageFont.load_default()
+    if badge:
+        bw = int(d.textlength(badge, font=f_b)) + 36
+        d.rounded_rectangle([48, 42, 48 + bw, 42 + 50], radius=12, fill=(240, 92, 40))
+        d.text((66, 54), badge, font=f_b, fill=(20, 16, 12))
+    # title bottom
+    try: f_t = ImageFont.truetype(f"{FONT_DIR}/DejaVuSans-Bold.ttf", 46)
+    except: f_t = ImageFont.load_default()
+    lines = wrap(title, f_t, W - 120, d)[:3]
+    y = H - 60 - len(lines) * 58
+    for ln in lines:
+        d.text((60, y), ln, font=f_t, fill=(248, 248, 245))
+        y += 58
+    # footer brand
+    try: f_f = ImageFont.truetype(f"{FONT_DIR}/DejaVuSans.ttf", 24)
+    except: f_f = ImageFont.load_default()
+    d.text((60, H - 42), "Nhân Sự Toàn Năng Hermes · speedreading.vn/shermes", font=f_f, fill=(220, 200, 180))
+    return img
+
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--title", default="Hermes tự động hóa công việc")
     ap.add_argument("--topic", default="default")
+    ap.add_argument("--badge", default="")
     ap.add_argument("--out", default=None)
     a = ap.parse_args()
-    data = gen(a.topic)
+    data = gen_image(a.topic)
+    img = overlay(data, a.title, a.badge)
     if not a.out:
-        h = hashlib.md5((a.topic + str(os.urandom(4))).encode()).hexdigest()[:8]
+        h = hashlib.md5((a.topic + a.title).encode()).hexdigest()[:8]
         a.out = f"ai-{a.topic}-{h}.webp"
     out_path = a.out if (os.path.isabs(a.out) or a.out.startswith("static/")) else os.path.join(OUT_DIR, a.out)
-    # convert to webp
-    try:
-        from PIL import Image
-        import io
-        img = Image.open(io.BytesIO(data)).convert("RGB")
-        img.save(out_path, "WEBP", quality=90)
-    except Exception:
-        # fallback: save raw (likely jpeg)
-        with open(out_path, "wb") as f:
-            f.write(data)
+    img.save(out_path, "WEBP", quality=92)
     print("/covers/" + os.path.basename(out_path))
 
 if __name__ == "__main__":
