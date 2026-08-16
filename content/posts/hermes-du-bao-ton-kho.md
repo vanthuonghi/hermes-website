@@ -3,7 +3,7 @@ title: "Hermes đọc lịch sử bán, dự báo tồn kho trước 3 tuần �
 date: 2026-08-16
 draft: false
 description: "Chatbot đoán mò khi bạn hỏi 'nên nhập bao nhiêu'. Hermes tự mở file bán hàng 14 tháng, tính tốc độ bán từng mã, dự báo ngày hết hàng, 7h sáng thứ Hai gửi bảng 'NÊN NHẬP GÌ - BAO NHIÊU - VÌ SAO' — và tự lặp lại mỗi tuần kể cả khi tôi đi vắng."
-image: "https://vanthuonghi.github.io/hermes-website/covers/auto-memory-d889b018.webp"
+image: "https://vanthuonghi.github.io/hermes-website/covers/ai-memory-1786854437.webp"
 share_teaser: |
   Hỉ vừa được thứ xịn đến mức hơi ngượng: tuần trước Hỉ nhập 300 hộp một mã, tưởng bán chạy, kết quả nằm kho 5 tuần chưa hết nửa. Còn cái mã bán chạy thật thì… hết hàng đúng cuối tuần đông khách. 🤦
   Giờ 7h sáng thứ Hai Hỉ mở điện thoại đã có sẵn 1 bảng: mã nào còn bán được mấy ngày, mã nào sắp cháy, nên nhập bao nhiêu, vì sao. Hỉ không mở Excel một phút nào.
