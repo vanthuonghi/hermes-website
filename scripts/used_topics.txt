@@ -3,3 +3,4 @@ Hermes dự báo tồn kho từ lịch sử bán
 Hermes xếp ưu tiên công việc: 41 việc → 5 việc mỗi 6h sáng
 4|Hermes học từ file Excel cũ của shop
 Hermes tóm tắt cuộc họp thành biên bản
+Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
