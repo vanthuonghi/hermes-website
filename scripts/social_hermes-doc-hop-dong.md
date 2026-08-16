@@ -32,7 +32,7 @@ Một cái NÓI. Một cái LÀM. 🙂
 Bài chi tiết mình viết ở đây (có luôn nguyên câu lệnh mình giao cho nó, copy dùng được):
 https://vanthuonghi.github.io/hermes-website/posts/hermes-doc-hop-dong/
 
-Ai muốn tự cài Hermes làm nhân sự ảo riêng mà không cần biết code: khoá Nhân Sự Toàn Năng Hermes 37 bài, early-bird 199K (sau 499K), hoàn tiền 7 ngày → speedreading.vn/pshermes
+Ai muốn tự cài Hermes làm nhân sự ảo riêng mà không cần biết code: khoá Nhân Sự Toàn Năng Hermes 37 bài, 239K, hoàn tiền 7 ngày → speedreading.vn/shermes
 
 ---
 
