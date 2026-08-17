@@ -1,3 +1,6 @@
 1|Hermes lập bảng theo dõi chi tiêu cá nhân
 2|Hermes lên kế hoạch du lịch tiết kiệm
 3|Hermes kết nối API: gom mọi Key vào 1 mối
+4|Hermes tự động hoá: giao 1 lần chạy hoài, đúng giờ kể cả ngủ
+5|Hermes viết mô tả sản phẩm shop đẹp
+6|Hermes viết thư cảm ơn sau bán hàng
