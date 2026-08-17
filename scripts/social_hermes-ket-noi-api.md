@@ -1,32 +1,22 @@
-# 📢 SOCIAL DRAFT — Hermes kết nối API: gom mọi Key vào 1 mối, AI không còn là chatbot mà là cánh tay chạm thật
+# Social distribution — Hermes kết nối API: gom mọi Key vào 1 mối
+# Slug: hermes-ket-noi-api
+# Cover: https://vanthuonghi.github.io/hermes-website/covers/auto-api-094c2b2c.webp
+# Ngày: 2026-08-17
 
-🔗 Link bài: https://vanthuonghi.github.io/hermes-website/posts/hermes-ket-noi-api/
+## FACEBOOK (giọng Hỉ, seeding tự nhiên)
+Sáng thứ Hai Hỉ thử một trò: đưa Hermes (AI Agent) đúng 1 câu — "tổng hợp feedback khách tuần này, chép vào bảng, báo tôi qua Telegram" — rồi đi uống cà phê ☕
+Về thấy nó đã lục Gmail lấy 47 email, gom vào Google Sheets, đánh nhãn mức độ, xong nhắn "xong rồi anh" vào điện thoại. Hỉ không mở một tab, không dán một dòng.
+Đây là điểm chatbot làm không nổi: chatbot chỉ nằm trong khung chat, hỏi gì đáp đó. Còn Agent (nhân sự ảo) là "bản sao bạn" — nó có tay, gọi được đủ thứ công cụ bên ngoài (email, Sheets, web, Telegram) rồi tự báo cáo.
+Sự thật: 1 doanh nghiệp cỡ vừa xài tận ~89 ứng dụng SaaS (báo cáo Okta). Mỗi ngày bạn "nhảy" giữa gần 90 app, phần lớn thời gian chỉ để chuyển data copy-paste. Hermes gom mọi Key vào 1 cái đầu, giao 1 lệnh là nó tự nối ống.
+👉 Chi tiết + link ở BÌNH LUẬN nhé. Ai ngán việc dán đi dán lại giữa các app thì xem thử.
 
----
+## ZALO (ngắn gọn, trực tiếp)
+Hermes kết nối API: giao 1 lệnh, nó tự gọi Gmail + Sheets + web + Telegram, xong báo bạn — 0 lần dán tay.
+Thực tế: 1 câu lệnh tổng hợp 47 feedback khách, chép vào bảng, đăng bài, nhắn qua Zalo/Telegram. Chatbot làm không nổi vì nó không có "tay" với thế giới ngoài.
+Đọc chi tiết + link ở bình luận. Học làm "nhân sự ảo có tay" không cần biết code: speedreading.vn/shermes
 
-## 📘 FACEBOOK / ZALO POST (copy đăng)
- = 
-**Hermes kết nối API: gom mọi Key vào 1 mối, AI không còn là chatbot mà là cánh tay chạm thật**
-
-Bạn có biết: Hermes không phải chatbot viết chữ — nó là Agent tự động hoá cả quy trình, chạy hoài kể cả khi bạn ngủ?
-
-Tôi vừa viết chi tiết thực tế ở đây 👇
-https://vanthuonghi.github.io/hermes-website/posts/hermes-ket-noi-api/
-
-💡 Ai muốn có nhân sự ảo riêng mà không cần biết code — comment "Hermes" mình gửi khoá học 199K (hoàn tiền 7 ngày).
-
-#Hermes #AIAgent #TuDongHoa #Nhansuao
-
----
-
-## 🎬 YOUTUBE SHORT HOOK (15s mở đầu)
-"Nhiều người tưởng AI chỉ viết được chữ. Sai. Tôi giao Hermes 1 việc, sáng nào cũng có sẵn, tôi ngủ nó vẫn chạy. Chi tiết ở link dưới 👇 https://vanthuonghi.github.io/hermes-website/posts/hermes-ket-noi-api/"
-
-## 🎬 TITLE GỢI Ý
-- Hermes không phải ChatGPT — và đây là lý do
-- Giao 1 lần, AI tự làm cả tuần (thật hay lừa?)
-- Nhân sự ảo 199K: có đáng hay không?
-
----
-
-⚠️ Hình đi kèm: dùng cover webp của bài (static/covers/hermes-ket-noi-api.webp) — KHÔNG để chữ lên ảnh, chữ thêm ở Caption/Canva.
+## YOUTUBE
+Title: 1 LỆNH - 20 API: Hermes gom mọi công cụ vào 1 mối (không copy-paste)
+Desc: Chatbot chỉ trả lời trong khung chat. AI Agent (Hermes) thì có "tay" — giao 1 lệnh, nó tự gọi hàng chục API (email, Sheets, web, Telegram) để lấy data, xử lý, ghi lại, báo cáo. Trong video này mình show kịch bản thật: 1 câu lệnh tổng hợp 47 feedback khách, chép vào Google Sheets, đăng bài, nhắn mình qua Telegram — không một lần dán tay.
+Số liệu: doanh nghiệp cỡ vừa xài ~89 app SaaS (Okta), nhân viên đốt 1/3–1/2 thời gian cho việc lặp (McKinsey).
+👉 Khoá Nhân Sự Toàn Năng Hermes (239K sớm, gốc 499K): https://speedreading.vn/shermes
