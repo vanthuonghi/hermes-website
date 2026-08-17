@@ -4,3 +4,4 @@
 4|Hermes tự động hoá: giao 1 lần chạy hoài, đúng giờ kể cả ngủ
 5|Hermes viết mô tả sản phẩm shop đẹp
 6|Hermes viết thư cảm ơn sau bán hàng
+31|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
