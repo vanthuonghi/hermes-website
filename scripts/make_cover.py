@@ -53,9 +53,10 @@ def wrap(text, font, max_w, draw):
     if cur: lines.append(cur)
     return lines
 
-def make(title, topic, out_name=None):
+def make(title, topic, out_name=None, badge=None):
     topic=topic or "default"
     accent, bg, tag = THEMES.get(topic, THEMES["default"])
+    if badge: tag = badge
     W,H=1200,630
     img=Image.new("RGB",(W,H),bg)
     d=ImageDraw.Draw(img)
@@ -95,11 +96,12 @@ if __name__=="__main__":
     ap=argparse.ArgumentParser()
     ap.add_argument("--title",required=True)
     ap.add_argument("--topic",default="default")
+    ap.add_argument("--badge",default=None)
     ap.add_argument("--out",default=None)
     a=ap.parse_args()
     # rút kinh nghiệm: nếu topic đã dùng nhiều lần, xoay palette phụ
     log=load_log()
-    path=make(a.title, a.topic, a.out)
+    path=make(a.title, a.topic, a.out, a.badge)
     log["used"].append({"t":a.title,"topic":a.topic,"f":path})
     log["count"]=log.get("count",0)+1
     save_log(log)
