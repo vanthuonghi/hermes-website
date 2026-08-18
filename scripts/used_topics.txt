@@ -1,10 +1,1 @@
-1|Hermes lập bảng theo dõi chi tiêu cá nhân
-2|Hermes lên kế hoạch du lịch tiết kiệm
-3|Hermes kết nối API: gom mọi Key vào 1 mối
-4|Hermes tự động hoá: giao 1 lần chạy hoài, đúng giờ kể cả ngủ
-5|Hermes viết mô tả sản phẩm shop đẹp
-6|Hermes viết thư cảm ơn sau bán hàng
-31|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
-8|Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
-9|Hermes đọc 300 trang hợp đồng trích điều quan trọng
-10|29|Hermes lên kịch bản A/B test quảng cáo
+Hermes vòng lặp 8 bước: tìm nghiên cứu viết check lưu lịch báo cáo
