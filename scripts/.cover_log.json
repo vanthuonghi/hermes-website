@@ -79,7 +79,12 @@
       "t": "1 NGUOI - 4 VIEC - 1 GIO",
       "topic": "phan-than",
       "f": "/covers/ai-phan-than-4viec1gio.webp"
+    },
+    {
+      "t": "1 lệnh → 20 kịch bản chatbot",
+      "topic": "khac-chatgpt",
+      "f": "/covers/auto-khac-chatgpt-chatbot.webp"
     }
   ],
-  "count": 16
+  "count": 17
 }
