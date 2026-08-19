@@ -4,3 +4,4 @@ Hermes viết kịch bản chatbot chăm sóc khách
 Hermes viết tiêu đề email tỷ lệ mở cao
 5|Hermes tự động hoá: giao 1 lần, chạy hoài mỗi 2 tiếng — kể cả lúc ngủ
 Hermes quality gate: tự check trước khi giao
+7|Hermes kết nối API: gom mọi Key vào 1 mối
