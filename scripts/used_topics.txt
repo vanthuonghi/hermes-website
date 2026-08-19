@@ -1,9 +1,1 @@
-Hermes vòng lặp 8 bước: tìm nghiên cứu viết check lưu lịch báo cáo
-Hermes phan-than: 1 nguoi giao 4 viec xong trong 1 gio
-Hermes viết kịch bản chatbot chăm sóc khách
-Hermes viết tiêu đề email tỷ lệ mở cao
-5|Hermes tự động hoá: giao 1 lần, chạy hoài mỗi 2 tiếng — kể cả lúc ngủ
-Hermes quality gate: tự check trước khi giao
-7|Hermes kết nối API: gom mọi Key vào 1 mối
-Hermes lên thực đơn tuần giảm cân
-Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
+Hermes soạn câu hỏi phỏng vấn nhân viên
