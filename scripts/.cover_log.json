@@ -94,7 +94,12 @@
       "t": "Tự động hoá: giao 1 lần, chạy hoài",
       "topic": "tiet-kiem",
       "f": "/covers/auto-tiet-kiem-a20f41fa.webp"
+    },
+    {
+      "t": "Quality Gate: 8 bước, 0 lỗi lọt",
+      "topic": "quality",
+      "f": "/covers/hermes-quality-gate.webp"
     }
   ],
-  "count": 19
+  "count": 20
 }
