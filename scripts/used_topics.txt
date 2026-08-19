@@ -1,1 +1,2 @@
 Hermes vòng lặp 8 bước: tìm nghiên cứu viết check lưu lịch báo cáo
+Hermes phan-than: 1 nguoi giao 4 viec xong trong 1 gio
