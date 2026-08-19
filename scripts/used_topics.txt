@@ -1,1 +1,2 @@
 Hermes soạn câu hỏi phỏng vấn nhân viên
+Hermes vòng lặp 8 bước: tìm nghiên cứu viết check lưu lịch báo cáo
