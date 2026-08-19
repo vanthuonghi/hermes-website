@@ -99,7 +99,12 @@
       "t": "Quality Gate: 8 bước, 0 lỗi lọt",
       "topic": "quality",
       "f": "/covers/hermes-quality-gate.webp"
+    },
+    {
+      "t": "Gom 20 API ve 1 cau lenh",
+      "topic": "api",
+      "f": "/covers/auto-api-fc36cd72.webp"
     }
   ],
-  "count": 20
+  "count": 21
 }
