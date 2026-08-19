@@ -1,4 +1,4 @@
-# 📢 SOCIAL DRAFT — Hermes tự động hoá: giao 1 lần, chạy hoài mỗi 2 tiếng — kể cả lúc bạn ngủ
+# 📢 SOCIAL DRAFT — Tự động hoá thực sự: giao 1 lần, Hermes tự chạy 12 lần/ngày — kể cả lúc bạn ngủ
 
 🔗 Link bài (dán ở COMMENT ĐẦU TIÊN, không để trong post): https://vanthuonghi.github.io/hermes-website/posts/hermes-tu-dong-hoa/
 
@@ -6,8 +6,8 @@
 
 ## 📘 FACEBOOK / ZALO — POST CHÍNH (copy y nguyên, KHÔNG kèm link)
 
-Hỉ vừa để ý một cái hơi... thần kỳ: tối đi ngủ, sáng dậy có sẵn bài blog mới, email đã dọn, báo cáo nằm sẵn. 🌙→📄
-Tại sao? Vì Hỉ giao Hermes (AI Agent) 1 lần, hẹn nó chạy mỗi 2 tiếng — 24/7, kể cả 3h sáng nó vẫn làm. Chatbot thì bạn phải ngồi canh hỏi mới nói, còn Agent là "nhân viên" tự vận hành quy trình thay bạn.
+Hỉ để ý một cái hơi... thần kỳ: tối đi ngủ, sáng dậy có sẵn bài blog mới, email đã dọn, báo cáo nằm sẵn. 🌙→📄
+Tại sao? Vì Hỉ giao Hermes (AI Agent) đúng 1 câu, hẹn nó chạy mỗi 2 tiếng — 24/7, kể cả 3h sáng nó vẫn làm. Chatbot thì bạn phải ngồi canh hỏi mới nói, còn Agent là "nhân viên" tự vận hành quy trình thay bạn.
 Đây là bản chất AI Agent khác chatbot: chatbot "nói", Agent "làm việc thật" rồi báo cáo.
 👉 Hermes đang làm cái này rất mượt — chi tiết + link ở BÌNH LUẬN nhé, ai ngán việc lặp xem thử.
 
