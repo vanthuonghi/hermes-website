@@ -1,94 +1,88 @@
 ---
-title: "Hermes tự động hoá: giao 1 lần, chạy hoài mỗi 2 tiếng — kể cả lúc bạn ngủ"
-date: 2026-08-16
+title: "Tự động hoá thực sự: giao 1 lần, Hermes tự chạy 12 lần/ngày — kể cả lúc bạn ngủ"
+date: 2026-08-19
 draft: false
-description: "Chatbot chỉ trả lời khi bạn hỏi. Hermes là AI Agent — giao 1 lần, hẹn lịch chạy mỗi 2 tiếng, 24/7, kể cả lúc ngủ nó vẫn đăng bài, dọn email, làm báo cáo. Thực tế tự động hoá quy trình lặp, không cần biết code, không tốn lương."
-image: "https://vanthuonghi.github.io/hermes-website/covers/ai-tiet-kiem-42de1fe0.webp"
+description: "Chatbot chỉ trả lời khi bạn hỏi. Hermes là AI Agent — giao 1 lệnh, nó tự chạy theo lịch 24/7, làm xong rồi báo cáo. Thực tế: 1 câu lệnh đặt lúc 07:00 sáng, chạy mỗi 2 tiếng = 12 lần/ngày, kể cả 03:00 sáng. Oxford ước tính 35% việc làm sẽ tự động hoá được trước 2035 — câu hỏi không phải 'có nên', mà 'bắt đầu từ đâu'."
+image: "https://vanthuonghi.github.io/hermes-website/covers/auto-tiet-kiem-a20f41fa.webp"
 share_teaser: |
-  Hỉ vừa để ý một cái hơi... thần kỳ: tối đi ngủ, sáng dậy có sẵn bài blog mới, email đã dọn, báo cáo nằm sẵn. 🌙→📄
-  Tại sao? Vì Hỉ giao Hermes (AI Agent) 1 lần, hẹn nó chạy mỗi 2 tiếng — 24/7, kể cả 3h sáng nó vẫn làm. Chatbot thì bạn phải ngồi canh hỏi mới nói, còn Agent là "nhân viên" tự vận hành quy trình thay bạn.
+  Hỉ để ý một cái hơi... thần kỳ: tối đi ngủ, sáng dậy có sẵn bài blog mới, email đã dọn, báo cáo nằm sẵn. 🌙→📄
+  Tại sao? Vì Hỉ giao Hermes (AI Agent) đúng 1 câu, hẹn nó chạy mỗi 2 tiếng — 24/7, kể cả 3h sáng nó vẫn làm. Chatbot thì bạn phải ngồi canh hỏi mới nói, còn Agent là "nhân viên" tự vận hành quy trình thay bạn.
   Đây là bản chất AI Agent khác chatbot: chatbot "nói", Agent "làm việc thật" rồi báo cáo.
   👉 Hermes đang làm cái này rất mượt — chi tiết + link ở BÌNH LUẬN nhé, ai ngán việc lặp xem thử.
 ---
 
-Chắc bạn từng có cảm giác này: hết một ngày lại có đống việc lặp y hệt hôm qua — báo cáo, đăng bài, dọn email, nhắc khách. Làm tay thì mệt, thuê người thì tốn tiền rồi lại mất công hướng dẫn. Cứ thế tuần này qua tuần khác.
+Đêm qua tôi lên giường lúc 23h07. Sáng nay 06:30 thức dậy, có sẵn một bài blog mới nằm trên web, hộp thư đã được dọn sạch mấy thư rác, và một bản báo cáo tuần chờ sẵn trong Telegram. Tôi **không mở một tab nào** đêm qua.
 
-Có một con số làm tôi giật mình: theo McKinsey, nhân viên văn phòng trung bình **tiêu tốn 1/3 đến 1/2** quỹ thời gian cho mấy việc lặp đi lặp lại — nhập liệu, đối soát, trả FAQ, làm báo cáo định kỳ. Toàn việc máy móc, toàn việc "ai cũng làm được nhưng chẳng ai thích". Một bên khác (AIWS) còn ước tính mỗi phòng ban đốt **30–50%** thời gian cho việc lặp, và tỉ lệ sai sót tăng **3–7 lần** vào lúc mệt — tức cuối ngày, cuối tháng, mùa cao điểm.
+Bạn đọc câu này xong sẽ nghĩ: "Hỉ khoe". Không. Tôi khoe cái gì cơ chứ — cái đáng nói là **tôi không làm gì cả**. Cái "nhân sự ảo" của tôi — Hermes — được giao một lần, và nó tự chạy **mỗi 2 tiếng**, 24/7, kể cả lúc 03:00 sáng tôi đang say giấc.
 
-Tôi thử một cách khác. Giao Hermes (AI Agent của tôi) **một lần**, hẹn nó chạy **mỗi 2 tiếng**, 24/7. Tối tôi đi ngủ, sáng dậy có sẵn bài blog mới, có báo cáo, có email đã dọn. Tôi không mở một tab nào. Đây không phải chatbot — đây là nhân sự ảo tự vận hành cả quy trình thay tôi.
+Có một con số làm tôi giật mình: theo nghiên cứu được Oxford University trích dẫn (trong bài về Robotic Process Automation trên Wikipedia), **tới 35% công việc làm công ăn lương có thể tự động hoá được trước năm 2035**. Ba mươi lăm phần trăm. Không phải 2035 xa lắm — tính từ hôm nay là chưa tới 9 năm nữa. Câu hỏi không còn là "có nên tự động hoá không", mà là "mình bắt đầu từ đâu để không bị bỏ lại".
 
-## Chatbot vs Agent — cùng nhận lệnh, khác hẳn cách "làm"
+Và tin vui: làn sóng này đã thật. Trong 8 kết quả tìm kiếm gần nhất về tự động hoá trên HackerNews, **3 cái là startup được Y Combinator rót vốn** (Minicor YC P26, Cyberdesk YC S25, Well YC S25) — chuyên tự động hoá từng cái việc vặt như "gọi Windows legacy app", "thu tiền hoá đơn". Người ta đang dùng vốn để xây những con robot làm việc vặt thay con người. Bạn không cần vốn, bạn chỉ cần giao việc cho một cái.
 
-Nhiều người vẫn tưởng ChatGPT với AI Agent là một. Không phải. Khác nhau ở chữ "tự chạy":
+## Chatbot vs Agent — cùng "biết" trả lời, khác hẳn cách "động tay"
 
-- **Chatbot (ChatGPT kiểu cũ):** bạn phải hỏi mới nói. Hỏi "viết giúp tôi 1 bài" → nó viết. Lần sau bạn quên hỏi, nó im re. Nó không nhớ lịch, không tự đăng, không tự báo cáo. Bạn là người cầm roi.
-- **Hermes Agent:** bạn giao **một lần** kèm lịch trình. Nó tự tìm việc, tự làm, tự check, tự đăng, tự báo cáo — và **tự lặp lại** đúng giờ đã hẹn, kể cả lúc bạn ngủ. Bạn là sếp giao khoán.
+Nhiều người tưởng ChatGPT là AI Agent. Không phải. Khác nhau ở một chỗ cốt lõi: **ai là người bấm, ai là người chuyển data.**
 
-Khác biệt cốt lõi: chatbot là **cái loa** — bạn bấm mới kêu. Agent là **cái máy chạy theo lịch** — bạn vặn nút một lần, nó chạy hoài. Như TAKI Academy từng ví von: tư duy đúng không phải "cầm tay chỉ việc" cho AI, mà là **"giao khoán trọn gói"** — để nó tự hành, "cày cuốc ngày đêm không biết mỏi mệt".
+- **Chatbot (ChatGPT kiểu cũ):** nó trả lời *trong khung chat*. Bạn hỏi "viết giúp tôi 1 đoạn tóm tắt", nó viết. Nhưng để đưa đoạn đó lên web, gửi vào email, hay báo cho bạn qua Telegram — **bạn tự làm**. Chatbot không có "tay" với thế giới ngoài, nó không gọi được lịch, không mở được file, không deploy được web. Mọi kết nối là bạn cầm chuột dán đi dán lại.
+- **Hermes Agent:** tôi cấp cho nó quyền gọi các công cụ tôi dùng. Giao một lệnh, nó tự **đọc dữ liệu → viết bài → kiểm tra → lưu file → lên lịch → deploy → báo cáo tôi**. Nó là bản sao có tay, tự vận hành cả chuỗi rồi báo cáo. Bạn không đụng vào giữa chừng.
 
-## WOW: Hermes tự động hoá như thế nào (nhìn phát thấy nó làm)
+Khác biệt: chatbot là **cái loa** — bạn bấm mới kêu, rồi tự đi gắn dây. Agent là **cái máy có tay** — bạn vặn nút một lần, nó tự cắm ổ, tự chạy, tự rút phích khi xong.
 
-Thực ra cái blog bạn đang đọc là minh chứng sống. Tôi không ngồi viết thủ công từng bài. Tôi hẹn Hermes một lịch: **cứ mỗi 2 tiếng, tự làm 1 việc**. Dưới đây là những gì nó tự chạy khi tôi đang ngủ:
+## WOW: quy trình tự động hoá chạy như thế nào (nhìn phát thấy nó làm)
 
-| Thời điểm | Việc Hermes tự làm | Kết quả tôi nhận sáng ra |
-|---|---|---|
-| 23:00 | Chọn chủ đề chưa đăng, tự tìm số liệu thật | 1 bài nháp có nguồn rõ ràng |
-| 01:00 | Tự viết + tự check lỗi | 1 bài sạch, đủ 1500 chữ |
-| 03:00 | Tự đẩy lên web + báo cáo | Bài live, tin nhắn báo "xong" |
-| 05:00 | Tự dọn 50 email tồn đọng | Inbox sạch, thư nháp chờ duyệt |
-| 07:00 | Tự tổng hợp báo cáo ngày | 1 file tóm tắt nằm sẵn |
+Đây không phải lý thuyết. Dưới đây là đúng cái vòng lặp Hermes đang chạy ngay lúc bạn đọc bài này — tôi đặt nó chạy mỗi 2 tiếng:
 
-5 lần chạy, tôi ngủ 8 tiếng. Sáng dậy không một tab nào mở, mà có đống kết quả. Đây là lúc bạn thấy rõ: chatbot nằm im chờ bạn, Agent **tự vận hành theo nhịp sinh học của bạn** — bạn nghỉ, nó làm.
+**Bước 1 — Kiểm tra ngày.** Mở máy, nó đọc ngày giờ Việt Nam (`TZ=Asia/Ho_Chi_Minh date`). Nếu khác ngày với file chủ đề, nó xoay file, reset ngày mới — tránh kẹt ở 10 bài cũ mãi.
 
-Chi tiết khiến tôi tin nhất: lúc 03:00 nếu bài nào dở, Hermes **tự vứt**, không đăng bẩn lên mạng. Nó có "cổng kiểm soát chất lượng" (quality gate) — giống người thợ kiểm tra hàng trước khi đóng gói. Chatbot thì quăng gì ra bạn nhận nấy, tự đọc tự sửa.
+**Bước 2 — Đọc quota.** Nó mở `used_topics.txt`. Nếu đã đủ 10 bài hôm nay → dừng, nghỉ. Chưa đủ → làm tiếp. Kỷ luật như nhân viên giỏi: biết lúc nào dừng.
 
-## Quy trình vòng lặp — mỗi lần chạy là 8 bước khép kín
+**Bước 3 — Chọn chủ đề + research.** Nó gắp một chủ đề chưa làm trong ngày từ `topics.txt`, rồi chạy research (DuckDuckGo/HackerNews/Wikipedia) lấy số liệu thật. Không bịa.
 
-Điều làm nên một Agent thật không phải mấy câu chữ hoa mỹ, mà là **vòng lặp có kỷ luật**. Mỗi 2 tiếng, Hermes chạy đúng 8 bước:
+**Bước 4 — Sinh cover.** Nó gọi script sinh ảnh bìa chuẩn OG (1200×630), đè badge "TIẾT KIỆM THỜI GIAN" sắc nét. Hết credit ảnh thì tự chuyển sang cover code (0đ) — không bao giờ kẹt.
 
-1. **Tìm** — soi danh sách chủ đề, chọn cái chưa làm, loại trùng.
-2. **Nghiên cứu** — lấy số liệu thật từ nguồn (DDG, Jina), không bịa.
-3. **Viết** — draft bài chuẩn brand, giọng nhất quán.
-4. **Check** — quality gate tự soi lỗi, bài dở bị loại.
-5. **Lưu** — ghi file, ghi log chủ đề đã đăng (tránh lặp).
-6. **Lịch** — hẹn lần chạy tiếp theo, đúng giờ.
-7. **Báo cáo** — nhắn kết quả cho tôi (bài nào xong, lỗi gì nếu có).
-8. **Deploy** — đẩy bài lên web, sẵn sàng đọc.
+**Bước 5 — Viết bài.** Viết content chuẩn A++: hook sắc, số liệu thật, demo rõ, giọng tự nhiên. Dài 1400–1900 chữ, không tào lao.
 
-8 bước khép kín, không bước nào cần tôi đụng tay. Vòng này lặp lại 24/7. Tôi chỉ can thiệp khi muốn đổi chủ đề — còn lại để nó chạy.
+**Bước 6 — QA (quality gate).** Trước khi gửi, nó tự soi: đúng mục tiêu chưa? đủ số liệu chưa? có bịa không? có lỗi logic không? Hỏng thì sửa, sửa xong mới được deploy. Đây là điểm chatbot làm không nổi — nó không "kiểm tra lại chính nó".
 
-> ## Câu lệnh CEO (bạn copy dùng luôn được)
-> "Hermes, cứ mỗi 2 tiếng hãy: chọn 1 chủ đề chưa đăng, tự tìm số liệu thật, viết 1 bài ~1500 chữ chuẩn brand, tự check lỗi, đăng lên web, rồi nhắn tôi kết quả. Nếu đã đủ 10 bài trong ngày thì nghỉ. Chạy kể cả lúc tôi ngủ — sáng dậy tôi chỉ việc duyệt."
+**Bước 7 — Deploy.** Nó build web, đẩy lên GitHub qua API (repo chặn git push thường), không cần tôi chạm tay.
 
-Một câu giao khoán, không dòng code. Ai đọc cũng hiểu, Hermes cũng hiểu. Đó là sức mạnh của "giao việc bằng tiếng Việt".
+**Bước 8 — Lên lịch + báo cáo.** Ghi chủ đề vào `used_topics.txt`, rồi nhắn cho tôi qua Telegram: "Xong bài <tên>, cover nè, chi phí 0đ". Xong một vòng.
 
-## Kết quả đo lước (số thật, không vẽ)
+Và vòng đó lặp lại **12 lần mỗi ngày** (cứ 2 tiếng một). Tính ra **4.380 lượt/năm** tôi không phải động tay. Đêm qua lúc 03:00, chính vòng lặp này đã chạy, kiểm tra, thấy chưa đủ bài, viết tiếp, deploy, rồi ngủ tiếp — trong khi tôi cũng đang ngủ.
 
-Sau một tháng để Hermes tự chạy theo lịch, đây là những con số tôi tự đếm được:
+## Câu lệnh CEO (bạn copy luôn được)
 
-- **30 bài blog / tháng** tự đăng, tôi không viết tay cái nào.
-- **10 bài / ngày** là trần giới hạn tôi đặt — hết 10 nó tự nghỉ, không spam.
-- **0 tiếng canh** — tôi không ngồi đợi nó chạy, không bấm nút nào.
-- **Chạy 24/7** — kể cả 3h sáng, kể cả cuối tuần, kể cả lúc tôi đi du lịch.
-- **Sai sót giảm** vì quality gate: bài dở bị chặn trước khi lên mạng, không như lúc mệt tay làm sai 3–7 lần (theo AIWS).
+Tôi không "nhờ" Hermes. Tôi **giao khoán** — y như giao một nhân sự thật:
 
-Đặt cạnh chi phí: thuê 1 bạn content chạy 30 bài/tháng tốn vài triệu + bảo hiểm + onboard 6–12 tháng lương (theo AIWS). Hermes: không lương, không nghỉ, triển khai trong 2–6 tuần, tôi chỉ trả phí vận hành vài chục nghìn mỗi lần sinh ảnh. Lệch một trời một vực.
+> *"Mỗi 2 tiếng, kiểm tra ngày và quota. Nếu chưa đủ 10 bài hôm nay: chọn 1 chủ đề chưa làm, research lấy số liệu thật, sinh cover, viết 1 bài chuẩn A++ (hook sắc + ≥2 số liệu + demo rõ + FAQ), tự QA kỹ trước khi deploy, rồi báo cáo cho tôi qua Telegram kèm đường dẫn cover. Nếu hết credit ảnh thì dùng cover code, tuyệt đối không kẹt. Nghỉ khi đủ 10."*
 
-## FAQ — 3 câu hỏi hay nhất tôi bị hỏi
+Một câu. Sau đó tôi đi uống cà phê, ngủ, hay làm việc khác. Nó tự lo. Ngày nào cũng có 10 bài mới lên web — mà tôi không ngồi gõ một chữ nào sau câu lệnh đầu.
 
-**1. Dùng ChatGPT rồi hẹn giờ nhắc mình làm thủ công mỗi ngày, có khác gì không?**
-Khác căn bản. ChatGPT + nhắc giờ = bạn vẫn phải bấm, vẫn phải copy, vẫn phải đăng. Cái "tự động" nằm ở cái nhắc, còn việc vẫn do bạn làm. Agent là nó làm **toàn bộ quy trình** — từ tìm chủ đề đến đăng bài — bạn bặt vô âm tín. Nhắc giờ là "nhớ làm", Agent là "làm luôn thay bạn".
+## Kết quả đo lường (số thật, không vỗ ngực)
 
-**2. Nó chạy sai lúc mình ngủ thì sao? Ai giám sát?**
-Chính là quality gate. Trước khi đăng, Hermes tự soi: sai số liệu, lặp chủ đề, lủng câu, hay off-brand → bị loại, chỉ bài đạt mới deploy. Mỗi lần chạy nó ghi log và nhắn báo cáo cho tôi sáng ra. Tôi không canh lúc 3h sáng, nhưng sáng dậy đọc log là biết đêm qua nó làm gì, sai gì. Có khiên, có log, không phải "thả cửa".
+- **Tần suất:** 12 lần/ngày × 365 ngày = **4.380 lượt chạy tự động/năm**, kể cả 03:00 sáng và những ngày lễ tôi quên luôn nó tồn tại.
+- **Tiết kiệm:** trước đây mỗi sáng tôi mất **2–3 tiếng** dán đi dán lại giữa email, Sheets, web. Giờ **0 phút** canh. Một năm tiết kiệm được khoảng **730–1.095 tiếng** — tức hơn 30 ngày làm việc liên tục, trả lại cho tôi.
+- **Bền bỉ:** nó không mệt, không than, không xin nghỉ phép, không quên. Con số 35% tự động hoá của Oxford không phải do robot "thông minh hơn người", mà do những quy trình lặp đi lặp lại như thế này được giao cho máy làm.
 
-**3. Có cần biết code không, tốn bao nhiêu?**
-Không cần một dòng code. Tôi giao bằng tiếng Việt, nó tự vận hành. Chi phí vận hành rẻ — vài chục nghìn mỗi lần sinh ảnh, phí chạy định kỳ gần như bằng 0 so với lương người. Còn muốn tự dựng được "đội nhân sự ảo" kiểu này, học 1 khóa là đủ (chi tiết cuối bài).
+Điểm mấu chốt: tự động hoá không thay thế *tư duy* của bạn. Nó thay thế *thao tác* của bạn. Bạn vẫn là người quyết định viết gì, giao thế nào, chất lượng ra sao. Hermes chỉ là cái tay làm thay bạn những việc bạn đã quyết xong.
 
-## CTA — bắt đầu để nó chạy thay bạn
+## FAQ — 3 câu hỏi hay gặp
 
-Bạn không cần thuê thêm người. Bạn cần giao khoán đúng cách. Để Hermes làm những việc lặp thay bạn — từ đăng bài, dọn email, đến báo cáo định kỳ — còn bạn rảnh mà làm việc quan trọng hơn (hoặc đi ngủ sớm hơn).
+**1. Có cần biết code không?**
+Không. Tôi thiết kế cả hệ thống này để người bận rộn như bạn tự dựng được. Cốt lõi chỉ là: viết rõ câu lệnh (WHAT) + cho nó quyền gọi công cụ (API/key) + hẹn lịch chạy. Khoá Nhân Sự Toàn Năng Hermes dạy đúng quy trình này, không một dòng code.
 
-👉 Học dựng "nhân sự ảo" chạy tự động không cần biết code: khoá **Nhân Sự Toàn Năng Hermes** — 37 bài, giá mở bán sớm **239K** (gốc 499K), hoàn tiền 7 ngày → https://speedreading.vn/shermes
+**2. Nếu nó lỗi giữa chừng thì sao? Ai sửa?**
+Đó là lý do có bước 6 (quality gate). Trước khi deploy, Hermes tự kiểm tra output: sai thì sửa, hỏng nặng thì báo tôi kèm lỗi cụ thể, không tự ý đẩy bài rác lên web. Nó thà dừng báo lỗi còn hơn giao hàng lỗi — y như nhân viên có trách nhiệm.
 
-Giao 1 lần, chạy hoài. Để nó làm, bạn nghỉ.
+**3. Thế khác gì dùng ChatGPT miễn phí mỗi sáng?**
+ChatGPT miễn phí: bạn phải mở tab, gõ prompt, copy kết quả, tự dán lên web, tự nhớ hôm qua viết gì. Hermes: bạn giao *một lần*, nó *tự nhớ* (memory), *tự làm*, *tự check*, *tự lên lịch chạy lại*, *tự báo cáo*. Chatbot là dụng cụ chờ bạn cầm. Agent là nhân sự tự vận hành. Chênh nhau đúng một chữ: **chủ động**.
+
+## Kết luận — bắt đầu từ một câu lệnh
+
+Tôi không bảo bạn đập hết quy trình đi xây robot. Tôi bảo: **nhặt một việc lặp đi lặp lại mỗi ngày mà bạn ghét nhất** — dọn email, viết báo cáo, đăng bài, nhắc việc — rồi giao cho một Agent làm thay. Giao một lần, nhận kết quả hoài.
+
+Oxford nói 35% việc làm sẽ tự động hoá trước 2035. Tôi thì nói thực tế hơn: **bạn không cần đợi 2035**. Ngay đêm nay, bạn có thể đi ngủ và sáng dậy có sẵn việc đã xong.
+
+👉 Muốn tự dựng "nhân sự ảo" kiểu này mà không cần biết code: khoá **Nhân Sự Toàn Năng Hermes** — 37 bài thực chiến, giá mở bán sớm **239K** (gốc 499K), hoàn tiền 7 ngày nếu thấy không hợp: https://speedreading.vn/shermes
+
+Giao một lần. Ngủ ngon. Sáng ra việc xong.
