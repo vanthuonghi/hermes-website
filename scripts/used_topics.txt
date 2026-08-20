@@ -1,1 +1,2 @@
 1|Hermes tự động hoá: giao 1 lần chạy hoài, đúng giờ kể cả ngủ
+2|Hermes viết lại nội dung cũ thành mới
