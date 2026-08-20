@@ -1,2 +1,4 @@
 Hermes soạn câu hỏi phỏng vấn nhân viên
 Hermes vòng lặp 8 bước: tìm nghiên cứu viết check lưu lịch báo cáo
+Hermes gợi ý quà tặng khách VIP
+Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
