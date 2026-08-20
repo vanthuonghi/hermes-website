@@ -1,2 +1,3 @@
 1|Hermes tự động hoá: giao 1 lần chạy hoài, đúng giờ kể cả ngủ
 2|Hermes viết lại nội dung cũ thành mới
+3|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
