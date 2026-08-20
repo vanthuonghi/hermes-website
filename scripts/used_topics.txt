@@ -7,3 +7,4 @@
 7|Hermes dự báo tồn kho từ lịch sử bán
 8|Hermes quality gate: tự check trước khi giao
 9|Hermes học từ file Excel cũ của shop
+10|15|Hermes tạo kịch bản livestream bán hàng
