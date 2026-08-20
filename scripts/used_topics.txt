@@ -4,3 +4,4 @@
 4|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
 5|Hermes tóm tắt tin tức ngành mỗi sáng
 6|Hermes chuẩn bị tài liệu đào tạo nhân viên
+7|Hermes dự báo tồn kho từ lịch sử bán
