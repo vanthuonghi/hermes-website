@@ -5,3 +5,4 @@
 5|Hermes tóm tắt tin tức ngành mỗi sáng
 6|Hermes chuẩn bị tài liệu đào tạo nhân viên
 7|Hermes dự báo tồn kho từ lịch sử bán
+8|Hermes quality gate: tự check trước khi giao
