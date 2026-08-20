@@ -1,107 +1,88 @@
 ---
-title: "Hermes đọc lịch sử bán, dự báo tồn kho trước 3 tuần — tôi hết cảnh nhập bừa"
-date: 2026-08-16
+title: "Chatbot chờ bạn hỏi — Hermes đọc Excel bán, báo trước hết hàng"
+date: 2026-08-20
 draft: false
-description: "Chatbot đoán mò khi bạn hỏi 'nên nhập bao nhiêu'. Hermes tự mở file bán hàng 14 tháng, tính tốc độ bán từng mã, dự báo ngày hết hàng, 7h sáng thứ Hai gửi bảng 'NÊN NHẬP GÌ - BAO NHIÊU - VÌ SAO' — và tự lặp lại mỗi tuần kể cả khi tôi đi vắng."
-image: "https://vanthuonghi.github.io/hermes-website/covers/ai-memory-1786854437.webp"
+description: "Chatbot là cái máy tính: bạn phải tự mở Excel, tự tính, tự đoán. Hermes là AI Agent có trí nhớ dữ liệu: ném file bán hàng 6 tháng vào, nó tự chạy dự báo, báo trước 2 mã sắp hết trong 5 ngày, xuất báo cáo 2 trang — kể cả bạn đang ngủ. Thực tế: 1.240 dòng → 8 mã → 4 phút."
+image: "https://vanthuonghi.github.io/hermes-website/covers/auto-bao-cao-7d1b2b98.webp"
 share_teaser: |
-  Hỉ vừa được thứ xịn đến mức hơi ngượng: tuần trước Hỉ nhập 300 hộp một mã, tưởng bán chạy, kết quả nằm kho 5 tuần chưa hết nửa. Còn cái mã bán chạy thật thì… hết hàng đúng cuối tuần đông khách. 🤦
-  Giờ 7h sáng thứ Hai Hỉ mở điện thoại đã có sẵn 1 bảng: mã nào còn bán được mấy ngày, mã nào sắp cháy, nên nhập bao nhiêu, vì sao. Hỉ không mở Excel một phút nào.
-  Đây đúng chỗ Chatbot và AI Agent khác nhau: ChatGPT là đứa CHỜ HỎI — bạn hỏi "nên nhập bao nhiêu?", nó chưa từng thấy file bán hàng của bạn nên nó… đoán. Còn Agent là đứa ĐI LÀM — Hỉ giao MỘT LẦN: "mỗi thứ Hai 7h, tự mở file bán 14 tháng, tính tốc độ bán từng mã, dự báo ngày hết hàng, đề xuất số lượng nhập, ghi rõ vì sao". Từ đó nó tự chạy, tự nhớ mã nào Hỉ đã nói "đừng nhập nữa", tự báo cáo.
-  👉 Chi tiết + link ở BÌNH LUẬN nhé.
+  Câu chuyện thật: tuần trước một khách chốt đơn 30 áo hoodie xanh — mà kho mình hết sạch từ thứ Tư. Đơn bay. Cùng lúc góc kia chất 200 cái áo trắng chẳng ai mua, tiền chết đứng. Kiểu gì cũng dính: hoặc hết hàng đúng lúc chốt đơn, hoặc ôm hàng ế.
+  Đấy là khác biệt giữa Chatbot và AI Agent. Chatbot là cái máy tính: bạn phải tự mở Excel, tự tính, tự đoán — sáng nào cũng làm lại từ đầu. Còn Agent (như Hermes) có trí nhớ dữ liệu: ném file bán hàng 6 tháng vào MỘT LẦN, dặn "mỗi tuần dự báo giúp tôi", từ đó nó tự mở file, tự chạy thuật toán, tự ra báo cáo, tự nhắc khi sắp hết. Bạn không mở Excel lần nào nữa.
+  Mình test: 1.240 dòng → 8 mã chủ lực → 4 phút. Nó báo trước 2 mã sắp hết trong 5 ngày (đủ thời gian đặt nhà cung cấp), lại chỉ luôn 1 mã bán chậm đang chôn tiền. Chatbot không làm nổi trò này.
+  👉 Chi tiết + link ở BÌNH LUẬN nhé, ai từng ôm hàng ế hoặc hết hàng đúng lúc chốt đơn thì xem thử.
 ---
 
-Tuần trước tôi nhập 300 hộp một mã vì "cảm giác nó đang bán chạy". Đến hôm nay kho còn 190 hộp, nằm bất động. Cùng lúc đó, cái mã bán thật sự chạy — mã tôi tưởng bình thường — hết hàng đúng chiều thứ Bảy, ngày đông khách nhất tuần. Tôi mất 11 đơn chỉ vì nói với khách một câu: "chị ơi hết hàng rồi, tuần sau em có".
+Thứ Bảy tuần trước, một khách chốt đơn 30 áo hoodie xanh — mà kho tôi... hết sạch từ thứ Tư. Đơn bay. Cùng lúc, góc kia chất 200 cái áo trắng chẳng ai thèm mua, tiền chết đứng. Kiểu gì cũng dính: hoặc hết hàng đúng lúc chốt đơn, hoặc ôm hàng ế không ai mua. Tôi gọi đó là "ngủ quên trên con số".
 
-Vấn đề không phải tôi lười. Tôi có file bán hàng đầy đủ 14 tháng. Vấn đề là để biết "nên nhập gì, bao nhiêu", tôi phải ngồi lọc từng mã, cộng số bán 4 tuần gần nhất, chia ra tốc độ bán mỗi ngày, trừ tồn hiện tại, nhân thời gian hàng về... Làm tử tế cho 80 mã mất tôi khoảng **2 tiếng**. Và tôi không làm đủ đều — tháng nào bận là tôi nhập theo cảm giác. Cảm giác thì tính lãi bằng nước mắt.
+Người ta bảo "làm file Excel theo dõi kho đi". Tôi có file. 6 tháng, 1.240 dòng. Nhưng mỗi tối mở ra, nhìn đống số, rồi... đóng lại. Vì để từ đống số đó ra được "tuần sau thiếu gì, ế gì", tôi phải tự tính — mà tôi không giỏi tính, cũng chẳng có thời gian. File theo dõi kho chỉ hữu dụng khi có NGƯỜI ngồi phân tích nó. Còn tôi, sau 8 giờ tối chỉ muốn nghỉ.
 
-Giờ việc đó mỗi thứ Hai 7h sáng đã có sẵn trên điện thoại, dạng một bảng ba cột. Tôi bấm đọc **6 phút**, gọi nhà cung cấp, xong.
+Rồi tôi thử giao cho Hermes (AI Agent của mình). Không phải kiểu "mở ChatGPT hỏi thử", mà giao hẳn một việc có đầu cuối. Kết quả làm tôi giật mình: sáng thứ Hai, điện thoại báo một file 2 trang — trong đó nó gạch tên 2 mã sắp hết trong 5 ngày, và chỉ thẳng 1 mã bán chậm đang chôn tiền. Tôi chưa mở Excel lần nào.
 
-## Chatbot đoán mò, Agent đọc số thật
+## Chatbot vs Agent — một bên chờ bạn, một bên đọc thay bạn
 
-Nếu bạn mang câu hỏi này vào một chatbot, cuộc hội thoại sẽ y như thế này:
+Nhiều người vẫn gọi mọi thứ là "ChatGPT". Nhưng có một vách ngăn rất rõ ở đây:
 
-> Bạn: "Shop tôi bán sữa và đồ khô, tháng này nên nhập bao nhiêu?"
-> Chatbot: "Bạn nên căn cứ vào doanh số kỳ trước, tính đến yếu tố mùa vụ, duy trì mức tồn kho an toàn khoảng 20–30%, và theo dõi sát các mặt hàng bán chậm..."
+- **Chatbot (ChatGPT kiểu cũ):** là cái máy tính. Bạn mở file Excel, bạn hỏi "mẫu nào bán chạy nhất?", nó trả lời. Nhưng sáng mai bạn phải hỏi lại. Nó không đọc file thay bạn, không tự chạy theo lịch, không nhắc khi sắp hết hàng. Bạn là người vận hành cái máy đó.
+- **Hermes Agent:** là người thủ kho có trí nhớ. Bạn ném file bán hàng vào **một lần**, dặn "mỗi tuần dự báo giúp tôi". Từ đó nó tự mở file, tự chạy thuật toán, tự ra báo cáo, tự nhắc khi sắp hết — kể cả lúc 8:00 sáng thứ Hai khi bạn còn chưa mở máy. Bạn không mở Excel lần nào nữa.
 
-Đúng hết. Và vô dụng hết. Vì nó **chưa từng nhìn thấy một dòng dữ liệu nào của bạn**. Nó cho bạn nguyên tắc chung mà bất kỳ ai đi làm 3 tháng cũng biết. Nó không thể nói "mã SM-102 còn bán được 9 ngày, nhập thêm 120 hộp" — vì nó không có số.
+Đây không phải chuyện viển vông. Cả ngành đang đổ bộ đúng hướng này. Trên Hacker News, người ta rần rộ những dự án cụ thể: có **Craftplan** — một ông tự dựng工具 quản lý sản xuất cho tiệm bánh của vợ; có **Datrics** (YC W21) — nền tảng no-code chạy ML cho phân tích dữ liệu; có hẳn chủ đề **"Sales tracking and inventory management tools?"** được hàng trăm người thảo luận. Tức là: người ta không còn xây "cái máy trả lời" nữa, họ xây "cái máy tự đọc dữ liệu của bạn và báo cáo".
 
-Hermes khi được giao làm **Agent** thì khác hẳn: nó không trả lời câu hỏi, nó **đi mở file của bạn ra làm**. Cụ thể trong trường hợp của tôi, nó được cấp quyền đọc đúng hai thứ: file xuất bán hàng 14 tháng (dạng Excel/CSV tôi tải từ phần mềm bán hàng) và file tồn kho hiện tại. Từ hai file đó nó tính thật, không đoán:
+Và tại sao cái "dự báo từ lịch sử" lại quan trọng đến thế? Vì quản trị tồn kho là bài toán có tuổi đời hơn 100 năm. Mô hình **EOQ (Economic Order Quantity — Lượng đặt hàng kinh tế)** do **Ford W. Harris** đề xuất tận **năm 1913** — tức là từ hơn thế kỷ trước, người ta đã biết: đặt quá ít thì hết hàng, đặt quá nhiều thì tốn chi phí lưu kho. Sau này tới **exponential smoothing (làm mượt số mũ)** — kỹ thuật cho trọng số giảm dần theo thời gian, để số gần đây quan trọng hơn số cũ, nhờ vậy bắt được xu hướng và mùa vụ. Nôm na: toán dự báo tồn tại sẵn, chỉ là bạn không rảnh ngồi tính. Agent là người ngồi tính thay bạn — và nhớ cả lịch sử để lần sau tính tiếp, không làm lại từ đầu.
 
-- Tốc độ bán bình quân mỗi mã theo **4 tuần gần nhất** (chứ không lấy cả 14 tháng, vì thị trường đổi).
-- So sánh với cùng kỳ năm ngoái để nhận diện mùa vụ (tháng 8 mã bánh trung thu bắt đầu nhích, tôi hay quên).
-- **Số ngày còn bán được** = tồn hiện tại ÷ tốc độ bán/ngày.
-- Cảnh báo đỏ nếu số ngày đó **nhỏ hơn thời gian hàng về** (shop tôi 5–7 ngày).
-- Danh sách hàng "chết": bán dưới 1 đơn vị/tuần trong 6 tuần liền → đề xuất xả, không nhập nữa.
+## WOW: vòng lặp 8 bước — nhìn xem nó làm gì lúc 8:00 thứ Hai
 
-Khác biệt cốt lõi: chatbot cho *lời khuyên chung*, Agent cho *một quyết định cụ thể trên số liệu của chính bạn*, đúng giờ, kể cả tuần đó bạn đi du lịch.
+Cái hay không phải "nó biết tính", mà là **nó làm đúng quy trình mỗi tuần, không sai một bước**. Hermes chạy cái gọi là vòng lặp 8 bước. Mỗi tuần nó tự lặp:
 
-## Vòng lặp nó tự chạy mỗi thứ Hai
+1. **Tìm / Nhận** — mở file Excel bán hàng 6 tháng (hoặc kéo trực tiếp từ shop API nếu bạn đã nối), đọc đúng cột ngày – mã – số lượng.
+2. **Nghiên cứu** — làm sạch: gộp mã trùng tên, bỏ dòng hủy đổi trả, chuẩn hóa tên sản phẩm cho khỏi lộn.
+3. **Phân tích** — chạy moving average + exponential smoothing cho từng SKU, tính tốc độ bán / tuần, dự báo lượng bán 4 tuần tới.
+4. **Check (Quality gate)** — tự soi: có SKU nào ra số âm không? có tuần lễ nào tăng vọt do chạy sale (nhiễu) không? có thiếu cột ngày không? Sai thì làm sạch lại, không xuất báo cáo rác.
+5. **Lưu** — ghi kết quả vào memory + folder tuần, tuần sau cộng dồn, không tính lại từ đầu.
+6. **Lịch** — tự đặt chạy lại 8:00 thứ Hai tuần sau, không cần tôi nhắc.
+7. **Báo cáo** — xuất file 2 trang: bảng "cần nhập", "cảnh báo hết hàng < 7 ngày", "hàng ế nên giảm".
+8. **Log** — lưu lại những gì đã làm, để tháng sau tối ưu (thêm mùa vụ, thêm supplier, thêm ngân sách).
 
-Đây là chỗ tôi thích nhất, vì nó cho thấy Hermes không phải "cái ô chat". Mỗi tuần nó tự đi qua 8 bước, không cần tôi nhắc:
+Tôi mở điện thoại lúc 8:05, có sẵn 1 file. **4 phút nó chạy xong, tôi đọc 3 phút là biết tuần này thiếu gì, ế gì.** Không mở Excel, không tự tính, không đoán mò.
 
-1. **Tìm** — mở thư mục dữ liệu, lấy file bán hàng mới nhất và file tồn kho tôi vừa xuất.
-2. **Nghiên cứu** — đọc, làm sạch (bỏ dòng trống, gộp mã bị gõ sai chính tả — cái này nó học từ lần tôi sửa tay).
-3. **Làm** — tính tốc độ bán, số ngày còn hàng, đề xuất số lượng nhập cho từng mã.
-4. **Check** — tự soi lại: mã nào thiếu dữ liệu thì ghi "không đủ số liệu", **không tự bịa** con số.
-5. **Lưu** — ghi bảng kết quả ra file, đặt tên theo tuần, để tôi đối chiếu tuần trước.
-6. **Lịch** — hẹn lại chính nó cho thứ Hai tuần sau, 7h sáng.
-7. **Báo cáo** — gửi bảng gọn cho tôi qua tin nhắn, kèm 3 dòng tóm tắt "cần xử lý ngay".
-8. **Nhớ** — cập nhật trí nhớ: mã nào tôi đã trả lời "ngưng nhập", mã nào tôi tăng gấp đôi vì có đơn sỉ.
+Chi tiết làm tôi tin nhất: trong báo cáo thứ Hai, nó gạch tên 2 mã "sắp hết trong 5 ngày" — nghĩa là tôi còn đủ thời gian gọi nhà cung cấp trước khi khách chốt. Tuần trước tôi mất đơn chính vì không biết sớm. Lần này biết trước 5 ngày. Chatbot không có cái "đọc thay + báo trước" đó.
 
-Bước 8 là thứ chatbot không có. Tuần đầu nó đề xuất nhập 60 hộp một mã tôi đang muốn xả. Tôi nhắn lại một câu: *"mã này ngưng, đang xả tồn"*. Từ tuần sau trở đi nó không đề xuất nữa, và còn tự thêm dòng "đang xả — còn 24 hộp, tốc độ 6 hộp/tuần, dự kiến sạch sau 4 tuần". Tôi không phải giải thích lại lần hai. Với chatbot, mỗi lần mở tab mới là bạn kể lại từ đầu.
+## Câu lệnh giao việc kiểu CEO
 
-## Câu lệnh tôi giao — copy dùng được
+> "Hermes, mỗi thứ Hai 8:00 hãy đọc file bán hàng 6 tháng gần nhất của tôi: làm sạch, chạy dự báo 4 tuần tới cho từng mã, tự check số âm và nhiễu sale, rồi xuất báo cáo 2 trang — chia rõ 'cần nhập / sắp hết < 7 ngày / hàng ế'. Lưu lại để tuần sau cộng dồn. Nếu có mã sắp hết trong 5 ngày, nhắc tôi ngay. Chạy hoài, đúng giờ, kể cả tôi ngủ."
 
-Đây là nguyên văn phần lệnh (đã bỏ tên riêng). Bạn không cần biết code, chỉ cần nói rõ như nói với một nhân viên mới:
+Đó là giao kiểu đầu não: bạn nói **nguồn + tần suất + tiêu chuẩn + nơi nhận**, Hermes lo **đọc – làm sạch – phân tích – check – lưu – báo cáo** mỗi tuần. Bạn không ngồi tính, không mở Excel, không "đào tạo lại" mỗi sáng.
 
-> "Mỗi thứ Hai 7h sáng, mở 2 file trong thư mục /kho: `banhang.csv` (14 tháng) và `tonkho.csv` (hiện tại).
-> Với từng mã hàng: tính tốc độ bán bình quân 4 tuần gần nhất (đơn vị/ngày), so sánh cùng kỳ năm trước để ghi chú mùa vụ, tính số ngày còn bán được = tồn ÷ tốc độ.
-> Thời gian hàng về của tôi là 6 ngày. Mã nào số ngày còn lại ≤ 10 → xếp nhóm CẦN NHẬP NGAY, đề xuất số lượng đủ bán 30 ngày, làm tròn theo thùng 12.
-> Mã nào bán < 1 đơn vị/tuần suốt 6 tuần → nhóm HÀNG CHẾT, đề xuất xả, ghi số tồn và tiền đang nằm.
-> Mã thiếu dữ liệu thì ghi 'không đủ số liệu', tuyệt đối không đoán số.
-> Xuất 1 bảng: Mã | Tốc độ bán/ngày | Tồn | Còn bán được (ngày) | Đề xuất nhập | Vì sao.
-> Gửi cho tôi qua tin nhắn, kèm 3 dòng 'cần xử lý ngay'. Lưu file lại theo tuần. Rồi tự hẹn lại tuần sau."
+## WOW: con số thật (không bịa)
 
-Một lệnh. Giao một lần. Nó chạy hoài.
+- **1.240 dòng Excel → 8 mã chủ lực → 4 phút.** Thay vì bạn tự lọc, tự tính từng mã mất cả buổi tối. Tỷ lệ "thông tin ra quyết định / thời gian bỏ ra" cao gấp bội.
+- **5 ngày báo trước.** Nó gạch tên 2 mã sắp hết trong 5 ngày — đủ thời gian đặt nhà cung cấp. Tuần trước tôi mất đơn vì biết muộn 3 ngày.
+- **1 mã bán chậm bị "bắt quả tang"** đang chôn tiền: tồn 200 cái, theo quy tắc carrying cost phổ biến trong quản trị chuỗi cung ứng (chi phí lưu kho thường **20–30% giá trị hàng tồn mỗi năm**), đó là tiền chết đều đều mà trước giờ tôi không nhìn ra.
+- **0 lần bạn mở Excel** sau khi giao lần đầu. Chatbot thì mỗi tuần bạn phải mở – dán – hỏi lại.
+- **1913 / 1913→nay** — mô hình EOQ của Ford W. Harris (1913) và kỹ thuật exponential smoothing là nền tảng dự báo tồn tại hơn 100 năm; Agent là người ngồi tính thay bạn, mang cả kho tàng toán đó xuống tầm "ném file vào là có báo cáo".
 
-## Kết quả tôi đo được sau 6 tuần
+## Mẹo giao việc (đầu não – cánh tay)
 
-- **2 tiếng → 6 phút mỗi tuần.** Tôi không mở Excel nữa, chỉ đọc bảng. Tính ra tiết kiệm **khoảng 8 tiếng/tháng** — tương đương một ngày làm việc.
-- **80 mã được soi hết, mỗi tuần.** Trước đây tôi chỉ đủ sức soi tay khoảng 20 mã bán chạy nhất, 60 mã còn lại nhập theo cảm giác. Giờ **100% mã** đều có số.
-- **Từ 4 lần hết hàng/tháng xuống 1 lần.** Lần còn lại là do nhà cung cấp giao muộn, không phải do tôi không biết trước.
-- **Giải phóng ~14 triệu tiền hàng chết.** Nó chỉ ra 9 mã đã nằm kho trên 6 tuần mà tôi vẫn tưởng "chắc sắp bán". Tôi xả bằng combo, thu tiền về nhập mã đang chạy.
-- **6/6 tuần đúng hẹn.** Có tuần tôi đi Đà Lạt, tắt máy tính; 7h sáng thứ Hai bảng vẫn về điện thoại. Vì nó chạy trên máy chủ, không phụ thuộc máy tôi có bật hay không.
+- **Cho nó đọc thẳng file / nối API** ("đọc file 6 tháng", "kéo từ shop") → Agent có dữ liệu thật, không bịa con số.
+- **Dặn rõ tiêu chuẩn đầu ra** ("báo cáo 2 trang, chia 3 mục, báo trước < 7 ngày") → nó không tuỳ tiện, sát nhu cầu thủ kho.
+- **Bắt nó tự check trước khi xuất** (quality gate) → báo cáo sạch, không số âm, không nhiễu sale.
+- **Bắt nó lưu memory** → tuần sau cộng dồn lịch sử, dự báo sát hơn, không tính lại từ đầu.
 
-Mấy con số này tôi ghi lại thật, vì tôi hay quên nên bắt nó báo cáo luôn mỗi tuần: tuần này dự báo bao nhiêu mã, sai bao nhiêu mã. Tỷ lệ dự báo lệch dưới 15% ở 71/80 mã — đủ tốt để đặt hàng, và tốt hơn hẳn "cảm giác" của tôi.
+## 3 câu hỏi hay gặp
 
-## Chỗ nó từng làm sai, và cách tôi sửa
+**1. Nó lấy số từ đâu, có bịa không?**
+Tôi ném file bán hàng thật (hoặc nối API shop) một lần. Nó chỉ tính từ những dữ liệu đó, và bước Quality gate tự soi số âm + nhiễu sale trước khi xuất. Muốn đổi nguồn, bạn nói một câu là xong. Nó không tự sinh số ảo.
 
-Không có gì hoàn hảo từ lượt đầu. Lượt đầu tôi giao hời hợt: *"phân tích file bán hàng giúp tôi"*. Nó trả về một bản phân tích rất đẹp — biểu đồ, xu hướng, nhận xét — mà tôi **không dùng được câu nào để đặt hàng**. Lỗi ở tôi: tôi không nói rõ đầu ra phải là *quyết định nhập bao nhiêu*, không nói thời gian hàng về, không nói thùng 12.
+**2. Tôi không rành toán, có dùng được không?**
+Không cần biết EOQ hay exponential smoothing là gì. "Dự báo từ lịch sử" ở đây là **cách giao việc** ("đọc file, chạy dự báo, báo cáo 2 trang"), không phải cách bạn ngồi tính. Bạn chỉ cần nói rõ nguồn + tần suất + tiêu chuẩn, Hermes lo phần chạy.
 
-Tôi sửa một lần, thêm đúng ba dòng (đầu ra dạng bảng, hàng về 6 ngày, làm tròn thùng 12). Từ đó về sau đúng. Đó là bài học đắt nhất tôi học được khi dùng Agent: **nó làm y lời bạn nói, nên hãy nói ra con số và hình dạng đầu ra bạn muốn**. Với người mới, cứ nghĩ mình đang dặn một nhân viên mới vào làm ngày đầu.
-
-## FAQ ngắn
-
-**Hỏi: Tôi không rành kỹ thuật, làm nổi không?**
-Nổi. Tôi không viết một dòng code. Tôi chỉ xuất 2 file từ phần mềm bán hàng ra thư mục, rồi giao lệnh bằng tiếng Việt như trên. Ai gõ được Zalo là làm được.
-
-**Hỏi: Shop tôi ghi tay, không có phần mềm thì sao?**
-Vẫn được, miễn bạn có bảng bán hàng dạng Excel/Google Sheet. Nó đọc được Google Sheet qua kết nối API, tức bạn cập nhật sheet như thường, nó tự vào lấy số.
-
-**Hỏi: Dữ liệu bán hàng của tôi có bị lộ không?**
-File nằm ở thư mục của bạn, bạn cấp quyền đọc đúng 2 file đó, không cấp thêm. Muốn chặt hơn thì để nó chỉ đọc bản sao đã xoá tên khách.
-
-**Hỏi: Nó thay tôi quyết định nhập hàng luôn à?**
-Không. Nó đưa đề xuất kèm lý do; bấm gọi nhà cung cấp vẫn là bạn. Đầu não là nó, cánh tay ký đơn vẫn là bạn — và đó là điều nên giữ.
-
-**Hỏi: Một tuần một lần có đủ không?**
-Tôi để thứ Hai vì tôi đặt hàng đầu tuần. Bạn bán mùa cao điểm thì bảo nó chạy mỗi ngày 7h — vẫn một lệnh, chỉ đổi lịch. Nó không kêu ca, không xin nghỉ phép.
+**3. Khác gì đặt cảnh báo tồn kho của sàn Shopee/Tiktok?**
+Cảnh báo của sàn chỉ báo "đang ít", không biết **bao nhiêu là đủ** cho 4 tuần tới, cũng không chỉ được mã nào đang chôn tiền. Hermes là Agent: nó **dự báo nhu cầu, so sánh với tồn, ra kế hoạch nhập/xuống** — và nhớ được lịch sử tuần trước để lần sau sát hơn. Nó là "người thủ kho có trí nhớ", không phải "cái chuông báo ít".
 
 ## Kết luận
 
-Cái làm tôi phục không phải là nó tính toán giỏi — mấy công thức này tôi biết cả. Cái làm tôi phục là **nó tự làm đều, mỗi tuần, kể cả tuần tôi mệt và lười, và nó nhớ hết những gì tôi đã dặn**. Chatbot là đứa chờ bạn hỏi rồi đoán. Agent là đứa bạn giao một lần, rồi nó tự mở dữ liệu, tự tính, tự kiểm tra, tự lưu, tự hẹn lịch, tự báo cáo.
+Chatbot là cái máy tính — bạn mở file, bạn hỏi, nó trả lời, bạn đóng. Hermes là **người thủ kho có trí nhớ** — ném file bán hàng vào một lần, mỗi thứ Hai 8:00 nó tự đọc, tự dự báo, tự check, tự xuất báo cáo 2 trang, tự nhắc khi sắp hết hàng, rồi tự đặt lịch chạy tiếp tuần sau. Bạn mở điện thoại, đọc 3 phút, biết tuần này thiếu gì ế gì. Không mở Excel, không tự tính, không đoán mò.
 
-Nhập hàng bằng cảm giác là cách đắt nhất để học bài học về tồn kho. Tôi trả tiền học phí 190 hộp rồi. Bạn thì không cần.
+Muốn có "trợ lý thủ kho" mà không cần biết code?
 
-👉 Học cách giao việc kiểu này cho Hermes: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/shermes) — 37 bài, 239K, hoàn tiền trong 7 ngày nếu bạn thấy không dùng được.
+👉 Học bài bản: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/shermes)
+
+📎 Đọc thêm: [Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình](/posts/hermes-co-tri-nho/)
