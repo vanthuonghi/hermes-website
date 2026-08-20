@@ -62,6 +62,8 @@ Tôi chỉ duyệt cái nút "đồng ý" thôi. Còn lại nó chạy.
 - **Kết nối thật:** Wikipedia định nghĩa API là *"kết nối giữa các chương trình máy tính"* — Hermes dùng API để nối TikTok Shop, Shopee, email và Telegram thành **một mối**, tự luân chuyển data giữa các app thay vì tôi copy-paste thủ công.
 - **Làn sóng có thật:** trên HackerNews năm 2026, loạt dự án agent cho marketing liên tục ra mắt — Screenpipe (YC S26) ghi lại cách bạn làm rồi biến thành agent; cosmicjs công bố "Team agents quản lý CMS từ Slack/WhatsApp/Telegram"; virlo xây "công cụ tình báo nội dung ngắn cho media buyer"; Sitefire (YC W26) tự động hoá hành động để tăng độ hiện diện AI. Tự động hoá marketing bằng agent là trào lưu thật, không phải chuyện khoa học viễn tưởng.
 
+**Ví dụ thực tế một tuần của tôi:** tuần 1, Hermes gợi ý 3 mẫu — áo polo tặng kèm name card, áo croptop thể thao, áo thun in chữ. Live 20h00: 1.200 view, 18 đơn, tỷ lệ chốt 1,5%. Nó lưu vào memory: *"khung 20h đông, croptop chốt nhanh nhất"*. Tuần 2 nó tự dời lịch sang 20h30 (vì memory thấy muộn hơn còn đông hơn) và đẩy croptop lên mở màn. Kết quả live tuần 2: 1.650 view, 27 đơn, tỷ lệ chốt 1,6%. Tăng đều mà tôi không phải nghĩ lại cái nào — chính số của tôi tuần trước thành đầu vào để tuần sau tự tốt hơn.
+
 ## FAQ — 3 câu hỏi chủ shop hay hỏi
 
 **1. Hermes có cần tôi biết code không?**
