@@ -169,7 +169,12 @@
       "t": "Giao 1 Lan – Chay Hoai Ke Ca Khi Ngu",
       "topic": "tiet-kiem",
       "f": "/covers/ai-tu-dong-hoa-ngu.webp"
+    },
+    {
+      "t": "1 bài cũ = 5 bài mới: AI viết lại tự động",
+      "topic": "content",
+      "f": "/covers/hermes-viet-lai-noi-dung.webp"
     }
   ],
-  "count": 34
+  "count": 35
 }
