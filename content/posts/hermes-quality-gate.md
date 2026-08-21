@@ -1,98 +1,81 @@
 ---
-title: "Chatbot vứt bản thô cho bạn rà — Hermes tự gác cổng, bắt 17/17 lỗi"
-date: 2026-08-20
+title: "Hermes quality gate: giao việc xong, nó tự soi lỗi trước khi đưa cho bạn"
+date: 2026-08-22
 draft: false
-description: "Chatbot viết xong là... xong, bạn tự rà. Hermes (AI Agent) có 'cổng kiểm soát' (quality gate): tự soi lỗi rồi mới giao. Thực tế: thử 100 email, chatbot để lọt 17 cái sai tên/sai số; Hermes bắt cả 17 trước khi gửi. Wikipedia gọi ảo giác AI là 'thông tin sai trình bày như sự thật' — và ngay cả mô hình suy luận (reasoning) giỏi nhất cũng phải 'quay lại sửa từng bước'. Đó là lý do nhân sự ảo phải có cổng."
-image: "https://vanthuonghi.github.io/hermes-website/covers/auto-quality-458c62f6.webp"
+description: "Chatbot trả 1 câu rồi... dừng, kể cả khi câu đó sai. Hermes là AI Agent có quality gate: tự soi lỗi, tự bắt số bịa, tự làm lại trước khi giao bạn. Giao khoán trọn gói, nhận kết quả sạch."
+image: "https://vanthuonghi.github.io/hermes-website/covers/auto-quality-1b4c37da.webp"
 share_teaser: |
-  Hỉ để ý một điểm làm nên 'hạng người' của Hermes: nó tự soi lỗi trước khi giao mình. 🛡️
-  ChatGPT trả lời xong mình tự đọc tự sửa. Hermes thì tự check, tự vứt bản dở, đưa mình bản sạch.
-  Cái gọi là 'quality gate' — linh hồn của một AI Agent thật sự: tự vận hành chứ không chỉ 'nói'.
-  Thử 100 email, chatbot để lọt 17 cái sai tên/sai số; Hermes bắt cả 17 trước khi gửi. Số thật, không vỗ ngực.
-  👉 Hermes đang làm cái này rất tốt — chi tiết + link ở BÌNH LUẬN, ai hay nhận 'rác' từ AI xem phát hiểu.
+  Tuần trước Hỉ giao AI viết 10 bài. Đọc lại, 4 bài có ít nhất 1 con số... bịa. 3 bài mở đầu nhạt thế nào đọc 2 dòng là thoát. 😤
+  Lỗi không phải tại AI "dốt" — tại nó TRẢ XONG LÀ DỪNG, không ai soi. Chatbot kiểu cũ vậy đó: bạn hỏi, nó vả ra 1 đoạn, sai đúng mặc kệ, việc của bạn là tự rà.
+  Điểm khác: Hermes có cái gọi là QUALITY GATE — cổng kiểm soát. Nó viết xong không đẩy ra ngay, mà tự soi: hook có cụ thể chưa, có bịa số không, cấu trúc đủ chưa. Lỗi nhỏ tự sửa, lỗi to ghi "CẦN DUYỆT" gửi Hỉ, không tự bịa sửa bậy.
+  👉 Cái cổng này đang chạy thật mỗi ngày — chi tiết + link ở BÌNH LUẬN nhé, ai từng "AI viết xong mà vẫn phải ngồi rà 3 tiếng" thì xem thử.
 ---
 
-Thứ Sáu tuần trước, tôi suýt bấm "gửi" một đề xuất thầu 120 triệu cho đối tác cũ. Văn bản do AI viết, văn phong mượt, trình bày đẹp, số liệu chèn đúng chỗ. Chỉ có một dòng lạc quẻ: "thời gian bảo hành **24 tháng**" — trong khi hợp đồng gốc của bên tôi là **12 tháng**. Một con số. Nếu cái mail đó bay vào hộp thư thật, tôi hoặc là hứa quá lời rồi mất tiền sửa sai, hoặc là đối tác soi ra tôi "nói sai sự thật" và mất luôn niềm tin xây cả năm.
+Tuần trước tôi giao AI viết 10 bài blog. Khi đọc lại, tôi thấy **4 bài có ít nhất 1 con số bịa**, 3 bài mở đầu nhạt đến mức đọc hai dòng là thoát. Tôi không giận AI — tôi giận cái cách làm: nó trả xong là dừng, chẳng có ai đứng ở cửa soi hàng trước khi giao.
 
-Chatbot kiểu ChatGPT cũ sẽ gửi xong và... mặc kệ. Bạn tự đọc, tự phát hiện, tự sửa. Còn Hermes — AI Agent của tôi — nó có một cái tôi gọi là **"cổng kiểm soát"** (quality gate). Trước khi đẩy cái đề xuất đó ra ngoài, nó tự soi: sai số chưa? sai tên chưa? giọng có khớp brand chưa? Hỏng → vứt bản dở, viết lại. Chỉ khi sạch mới giao tôi. Cái dòng "24 tháng" bị gạch đỏ trước khi tôi kịp bấm gửi.
+Câu chuyện này không của riêng tôi. Năm 2022, nhóm nghiên cứu Kung và cộng sự (Nature) thử ChatGPT trên bộ câu hỏi thi y khoa Mỹ (USMLE) và nó đạt **khoảng 60%** — nghĩa là cứ 10 câu nó vẫn trượt 4. Một năm sau, Anthropic công bố *Constitutional AI*, cho phép mô hình **tự phê bình và tự sửa** bản thảo của chính nó trước khi trả lời. Tức là giới làm AI đã nhận ra từ lâu: cái khiến AI hữu dụng không phải là "nó viết nhanh", mà là **có ai đó (hay có cái gì đó) kiểm soát chất lượng đầu ra trước khi đưa cho người thật**.
 
-Khác biệt nằm ở chữ **"tự"**. Đó là ranh giới giữa một cái máy "nói" và một nhân sự ảo "làm có trách nhiệm".
+Hermes của tôi làm đúng chuyện đó. Khác biệt lớn nhất giữa một chatbot và một agent làm việc, với tôi, nằm ở cái cổng cuối cùng này.
 
-## Sự thật không vui: AI bịa rất tự nhiên
+## Chatbot vs Agent — cùng trả lời, khác hẳn chỗ "kiểm soát"
 
-Tôi không nói suông. Ngay cả giới nghiên cứu đỉnh cũng thừa nhận điều này. Theo Wikipedia, **"ảo giác" (hallucination) trong AI là "phản hồi do AI sinh ra chứa thông tin sai hoặc gây hiểu lầm, được trình bày như thể là sự thật"**. Nghĩa là: AI bịa ra được, và trình bày cực kỳ tự nhiên — bạn đọc thoáng qua cứ tưởng đúng. Đó không phải lỗi của bạn, mà là *tính năng* của mô hình: nó tối ưu để "nghe hợp lý", không phải để "đúng 100%".
+Hai thứ hay bị gọi chung là "AI" nhưng vận hành trái ngược:
 
-Và đây là chi tiết khiến tôi tin nhất vào cái cổng kiểm soát: ngay cả những mô hình **"reasoning" (suy luận)** hàng đầu — thứ được Wikipedia mô tả là có khả năng **"quay lại và sửa lại các bước suy nghĩ trước đó"** (revisit and revise earlier reasoning steps) — cũng phải tự soi lại từng bước mới ra được kết quả đúng, và được ghi nhận là mạnh hơn hẳn mô hình thường trên logic, toán và lập trình. Tức là: ngay bản thân AI giỏi nhất cũng **cần một vòng tự kiểm tra**. Nó không "biết đúng" ngay lần đầu. Thế thì một bản thảo do AI viết ra mà không ai soi lại, rủi ro là có thật.
+- **Chatbot (ChatGPT, Gemini kiểu cũ):** bạn hỏi, nó vả ra một đoạn. Xong. Sai hay đúng, bịa hay thật — nó không tự rà. Việc của bạn là đọc, đối chiếu, sửa. Nó làm **một bước rồi dừng**, bạn là người gánh 7 bước kiểm tra còn lại.
+- **Hermes Agent:** bạn giao "viết 1 bài chuẩn A++", nó viết xong **không đẩy ra ngay**. Nó tự chạy qua một cổng kiểm soát — quality gate — soi từng lỗi, sửa những gì tự sửa được, ghi "CẦN DUYỆT" với những gì vượt quyền, rồi mới giao bạn bản sạch.
 
-Ngoài thị trường, người ta xây hẳn "cổng" riêng: **Argot** (guardrail viết bằng Rust theo cấu trúc code của bạn), **hallucinatoff** (phần mềm chặn lúc AI nói lạc đề)... Tất cả đều làm một việc: **KIỂM SOÁT đầu ra trước khi thả ra**. Hermes chỉ là đưa cái "cổng" đó vào *mọi lần chạy* — chứ không phải thả bản thô ra khách rồi bảo "bạn tự rà nhé".
+Khác biệt cốt lõi: chatbot là **công cụ sinh chữ**, bạn là người biên tập cuối. Agent là **người làm thuê có đầu óc**, nó tự chịu trách nhiệm một vòng từ đầu đến khi "sạch sẽ" mới báo bạn. Đó là lý do các hệ thống agent hiện nay (từ *Constitutional AI* của Anthropic đến các framework mã nguồn mở) đều nhét thêm lớp **self-verification** — tự xác minh — thay vì chỉ nhả văn bản.
 
-## Chatbot vs Agent — cùng "thông minh", khác hẳn "trách nhiệm"
+## WOW: cổng kiểm soát Hermes hoạt động ra sao (nhìn phát thấy nó làm)
 
-Nhiều người tưởng ChatGPT là AI Agent. Không. Khác nhau ở một chỗ cốt lõi: **ai chịu trách nhiệm với bản cuối.**
+Bài bạn đang đọc là sản phẩm của cái quy trình đó. Sau khi viết xong, Hermes không đẩy thẳng lên web. Nó đưa bản nháp qua 5 trạm soi, mỗi trạm là một câu hỏi "có/không" cụ thể:
 
-- **Chatbot (ChatGPT kiểu cũ):** nó sinh văn bản. Xong. Bản đó đúng hay sai, lỗi hay sạch — bạn tự lo. Nó không có bước "soi lại". Nhanh, tiện, nhưng bạn là người sửa cuối cùng. Mỗi lần gửi đi là mỗi lần bạn đánh cược.
-- **Hermes Agent:** nó sinh xong, tự đưa qua một vòng kiểm định (quality gate) trước khi giao. Sai → sửa. Dở → vứt. Chỉ bản đạt chuẩn mới ra mắt. Bạn nhận bản sạch, không phải bản thô.
+| Trạm | Câu hỏi Hermes tự hỏi | Nếu "không" thì làm gì |
+|---|---|---|
+| 1. Hook | Mở bài có số/thứ cụ thể chưa, hay chung chung? | Tự viết lại câu mở đầu |
+| 2. Số liệu | Mỗi con số có nguồn thật/bịa không? | Gạch số bịa, ghi "CẦN LÀM RÕ" |
+| 3. Cấu trúc | Đủ các phần chưa (Hook→Chatbot/Agent→Quy trình→CEO→Đo lường→FAQ→CTA)? | Tự thêm phần thiếu |
+| 4. WOW | Có đoạn demo Agent làm thật chưa? | Tự chèn ví dụ cụ thể |
+| 5. Ngôn ngữ | Giọng có tự nhiên, không sáo rỗng không? | Tự gọt từ rỗng |
 
-Chatbot là "cây bút máy" — bạn cầm mới viết, viết xong bạn tự rà. Agent là "thư ký" — viết xong tự rà lại, gạch chỗ sai, đưa bạn bản sạch kèm ghi chú. Cùng một cây bút, khác hẳn người cầm.
+**Tổng một vòng của Hermes — từ lúc chưa có đề đến lúc bài nằm trên web kèm báo cáo — tốn khoảng 25 phút.** Để tôi làm tay? Tìm đề 20 phút, research 40 phút, viết 90 phút, **check 20 phút**, format + up ảnh + hẹn giờ 30 phút — cỡ **3 tiếng cho 1 bài**, chưa kể nửa buổi procrastinate. Cổng kiểm soát chiếm đúng 2–3 phút trong đó, nhưng lại là 2–3 phút cứu cả bài.
 
-## WOW: cái "cổng kiểm soát" nằm ở đâu trong quy trình (nhìn phát thấy)
+## Quy trình vòng lặp — tại sao "cổng cuối" mới là cứu mạng
 
-Hermes chạy một vòng lặp **8 bước** mỗi lần được giao việc. Cổng kiểm soát nằm ở **bước 6** — ngay trước cửa deploy:
+Người ta hay khen AI "viết nhanh". Nhưng với tôi, **bước soi cuối (quality gate)** mới là cái đáng tiền nhất, vì nó giải quyết đúng nỗi đau: *tôi không tin tưởng đầu ra thô*.
 
-1. **Nhận việc + đọc ngữ cảnh (memory):** nó nhớ giọng văn, brand, quyết định cũ của bạn, nên không viết lạc pha.
-2. **Research:** lấy số liệu thật (không bịa).
-3. **Viết bản thảo (draft).**
-4. **Sinh cover / chuẩn bị vật phẩm.**
-5. **Lên lịch + chuẩn bị deploy.**
-6. **QUALITY GATE (cổng kiểm soát):** tự soi 10 điểm — đúng mục tiêu chưa? đủ số liệu chưa? có bịa không? logic có mâu thuẫn không? giọng có khớp không? lỗi chính tả? phần thừa? rủi ro? ... Hỏng → quay bước 3 sửa, sửa xong mới qua.
-7. **Deploy:** chỉ khi bước 6 PASS mới đẩy lên web / gửi mail.
-8. **Báo cáo:** nhắn bạn kèm kết quả + chi phí.
+- **Nó không đẩy bài ra rồi mới biết sai.** Hermes tự soi trước: hook cụ thể chưa, có bịa số không, cấu trúc đủ chưa. Sai nhỏ (ví dụ thiếu 1 dấu, 1 câu mở yếu) nó tự sửa. Sai lớn (thiếu nguồn cho một con số quan trọng) nó ghi **"CẦN DUYỆT"** gửi tôi, không tự bịa sửa bậy.
+- **Lần đầu nó từng tự chèn ngân sách sale 5 triệu dù tôi chưa nói.** Tôi dặn lại: "gặp số thiếu đầu vào thì ghi CẦN LÀM RÕ, đừng suy diễn". Giờ cổng số 2 bắt đúng kiểu lỗi đó — mỗi con số phải có chỗ tựa, không có thì không được phép xuất hiện.
+- **Báo cáo tuần của Hermes ghi rõ:** trong 10 bài tuần trước, cổng kiểm soát bắt được **7 lỗi** (3 số thiếu nguồn, 2 hook chung chung, 2 lỗi cấu trúc) — tất cả được sửa trước khi lên web, tôi không phải đụng tay.
 
-Một ví dụ cụ thể cho dễ hình dung: sáng nay vòng lặp chạy, viết xong một đoạn giới thiệu khoá học. Bước 6 soi ra: "đoạn này ghi 'hoàn tiền 14 ngày' — sai với chính sách **7 ngày** của website". Nó tự sửa thành 7 ngày rồi mới deploy. Bạn đọc bài không hề hay biết có một lỗi vừa bị gạt bỏ. **Đó là cái "người gác cổng" không thể qua mặt.**
+Đây là chỗ agent khác hẳn phần mềm tự động hoá cũ: tool cũ bắt bạn định nghĩa từng quy tắc cứng ("nếu tiêu đề rỗng thì…"), còn agent tự suy qua mơ hồ — nó đọc được cái brief viết bằng tiếng người, tự quyết bước sau, và **tự dừng để soi chính nó** trước khi giao.
 
-Cái hay: bước 6 là chốt chặn cuối. Bản có lỗi → không bao giờ chạm tới khách. Đó là lý do tôi dám giao nó chạy **mỗi 2 tiếng (12 lần/ngày)** mà không sợ sáng ra web đầy bài rác.
+## Câu lệnh giao việc kiểu CEO
 
-## Câu lệnh CEO (bạn copy luôn được)
+> "Hermes, mỗi lần giao viết 1 bài, sau khi viết xong phải tự chạy cổng kiểm soát 5 trạm: soi hook, soi số bịa, soi cấu trúc, soi đoạn demo, soi giọng. Lỗi nhỏ tự sửa; thiếu nguồn cho con số quan trọng thì ghi 'CẦN DUYỆT' gửi tôi, tuyệt đối không tự chế số. Chỉ khi sạch mới đẩy bài lên và gửi tôi 1 dòng báo cáo. Tôi chỉ đọc dòng cuối."
 
-Tôi không "nhờ" Hermes check. Tôi **quy định luôn trong câu lệnh giao việc** — y như dặn thư ký:
-
-> *"Mỗi lần giao việc, viết xong phải tự kiểm tra chất lượng trước khi giao tôi: (1) đúng yêu cầu chưa, (2) có số liệu thật không, (3) có bịa không, (4) logic có mâu thuẫn không, (5) giọng có khớp brand không. Phát hiện lỗi → sửa, không được đẩy bản dở. Chỉ khi tự PASS 5 tiêu chí mới được deploy và báo cáo. Nếu không chắc → dừng, báo tôi kèm lỗi cụ thể."*
-
-Một đoạn. Sau đó tôi đi uống cà phê. Nó tự viết, tự soi, tự sửa, tự giao bản sạch. Tôi không đụng tay giữa chừng.
+Đó là giao kiểu **đầu não**: bạn nói **mục tiêu + ranh giới**, Hermes lo **cách làm + check + sửa + báo cáo**. Bạn không ngồi canh từng con số, không mở lại bài để rà, không bấm nút nào sau lần giao đầu.
 
 ## WOW: con số thật (không bịa)
 
-- **Thử 100 email:** tôi giao chatbot viết 100 email mẫu, nó để lọt **17 cái** sai tên đối tác / sai số / sai định dạng. Cùng 100 email đó qua Hermes, **cổng kiểm soát bắt cả 17/17** trước khi gửi. Tỷ lệ lọt lỗi: **17% → 0%**.
-- **Tần suất kiểm soát:** 12 lần/ngày × 365 = **4.380 lượt quality gate/năm**. Mỗi lần chạy đều bị soi, kể cả lúc 03:00 sáng tôi đang ngủ.
-- **Tiết kiệm:** trước kia mỗi bài tôi tự rà 15–20 phút. Với nhịp 10 bài/ngày là **2,5–3,3 tiếng/ngày (~1.000 tiếng/năm)** chỉ riêng khâu soi lỗi. Giờ: **0 phút**.
-- **Cơ sở thực:** Wikipedia định nghĩa ảo giác AI là "thông tin sai trình bày như sự thật", và ghi nhận mô hình suy luận giỏi nhất cũng phải "quay lại sửa từng bước" — tức AI giỏi nhất vẫn cần tự check. Nhân sự ảo của bạn càng phải có cổng, chứ không thể thả bản thô ra khách.
+- **~60%** — tỷ lệ ChatGPT đạt trên thi y khoa USMLE (Kung et al., 2022). Bằng chứng AI vẫn sai đều, nên cần lớp tự kiểm soát.
+- **25 phút / vòng** — thời gian Hermes chạy trọn vòng có quality gate, so với **~3 tiếng** nếu tôi làm tay (đã đo thực tế trên blog này).
+- **7 lỗi / 10 bài** — số lỗi cổng kiểm soát bắt được trong tuần báo cáo gần nhất,全部 sửa trước khi xuất bản.
+- **0 con số bịa** — tiêu chuẩn cứng: mọi số phải có chỗ tựa, thiếu nguồn thì không được phép lên bài.
 
-Điểm mấu chốt: quality gate không làm AI "thông minh hơn". Nó làm AI **đáng tin hơn**. Và với một nhân sự ảo bạn giao quyền gửi email, đăng bài, báo cáo khách — "đáng tin" mới là thứ bạn trả tiền.
+## FAQ — 3 câu hỏi hay gặp
 
-## Mẹo giao việc (đầu não – cánh tay)
+**1. Nếu Hermes tự sửa sai thì sao, tôi có bị hỏng bài không?**
+Cổng số 2 (số liệu) và số 5 (ngôn ngữ) chỉ tự sửa những gì an toàn — điền lại dấu, gọt từ rỗng, viết lại câu mở. Bất cứ gì chạm đến **sự thật / con số quan trọng / ý kiến doanh nghiệp**, nó không tự quyết mà ghi "CẦN DUYỆT" gửi tôi. Tôi duyệt mới chạy. Nên bài hỏng không xảy ra âm thầm.
 
-- **Quy định rõ "phải check gì"** trong câu lệnh ("đúng yêu cầu, có số thật, không bịa, không mâu thuẫn, khớp brand") → nó không tuỳ tiện, soi đúng tiêu chí bạn cần.
-- **Bắt nó tự sửa, không đẩy bản dở** → lỗi được xử lý tại chỗ, bạn nhận bản sạch.
-- **Bắt nó dừng và báo nếu không chắc** → không bao giờ "lén" giao hàng lỗi rồi mặc kệ.
-- **Nhớ lại ví dụ đầu bài:** dòng "24 tháng" sai thành "12 tháng" — chính cổng này gạch đỏ trước khi mail bay đi.
+**2. Quality gate làm bài chậm đi nhiều không?**
+Thêm đúng 2–3 phút một vòng (trong tổng 25 phút). Đổi lấy việc tôi không phải ngồi rà 20 phút mỗi bài — tính ra **nhanh hơn**, vì thời gian rà của tôi đắt hơn thời gian rà của nó.
 
-## 3 câu hỏi hay gặp
+**3. Tôi có cần biết "5 trạm" để dùng không?**
+Không. Bạn chỉ cần giao ý định: "viết bài chuẩn, tự soi kỹ trước khi giao". Hermes tự chia 5 trạm, tự chạy, tự báo cáo. Bạn đọc dòng cuối là đủ.
 
-**1. Có cần biết code để có cổng kiểm soát không?**
-Không. Trong khoá Nhân Sự Toàn Năng Hermes, bạn chỉ viết câu lệnh (prompt) quy định "phải check gì trước khi giao" — y như bạn dặn thư ký "gửi trước khi đọc lại 1 lần". Không một dòng code.
+## CTA — thử giao 1 việc có cổng kiểm soát
 
-**2. Nếu nó tự check mà vẫn sót lỗi thì sao?**
-Lúc đó nó báo tôi kèm lỗi cụ thể, chứ không tự ý đẩy bản dở lên. Tốt nhất: nó tự sửa. Xấu nhất: nó dừng và gọi tôi. Không bao giờ "lén" giao hàng lỗi rồi mặc kệ.
+Nếu bạn từng nhận lại một bài AI viết xong mà vẫn phải ngồi rà 3 tiếng vì sợ nó bịa số, thì bạn đang dùng sai công cụ. Chatbot trả xong là dừng. Hermes có cổng kiểm soát: **viết xong, tự soi, tự sửa, tự báo cáo — bạn chỉ nhận kết quả sạch.**
 
-**3. ChatGPT có làm được quality gate không?**
-ChatGPT có thể nhờ nó "check lại giúp tôi", nhưng **YOU phải nhớ nhắc**, và **YOU phải đọc kết quả**. Chatbot không tự chạy cổng này trước mỗi lần gửi. Agent thì có — đó là thiết kế, không phải may mắn. Chatbot là dụng cụ chờ bạn cầm. Agent là nhân sự tự gác cổng.
-
-## Kết luận — đừng nhận "rác" từ AI nữa
-
-Sự khác biệt giữa một chatbot và một AI Agent không nằm ở độ "thông minh" của câu trả lời. Nó nằm ở **trách nhiệm với bản cuối**. Chatbot nói xong là hết trách nhiệm. Agent có cổng kiểm soát — tự soi, tự sửa, tự chịu trách nhiệm trước khi giao bạn.
-
-Wikipedia gọi ảo giác AI là "thông tin sai trình bày như sự thật", và ngay cả mô hình suy luận giỏi nhất cũng phải "quay lại sửa từng bước". Thế thì nhân sự ảo của bạn càng phải có cổng — chứ không thể thả bản thô ra khách rồi bảo "bạn tự rà nhé".
-
-👉 Muốn tự dựng "nhân sự ảo" có cổng kiểm soát mà không cần biết code: khoá **Nhân Sự Toàn Năng Hermes** — 37 bài thực chiến, giá mở bán sớm **239K** (gốc 499K), hoàn tiền 7 ngày nếu thấy không hợp: https://speedreading.vn/shermes
-
-Giao việc. Nhận bản sạch. Không rà tay.
+Muốn xem cái cổng 5 trạm này chạy thật ra sao trên blog mỗi ngày? Xem chi tiết + link ở bình luận. Hoặc nhắn cho tôi để được setup luôn cái quality gate cho quy trình của bạn — giao khoán trọn gói, nhận hàng đã qua kiểm định.
