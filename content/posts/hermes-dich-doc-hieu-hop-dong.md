@@ -23,6 +23,8 @@ Chị ấy tiết kiệm được 2-3 triệu và 4 ngày chờ đợi. Tôi th�
 
 Đây là điểm khác biệt căn bản giữa **chatbot** và **AI Agent** — và phần lớn mọi người vẫn nhầm hai cái là một.
 
+Thật ra cái giá của việc "ký mù" lớn hơn nhiều người tưởng. Một chị chủ shop khác từng ký hợp đồng gia công mà không biết mình bị khóa độc quyền 2 năm — đến khi muốn đổi xưởng thì bị đòi bồi thường bằng 30% doanh thu. Mấy trang tiếng Việt dài dòng, đọc tới dòng ba là mắt tự trượt, nên 90% người tự kinh doanh ký luôn rồi mới lo. Hermes không thay luật sư, nhưng nó bắt đúng những "cái bẫy" đó lên đầu dòng trước khi bạn đặt bút — và miễn phí trong gói nhân sự ảo, không tính theo trang.
+
 ## Chatbot vs Agent — cùng "dịch", khác hẳn cái "hiểu"
 
 Thử hình dung bạn đưa cùng một tập hợp đồng cho hai bên.
