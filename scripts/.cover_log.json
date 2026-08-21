@@ -229,7 +229,12 @@
       "t": "Agent tự soi lỗi trước khi giao",
       "topic": "quality",
       "f": "/covers/auto-quality-1b4c37da.webp"
+    },
+    {
+      "t": "VIET DE XUAT TANG LUONG: GIAO 1 LAN, 10 PHUT XONG",
+      "topic": "content",
+      "f": "/covers/hermes-de-xuat-tang-luong.webp"
     }
   ],
-  "count": 46
+  "count": 47
 }
