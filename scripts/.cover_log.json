@@ -224,7 +224,12 @@
       "t": "Khách giận — 6 phút có email xin lỗi",
       "topic": "email",
       "f": "/covers/auto-email-xinloi.webp"
+    },
+    {
+      "t": "Agent tự soi lỗi trước khi giao",
+      "topic": "quality",
+      "f": "/covers/auto-quality-1b4c37da.webp"
     }
   ],
-  "count": 45
+  "count": 46
 }
