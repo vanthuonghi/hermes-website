@@ -204,7 +204,17 @@
       "t": "0 PHÚT/NGÀY — BẢNG CHI TIÊU TỰ ĐỘNG",
       "topic": "tiet-kiem",
       "f": "/covers/auto-chi-tieu-tietkiem.webp"
+    },
+    {
+      "t": "1 Người – 4 Việc – 60 Phút",
+      "topic": "phan-than",
+      "f": "/covers/auto-phanthan-20260821-31.webp"
+    },
+    {
+      "t": "1 Cuốn Sách – 23 Phút – Tóm Tắt Xong",
+      "topic": "content",
+      "f": "/covers/auto-content-20260821-28.webp"
     }
   ],
-  "count": 41
+  "count": 43
 }
