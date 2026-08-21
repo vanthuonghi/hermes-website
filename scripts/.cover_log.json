@@ -214,7 +214,17 @@
       "t": "1 Cuốn Sách – 23 Phút – Tóm Tắt Xong",
       "topic": "content",
       "f": "/covers/auto-content-20260821-28.webp"
+    },
+    {
+      "t": "1 bài SEO 1800 chữ — 15 phút",
+      "topic": "content",
+      "f": "/covers/auto-content-bcff5997.webp"
+    },
+    {
+      "t": "Khách giận — 6 phút có email xin lỗi",
+      "topic": "email",
+      "f": "/covers/auto-email-xinloi.webp"
     }
   ],
-  "count": 43
+  "count": 45
 }
