@@ -4,3 +4,4 @@
 4|Hermes viết bài PR gửi báo
 5|Hermes lập bảng theo dõi chi tiêu cá nhân
 6|Hermes tóm tắt sách chuyên môn ngành
+7|Hermes viết email xin lỗi khách giận
