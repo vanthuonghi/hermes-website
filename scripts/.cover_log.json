@@ -234,7 +234,12 @@
       "t": "VIET DE XUAT TANG LUONG: GIAO 1 LAN, 10 PHUT XONG",
       "topic": "content",
       "f": "/covers/hermes-de-xuat-tang-luong.webp"
+    },
+    {
+      "t": "Vòng Lặp 8 Bước: Giao 1 Lần, Agent Tự Chạy Tới Khi Xong",
+      "topic": "vong-lap",
+      "f": "/covers/auto-vong-lap-d9e04e96.webp"
     }
   ],
-  "count": 47
+  "count": 48
 }
