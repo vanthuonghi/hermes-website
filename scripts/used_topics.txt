@@ -3,3 +3,4 @@
 38|Hermes vòng lặp 8 bước: tìm nghiên cứu viết check lưu lịch báo cáo
 31|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
 23|Hermes tạo poll tăng tương tác fanpage
+34|Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
