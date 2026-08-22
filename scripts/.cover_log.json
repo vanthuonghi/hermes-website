@@ -239,7 +239,17 @@
       "t": "Vòng Lặp 8 Bước: Giao 1 Lần, Agent Tự Chạy Tới Khi Xong",
       "topic": "vong-lap",
       "f": "/covers/auto-vong-lap-d9e04e96.webp"
+    },
+    {
+      "t": "Giao 1 Lần – Chạy Hoài Cả Khi Ngủ",
+      "topic": "tiet-kiem",
+      "f": "/covers/auto-tiet-kiem-7518b172.webp"
+    },
+    {
+      "t": "Giao 4 việc, Hermes xong trong 1 giờ",
+      "topic": "phan-than",
+      "f": "/covers/auto-phan-than-629bbe79.webp"
     }
   ],
-  "count": 48
+  "count": 50
 }
