@@ -269,7 +269,12 @@
       "t": "Đọc 300 trang hợp đồng — 3 phút có báo cáo",
       "topic": "bao-cao",
       "f": "/covers/hermes-oc-300-trang-hop-ong-trich-ieu-quan-trong.webp"
+    },
+    {
+      "t": "1 lệnh, Hermes tự gọi 7 API",
+      "topic": "api",
+      "f": "/covers/auto-api-259ae375.webp"
     }
   ],
-  "count": 54
+  "count": 55
 }
