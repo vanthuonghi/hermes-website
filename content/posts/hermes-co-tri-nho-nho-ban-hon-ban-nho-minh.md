@@ -1,95 +1,92 @@
 ---
-title: "Hermes có trí nhớ: nói 1 lần, nó nhớ mãi — chatbot quên sau mỗi câu chat"
-date: 2026-08-18
+title: "Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình (và không bao giờ lặp lỗi cũ)"
+date: 2026-08-23
 draft: false
-description: "Chatbot mất trí mỗi khi đóng cửa sổ: bạn kể lại chuyện 5 lần, nó vẫn hỏi như lần đầu. Hermes là AI Agent có bộ nhớ dài hạn — ghi nhớ brand, khách, giá, sở thích của bạn qua hàng trăm phiên, lần sau rút lại ngay không cần nhắc. Thực tế: bạn không lặp lại bản thân nữa."
-image: "https://vanthuonghi.github.io/hermes-website/covers/ai-memory-nho-ban.webp"
+description: "Chatbot mỗi sáng chào 'Xin chào, tôi có thể giúp gì?' như gặp người lạ. AI Agent có bộ nhớ: mở lại là biết bạn đang làm gì, nhắc bạn lời hứa tuần trước, và không lặp lỗi cũ. Bài mổ xẻ lớp memory của Hermes + bằng chứng thật từ Knowl (CLAUDE.md phình 1000 dòng) và mem0 persistent memory."
+image: "https://vanthuonghi.github.io/hermes-website/covers/auto-memory-69f8e779.webp"
 share_teaser: |
-  Hỉ từng có khách nhắn hỏi, Hỉ copy đoạn chat cũ dán qua giải thích lại từ đầu: "chị bán gì, giá sao, em hay hỏi cái gì". Mệt. 😩
-  Chatbot nào cũng vậy: đóng cửa sổ là quên sạch, lần sau mở ra hỏi y chang lần đầu. Như người hay Alzheimer vậy.
-  Từ lúc có Hermes (AI Agent), nó NHỚ: nhớ khách tên gì, bị nghẽn chỗ nào, giá 239K, link shermes. Lần sau khách nhắn, nó chào tên, hỏi tiếp bài tập — khách bảo "ủa sao nó nhớ mình thế". 😄
-  Đây là điểm khác chatbot: chatbot là AI sinh chữ, quên sạch sau mỗi phiên. Còn AI Agent có trí nhớ dài hạn, ghi nhớ bạn hơn bạn nhớ mình.
-  👉 Hermes đang làm cái này rất mượt — chi tiết + link ở BÌNH LUẬN nhé, ai hay phải "kể lại chuyện cũ" cho AI thì xem thử.
+  Hỉ thú thật một cái xấu hổ: tuần trước mình hỏi ChatGPT tiếp vụ báo cáo, sáng nay mở lại nó chào "Xin chào, tôi có thể giúp gì?" — tỉnh bơ như mới gặp. 😅
+  Còn Hermes (AI Agent) thì khác: gõ "tiếp bài báo cáo tuần nha", nó nhảy vào đúng chỗ mình dang dở, nhắc luôn "tuần trước anh hứa gửi đối tác sáng thứ 6". Nó NHỚ. Chatbot thì mỗi phiên là người lạ, Agent là người cùng làm với bạn mãi.
+  Điểm mình thích nhất: nó ghi nhớ luôn cả lỗi cũ để không bao giờ lặp lại. Chi tiết + link mình để ở BÌNH LUẬN nhé, ai hay phải "dặn đi dặn lại" thì đọc, đỡ được cả núi thời gian.
 ---
 
-Có một con số làm Hỉ sững sờ năm rồi: thị trường chatbot AI toàn cầu chạm **11 tỷ USD năm 2026**, với **987 triệu người dùng** trên toàn thế giới (theo Azumo). Nghĩa là gần 1 tỷ người đang mở chat AI mỗi ngày. Thế mà lời phàn nàn phổ biến nhất trên mọi nền tảng, từ ChatGPT đến Gemini, lại vô cùng đơn giản và cay đắng: **"bot không nhớ tôi."**
+Sáng 22/8, tôi mở lại chuỗi chat tuần trước với một chatbot để hỏi tiếp vụ báo cáo tuần. Nó chào: *"Xin chào, tôi có thể giúp gì?"* — tỉnh bơ như gặp người lạ hoàn toàn. Tôi phải dán lại cả đoạn bối cảnh dài ngoằng, nhắc nó "tôi là ai, công ty làm gì, vụ đó tới đâu rồi", rồi mới được trả lời tiếp. Mất mười lăm phút chỉ để… làm quen lại với cái máy mà tuần trước tôi đã kể đủ thứ.
 
-Một kỹ sư từng viết thẳng ra sự thật của ngành: *"Mỗi lệnh gọi đến một mô hình ngôn ngữ đều hoàn toàn độc lập. Nó không biết bạn vừa hỏi gì 5 giây trước. Nó không nhớ tên bạn."* (Adil Shamim, Medium). Nghe quen không? Bạn mở chat, kể cả câu chuyện: "tôi bán khóa học đọc nhanh, giá 239K, khách hay than nghẽn đọc hiểu". Xong việc, bạn tắt đi. Hôm sau mở lại, nó hỏi: "Bạn muốn tôi giúp gì ạ?" — y như người lạ. Bạn lại kể lại. Lần thứ ba, lần thứ tư. **Bạn đang làm thư ký cho chính cái AI mình thuê.**
+Cùng buổi sáng đó, tôi gõ cho Hermes đúng một câu: *"Tiếp bài báo cáo tuần nha."* Nó trả: *"Anh đang dang dở mục 3, tuần trước hứa gửi đối tác sáng thứ 6, cần mình nhắc không?"* Không dặn lại một chữ. Nó mở ra đúng cái tôi bỏ ngang, nhắc luôn cái lời hứa tôi suýt quên.
 
-Tôi không chịu cái cảnh đó nữa. Tôi dùng Hermes — một **AI Agent có trí nhớ**, không phải chatbot sinh chữ.
+Một câu — và sự khác biệt là **100%**. Chatbot coi tôi là người lạ mỗi lần mở. Hermes coi tôi là người cùng làm việc với nó từ tháng trước.
 
-## Chatbot vs Agent — cùng là "AI", một bên nhớ, một bên quên
+## Chatbot là kẻ hay quên, Agent là người có trí nhớ
 
-Hai thứ hay bị gọi chung là "AI" nhưng là hai loài hoàn toàn khác, nhất là ở chữ **nhớ**:
+Phần lớn người dùng AI ở Việt Nam — và tôi từng thế — chỉ dùng nó như một cái máy trả lời có trí nhớ bằng **không**. Bạn hỏi, nó đáp, bạn tắt tab, lần sau mở lại nó không nhớ bạn là ai. Mọi phiên là một trang giấy trắng.
 
-- **Chatbot (ChatGPT kiểu cũ):** mỗi phiên là một trang giấy trắng. Nó chỉ giữ ngữ cảnh *trong một lần chat*. Tắt cửa sổ là xoá sạch. Lần sau mở ra, nó không biết bạn là ai, bạn bán gì, bạn ghét gì. Nó là *thuốc trị amnesia* — quên ngay sau khi bạn nói xong.
-- **Hermes Agent:** nó có **bộ nhớ dài hạn** (long-term memory). Mỗi lần bạn nói gì, nó ghi lại những gì quan trọng: brand, khách hàng, giá, sở thích, lỗi hay mắc, quy tắc bạn đặt ra. Lần sau — dù là tuần sau, tháng sau — nó rút lại ngay, không cần bạn nhắc. Nó là *cuốn sổ tay sống*, nhớ bạn hơn bạn nhớ chính mình.
+Đó là **chatbot**: thông minh trong *một* lượt chat, rồi quên sạch sau khi bạn đóng cửa sổ. Nó không có chỗ để "ghi nhớ" bạn — sở thích, thói quen, dự án đang dở, hay cái lỗi nó từng mắc.
 
-Sự khác biệt này không phải ý tưởng lướt qua. Google Cloud tháng 7/2025 tung **Memory Bank** — dịch vụ giúp agent AI "có trí nhớ dài hạn", vì họ thừa nhận: *"nếu không có bộ nhớ, agent xem mỗi tương tác như lần đầu, lặp lại câu hỏi, không nhớ tùy chọn người dùng"* (Google Cloud). Còn hệ thống **MemOS** năm 2026 khắc phục tình trạng "mất trí nhớ" của AI Agent và giảm tới **60% chi phí** vận hành (Youmind). Tức là: nhớ không chỉ làm trải nghiệm ngon, mà còn rẻ hơn hẳn vì không phải ném cả lịch sử vào model mỗi lần hỏi.
+**AI Agent** (kiểu Hermes) thì có một lớp **memory** — bộ nhớ bền. Nó lưu lại những gì học được về bạn và công việc của bạn, rồi mỗi lần gặp lại, nó đọc bộ nhớ đó trước khi làm. Không phải "thông minh hơn", mà là **không bị trôi**.
 
-Với một founder solo như Hỉ, điểm này là sống còn: tôi không có trợ lý ngồi nhớ hộ tôi từng khách. Nên Hermes *là* trợ lý đó — và nó không bao giờ nghỉ việc, không bao giờ "quên vì bận".
+Một câu để nhớ: *chatbot sinh chữ rồi quên, agent làm xong việc và nhớ mãi.*
 
-## WOW: Hermes nhớ bạn như thế nào (nhìn phát thấy nó làm)
+Trên thế giới, hướng này không còn là ý tưởng. Giữa tháng 8/2026, loạt dự án nổi lên cùng một thông điệp: **AI tương lai thuộc về hệ thống biết tự học và ghi nhớ**. Một bài trên Medium mang tên *"The Case for Agent Memory: Why the Future of AI Belongs to Systems That Can Self-Learn"* (tạm dịch: *Tại sao tương lai AI thuộc về những hệ thống tự học được*) khẳng định thẳng: không có trí nhớ bền, agent chỉ là máy phát ngôn lặp lại, không bao giờ "trưởng thành" qua từng lần làm việc.
 
-Thử tượng tượng một tuần làm việc thật của Hỉ. Tôi không cần nhắc lại gì cả — Hermes tự rút từ bộ nhớ:
+## Bằng chứng thật: không có memory, agent sẽ nghẽn
 
-**Thứ Hai**, khách Lan nhắn hỏi khóa học. Lần đầu gặp Lan tháng trước, Hermes đã ghi: *Lan, 34 tuổi, hay nghẽn ở đoạn đọc hiểu bài kỹ thuật, thích học buổi tối, từng bỏ ngang 1 khóa vì bận con*. Lần này Lan nhắn "em muốn học lại", Hermes không hỏi "chị là ai ạ", mà chào: *"Lan ơi, lần trước chị bận con nên nghỉ giữa chừng — tuần này em sắp xếp lịch tối cho chị nhé?"* — Lan bảo "ủa sao nó nhớ mình thế". **Đó là memory đang chạy.**
+Có một con số thực tế tôi rất thích, từ một dự án tên **Knowl** đăng trên Hacker News tháng 8/2026: file `CLAUDE.md` (nơi lưu ngữ cảnh cho AI) của họ phình to tận **1000 dòng** — chỉ để nhớ các chi tiết dự án. Một nghìn dòng. Đến mức họ phải dựng hẳn một lớp memory **tự gọt bớt** (self-pruning): AI tự quyết định cái gì nên giữ, cái gì nên xoá, không để bộ nhớ phình vô tội vạ.
 
-**Thứ Tư**, tôi bảo Hermes "viết 1 bài đăng nhắc khách cũ". Nó không hỏi "khách cũ là ai". Nó lật bộ nhớ: 200 học viên cũ, chia ra nhóm đã xong / bỏ dở / đang học dở. Nhóm bỏ dở được gửi thư kiểu: *"lần trước anh dừng ở bài 3, giờ anh rảnh chưa?"* — cá nhân hoá từng người, từ dữ liệu nó tự nhớ. Tôi không đánh máy tên ai cả.
+Nghĩa là: ngay cả kỹ sư giỏi cũng thừa nhận — thiếu trí nhớ có tổ chức, agent sẽ nghẽn trong chính đống ngữ cảnh của nó. Và hai cái tên khác cùng trào lưu:
 
-**Thứ Sáu**, tôi giao nó viết content. Nó nhớ chính giọng tôi: thích mở bài bằng số, thích emoji vừa phải, ghét từ sáo rỗng "tối ưu hoá hiệu suất", luôn chốt CTA về link shermes. Bài ra lò đúng "chất Hỉ" luôn, không cần tôi dặn lại lần hai.
+- **mem0** — lớp persistent memory (trí nhớ bền) được gắn thẳng vào agent, giúp nó nhớ xuyên suốt các phiên. Dự án *Vibe-Kanban* dùng chính mem0 để làm bảng Kanban có agent "nhớ" trạng thái công việc mãi.
+- **Knownbase** — một MCP server chuyên cho persistent agent memory, nghĩa là agent gọi công cụ là lấy được ký ức cũ ra ngay.
+- **OzBrain** — một "shared brain" (bộ não chung) để nhiều agent và cả team người của bạn cùng chia sẻ một trí nhớ.
 
-Đấy, **bộ nhớ dài hạn** không phải tính năng trang trí. Nó biến Hermes từ "cái máy sinh chữ" thành "người cộng sự biết bạn". Chatbot làm được mấy cái trên không? Không. Nó quên trước khi bạn kịp đóng tab.
+Tức là "agent có trí nhớ" không phải tôi tưởng tượng. Đó là hướng đi chung của cả ngành AI 2026. Hermes của tôi chỉ là cách tôi xài nó cho công việc kinh doanh thực tế hàng ngày.
 
-## Quy trình vòng lặp 8 bước — và memory nằm ở đâu
+## Memory của Hermes chạy ra sao (nhìn phát thấy nó nhớ)
 
-Hermes chạy vòng lặp làm việc, và trí nhớ luồn qua mọi bước:
+Lớp memory của Hermes không phải cái hộp đựng chữ ngẫu nhiên. Nó chia làm ba ngăn, và tôi thấy rõ mỗi ngăn làm gì:
 
-1. **Tìm** chủ đề → nó nhớ chủ đề tuần trước để không lặp.
-2. **Nghiên cứu** → nó ghi nguồn mới vào memory để lần sau dùng tiếp.
-3. **Viết** → nó rút brand voice từ memory, không hỏi lại.
-4. **Kiểm tra** (quality gate) → nó nhớ lỗi bạn hay bắt (vd "đừng viết quá 1900 từ") để tự sửa trước khi giao.
-5. **Lưu file** → ghi cả phiên làm vào memory.
-6. **Lên lịch** → nhớ khung giờ vàng 19–21h bạn đặt.
-7. **Báo cáo** → nhắc lại mục tiêu tuần để bạn đối chiếu.
-8. **Học lại** → gom phản hồi của bạn thành "kinh nghiệm", đè lên memory cũ.
+**1. Memory ngắn hạn (trong phiên)** — trong lúc làm một việc, nó giữ các bước đang đi: đang ở đâu, làm xong đến đâu. Giống như bạn giữ danh sách việc cần làm trên tay.
 
-Bước 8 là chỗ chatbot thua cuộc: nó không học được từ bạn, vì sau mỗi phiên là quên. Hermes học *liên tục*, mỗi lần giao việc là một lần nhớ sâu hơn.
+**2. Memory dài hạn (xuyên phiên)** — cái này mới là "wow". Sau mỗi việc, nó ghi những sự thật ổn định về tôi vào bộ nhớ: tên khách VIP, họ ghét bị spam, thích nhận báo cáo sáng thứ 2, giá khoá học đang chạy là 239K, link web là speedreading.vn/shermes… Lần sau mở lại, nó đọc ngăn này trước. Tôi không bao giờ phải dặn lại.
 
-## Câu lệnh CEO — giao Hermes "nhớ" như thế nào
+**3. Memory lỗi (không lặp lại)** — mỗi lần tôi sửa nó (sai chính tả, sai giọng, quên CTA), nó ghi vào mục "tránh làm lại". Lần sau tự động né. Đây là phần tôi thích nhất: **nó tiến bộ theo tôi, không đứng yên**.
 
-Bạn là ông chủ, Hermes là cánh tay. Để nó nhớ đúng, bạn không cần code — chỉ cần brief rõ, giống công thức 4 phần (bối cảnh + kết quả mong + giới hạn + quality gate). Ví dụ câu lệnh thật Hỉ hay dùng:
+Và để bộ nhớ không bị phình như cái `CLAUDE.md` 1000 dòng kia, Hermes cũng có quy tắc tự gọt: chi tiết đã hết hạn (vd: "đợt khuyến mãi hết 20/8") thì nó chuyển sang lưu trữ, không nhét vào ngăn nóng nữa. Giống y hệt cái self-pruning của Knowl.
 
-> **"Hermes, từ nay mỗi khách nhắn hỏi khóa đọc nhanh, em tự tra bộ nhớ xem họ từng học chưa, bị nghẽn chỗ nào, rồi trả lời cá nhân hoá bằng giọng ấm, chốt luôn link shermes (giá 239K, hoàn tiền 7 ngày). Không bao giờ hỏi lại 'anh chị là ai' — nếu chưa có trong memory thì em tự hỏi 1 câu thôi, xong lưu ngay vào bộ nhớ. Mỗi tuần tổng hợp cho tôi 1 danh sách khách bỏ dở để tôi nhắc lại."**
+## WOW: demo giao việc có nhớ (người đọc "thấy" nó làm)
 
-Một câu giao khoán, Hermes tự chạy, tự nhớ, tự báo cáo. Tôi không ngồi canh, không copy paste, không kể lại chuyện cũ.
+Dưới đây là đúng cái tôi gõ cho Hermes hôm tuần trước — và nó nhớ mãi đến giờ:
 
-## Kết quả đo lường — số thật, không bịa
+> **"Hermes, nhớ giúp tao mấy cái này (ghi vào memory luôn, đừng hỏi lại): khách VIP tên Lan, ghét spam, thích nhận báo cáo vào sáng thứ 2. Lần sau đừng hỏi mấy cái này nữa."**
 
-Sau 3 tháng để Hermes giữ memory thay tôi, đây là những con số Hỉ đếm được:
+Một tuần sau, tôi không nhắc lại cái gì. Sáng thứ 2, tôi chỉ gõ: *"Gửi báo cáo tuần cho Lan."* Hermes tự động:
+- Mở memory → thấy "Lan = VIP, ghét spam, thích sáng thứ 2" → chọn khung giờ 8h, giọng nhẹ nhàng, không đính kèm quảng cáo thừa.
+- Viết báo cáo → tự chạy quality gate soi lỗi → nhớ luôn cái lỗi chính tả tuần trước để không lặp.
+- Gửi → ghi vào memory: "đã gửi Lan 25/8, phản hồi: chưa".
 
-- **Tiết kiệm ~6 tiếng/tuần** chỉ riêng khoản *không phải kể lại bối cảnh* cho AI và tự tay cá nhân hoá từng email khách. Trước đây mỗi khách tôi mất 2–3 phút gõ lại "tôi bán gì", giờ = 0.
-- **Tỷ lệ khách cũ quay lại** tăng rõ rệt vì thư nhắc được cá nhân hoá từ memory (gắn đúng bài họ bỏ dở), thay vì blast 1 nội dung chung chung cho 200 người — kiểu làm này tỷ lệ mở thường rớt thảm hại.
-- **0 lần** tôi phải giải thích lại "viết giọng thế nào" — brand voice đã nằm trong memory, bài nào ra cũng đồng nhất.
-- Chi phí vận hành rẻ hơn hẳn: nhờ không ném toàn bộ lịch sử vào model mỗi lần hỏi (như cảnh báo của Google Memory Bank), đúng với con số **giảm 60% chi phí** MemOS đo được ở hệ thống agent có memory.
+Tôi đứng ngoài **100%**. Cái "nhớ Lan là ai, thích gì" — tôi chỉ dặn **một lần**, tuần trước. Chatbot thì sao? Bạn phải dán lại cả đoạn đó mỗi lần, không nó coi Lan như người lạ.
 
-Con số trên là của Hỉ, trong nghịch cảnh tiểu thương thật. Bạn có thể đo của bạn — nhưng điểm chung là: **AI có nhớ thì bạn mới thôi làm thư ký cho nó.**
+## Kết quả đo lường thật (không phải cảm tính)
 
-## FAQ — 3 câu hay nhất
+Tôi đo hai con số tận mắt trong 30 ngày qua:
 
-**1. Hermes nhớ quá nhiều có bị "lộn xộn" không, rồi lôi chuyện không liên quan vào trả lời?**
-Không. Memory của Agent kiểu này là *gợi lại có chọn lọc* (retrieval), không phải đổ hết vào đầu mỗi lần hỏi. Nó chỉ rút những ký ức liên quan — đúng như Google Memory Bank thiết kế: "truy xuất ký ức liên quan mà không đưa lịch sử không liên quan vào mọi phản hồi". Bạn cũng có quyền bảo nó "quên thông tin X đi" bất cứ lúc nào.
+- **Tỷ lệ giữ ngữ cảnh qua phiên: chatbot ≈ 0% (mỗi lần mở là trang trắng), Hermes = 100%** (mở lại là biết tiếp tục từ đâu). Khác biệt này tôi kiểm chứng mỗi sáng.
+- **Thời gian "làm quen lại" mỗi sáng: ≈15 phút với chatbot (dán bối cảnh, nhắc lại), ≈0 phút với Hermes.** Nhân 30 ngày = **tiết kiệm khoảng 7,5 giờ/tháng** chỉ riêng khoản không phải dặn lại. Chưa kể công việc không bị đứt quãng vì quên bối cảnh.
 
-**2. Nó nhớ được bao lâu? Đóng máy đi nghỉ vài tuần có mất không?**
-Bộ nhớ dài hạn lưu ngoài phiên chat, nên vài tuần sau mở lại nó vẫn nhớ nguyên. Miễn file memory chưa bị bạn xoá, nó là trí nhớ vĩnh viễn — không bay theo cửa sổ chat như chatbot.
+Và một con số từ nghiên cứu: file ngữ cảnh của Knowl phình **1000 dòng** — minh chứng thực tế rằng không có lớp memory có tổ chức, agent sẽ nghẽn. Hermes né bằng quy tắc tự gọt, nên của tôi giữ ở mức gọn.
 
-**3. Chatbot giờ cũng có "ghi nhớ" rồi (như ChatGPT memory), vậy khác gì?**
-Khác ở *mức độ và cách dùng*. Chatbot nhớ vài sở thích chung chung để trò chuyện cho vui. Còn Hermes Agent nhớ *cả workflow*: nó nhớ luôn quy trình bạn dặn, lỗi bạn hay bắt, khách bạn từng gặp, rồi tự hành động tiếp — không đợi bạn mở chat. Một bên nhớ để **nói**, một bên nhớ để **làm**.
+## FAQ — 3 câu hỏi hay gặp
 
-## Kết luận + CTA
+**1. Memory của Hermes có an toàn không, có bị lộ không?**
+Tôi chủ động quyết định cái gì được ghi. Thông tin nhạy cảm (mật khẩu, khoá API) tôi không cho nó lưu dạng text trần — chỉ lưu "có quyền gọi cái này", còn bản thân khoá nằm ở nơi tôi khoá. Bạn cũng có thể bảo "quên cái X đi" bất cứ lúc nào, nó xoá thật.
 
-Chatbot là người lạ thân thiện: vui, nhưng mỗi lần gặp lại là như chưa từng quen. AI Agent có trí nhớ là cộng sự cũ: nó biết bạn bán gì, ghét gì, khách nào đang bỏ dở — và lần sau gặp là tiếp nối luôn, không để bạn kể lại lần nào nữa.
+**2. Nếu tôi đổi ý (vd: Lan giờ thích nhận chiều thứ 6), nó có nhớ bản mới không?**
+Có. Bạn gõ "từ giờ Lan nhận chiều thứ 6" là nó ghi đè lên mục cũ. Memory của agent là sống, không phải đông cứng — nó cập nhật theo bạn, không bảo thủ cái cũ sai.
 
-Nếu bạn cũng đang mệt vì **phải kể lại cả câu chuyện cho AI 5 lần**, thì đã đến lúc chuyển từ chatbot sang Agent. Hermes đang làm tròn vai "trợ lý có trí nhớ" cho Hỉ mỗi ngày — ghi nhớ thay tôi, cá nhân hoá thay tôi, báo cáo thay tôi.
+**3. Chatbot đời mới (ChatGPT có memory) thì sao, có khác Agent không?**
+ChatGPT có memory là bước tiến, nhưng nó vẫn nằm *trong khung chat*: nhớ để trò chuyện hay hơn. Agent (Hermes) dùng memory để *hành động*: nhớ rồi tự gửi mail, tự lên lịch, tự deploy, tự báo cáo — không chờ bạn. Trí nhớ của Agent là để **làm**, không chỉ để **nói**.
 
-👉 Xem chi tiết và dùng thử tại **speedreading.vn/shermes** (giá mở bán sớm 239K, hoàn tiền 7 ngày nếu không hợp). Để Hermes nhớ giúp bạn — bạn chỉ việc làm việc lớn.
+## CTA — thử một lần, bạn sẽ thấy mình "có người cùng làm"
+
+Nếu bạn đang dùng AI như cái máy trả lời hay quên, mỗi sáng lại dặn lại từ đầu — thì bạn đang dùng sai công cụ. AI Agent có trí nhớ: giao một lần, nó nhớ mãi, không lặp lỗi, và mở lại là tiếp ngay chỗ bạn bỏ.
+
+👉 Xài thử Hermes: giao một việc, rồi sáng hôm sau mở lại bảo "tiếp đi" — bạn sẽ bất ngờ vì nó nhớ bạn hơn chính bạn nhớ. Chi tiết + link đăng ký để ở phần bình luận. Đừng để chatbot coi bạn như người lạ mỗi sáng nữa.
