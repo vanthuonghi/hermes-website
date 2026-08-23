@@ -339,7 +339,12 @@
       "t": "1 Người – 4 Việc – 60 Phút",
       "topic": "phan-than",
       "f": "/covers/auto-phan-than-4viec.webp"
+    },
+    {
+      "t": "Gom mọi API vào 1 Agent",
+      "topic": "api",
+      "f": "/covers/auto-api-ketnoi.webp"
     }
   ],
-  "count": 68
+  "count": 69
 }
