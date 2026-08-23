@@ -299,7 +299,17 @@
       "t": "AI TU SOI LOI TRUOC KHI GIAO",
       "topic": "quality",
       "f": "/covers/auto-quality-gate.webp"
+    },
+    {
+      "t": "1 LỜI GIAO – 8 BƯỚC TỰ CHẠY",
+      "topic": "vong-lap",
+      "f": "/covers//home/ubuntu/hermes-website/static/covers/ai-vong-lap-8-buoc.webp"
+    },
+    {
+      "t": "TIẾT KIỆM 40 PHÚT MỖI SÁNG",
+      "topic": "bao-cao",
+      "f": "/covers//home/ubuntu/hermes-website/static/covers/ai-tom-tat-tin-tuc-moi-sang.webp"
     }
   ],
-  "count": 60
+  "count": 62
 }
