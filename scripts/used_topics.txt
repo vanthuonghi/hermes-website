@@ -4,3 +4,4 @@
 31|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
 35|Hermes quality gate: tự check trước khi giao
 16|Hermes tóm tắt tin tức ngành mỗi sáng
+37|Hermes đọc 300 trang hợp đồng trích điều quan trọng
