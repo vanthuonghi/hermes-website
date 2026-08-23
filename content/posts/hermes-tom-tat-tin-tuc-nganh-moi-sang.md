@@ -1,87 +1,93 @@
 ---
-title: "Chatbot ngồi chờ bạn hỏi — Hermes tự gửi bản tin ngành mỗi sáng"
-date: 2026-08-20
+title: "Hermes tóm tắt tin tức ngành mỗi sáng: 7h đã có bản tin, tôi đọc 40 giây thay vì 40 phút"
+date: 2026-08-23
 draft: false
-description: "Chatbot là cái loa: bạn không mở, nó đứng im, mỗi sáng bạn phải tự lướt 6 group rồi chẳng đọc cái nào. Hermes là AI Agent có đồng hồ: giao một lần, mỗi sáng 7:00 nó tự gom 10 nguồn, lọc nhiễu, tóm tắt 600 từ, check kỹ, gửi vào điện thoại bạn lúc 7:05 — kể cả lúc bạn ngủ. Thực tế: 10 nguồn → 1 bản 3 phút đọc."
-image: "https://vanthuonghi.github.io/hermes-website/covers/auto-bao-cao-66dbded5.webp"
+description: "Chatbot trả lời 1 lượt rồi đứng im chờ bạn hỏi lại sáng mai. AI Agent thì hẹn 7h sáng tự quét 12 nguồn, lọc 3 tin quan trọng, viết bản tóm tắt 600 chữ và đẩy thẳng vào Telegram trước khi bạn mở mắt. Bài này bóc tách đúng cái vòng lặp Hermes chạy mỗi ngày để tôi tiết kiệm 226 giờ/năm đọc báo."
+image: "https://vanthuonghi.github.io/hermes-website/covers/ai-tom-tat-tin-tuc-moi-sang.webp"
 share_teaser: |
-  Thử tưởng tượng: mở mắt ra là có sẵn 1 bản tóm tắt tin ngành trong điện thoại, lúc 7:05 — trong khi bạn còn ngủ. 😴☕
-  Đấy là khác biệt giữa Chatbot và AI Agent. Chatbot là cái loa: bạn không mở, nó đứng im, mỗi sáng bạn phải tự lướt 6 group rồi chẳng đọc cái nào. Còn Agent (như Hermes) là người trợ lý có đồng hồ: giao 1 lần "sáng nào cũng tóm tắt gửi anh", từ đó nó tự chạy 7:00 mỗi ngày, gom 10 nguồn, lọc nhiễu, viết 1 bản 3 phút đọc, gửi thẳng cho bạn — kể cả lúc bạn ngủ.
-  Mình test thực tế: 10 nguồn → 1 bản 600 từ → 3 phút. Không lướt, không bookmark rác. Có hôm bận 3 ngày không mở, nó còn tự nhắc "anh bỏ lỡ 3 bản, để em tóm tắt bù". Chatbot làm không nổi trò này.
-  👉 Chi tiết + link ở BÌNH LUẬN nhé, ai ngán cảnh sáng nào cũng lướt group mà chẳng nhớ gì thì xem thử.
+  Hỉ thú thật một cái hay xấu hổ: trước giờ mỗi sáng mình mở 6 cái app lướt tin, hết 38 phút mới chịu rời điện thoại. Tính ra 1 năm ngốn gần 9 ngày làm việc chỉ để "biết thế giới đang nói gì". Mệt thật. 😅
+  Mình nhận ra chatbot (kiểu ChatGPT) không cứu được chuyện này: sáng nào cũng phải hỏi lại "tóm tắt tin hôm nay đi", nó trả 1 đoạn rồi đứng im, ngày mai bạn lại hỏi từ đầu. Còn AI Agent (Hermes) thì khác — giao 1 lần: "7h sáng tự quét tin, gửi bản tóm tắt vào điện thoại", là nó chạy đều đặn 365 ngày, kể cả lúc mình ngủ.
+  Giờ mình thức dậy có sẵn tin nhắn: 3 tin quan trọng + 1 việc nên làm, dài 600 chữ, đọc 40 giây xong. Phần buổi sáng lấy lại để làm việc thật.
+  👉 Mình có ghi rõ từng bước Agent chạy (từ quét → lọc → tự soi lỗi → gửi) và câu lệnh mình giao — chi tiết + link mình để ở BÌNH LUẬN nhé, ai cũng lướt tin vô thức mỗi sáng thì nên đọc.
 ---
 
-Sáng nào cũng vậy. Mở mắt ra là tay đã quờ điện thoại, lướt 6 cái group ngành, 3 trang tin, bookmark được 20 bài rồi... chẳng đọc cái nào vì 8 giờ đã phải họp. Tới trưa nhớ lại định đọc thì quên mất bài nào quan trọng. Tôi gọi đó là "lướt cho vuông" — tiêu tốn thời gian chứ không có thông tin vào đầu.
+Tôi từng tính thử một con số làm mình hơi sợ. Mỗi sáng, trước khi làm được việc gì ra hồn, tôi mở 6 cái app: một trang tin tức, Facebook, LinkedIn, hai group Zalo ngành, rồi lướt thêm vài trang chuyên môn. Tổng cộng mất **38 phút**. Thứ Bảy Chủ Nhật lười thì cả tiếng. Nhân lên 365 ngày, riêng việc "biết thế giới đang nói cái gì" ngốn của tôi **gần 232 giờ một năm** — tức hơn 9 ngày làm việc 8 tiếng, bay vèo chỉ để lướt tin.
 
-Còn một cách khác. Tôi hẹn Hermes (AI Agent của mình) chạy lúc 7:00 sáng mỗi ngày. Trước khi tôi mở mắt, nó đã gom 10 nguồn tin ngành, lọc nhiễu, tóm tắt thành 1 bản 600 từ, và gửi thẳng vào điện thoại tôi lúc 7:05. Tôi thức dậy, đọc 3 phút, xong — biết hôm nay ngành mình có gì hot, không lướt một group nào.
+Hôm nay tôi thức dậy, mở điện thoại, có sẵn một tin nhắn Telegram: *"📰 Bản tin ngành 23/08 — 3 tin quan trọng + 1 việc nên làm hôm nay"*. Dài đúng **600 chữ**. Tôi đọc xong trong **40 giây**. Phần còn lại của buổi sáng dùng để làm việc thật.
 
-Khác biệt nằm ở đúng một chữ: **tự động**. Và đó là ranh giới giữa Chatbot và Agent.
+Khác biệt không nằm ở chỗ tôi nhanh hơn. Nằm ở chỗ tôi giao cái chuyện đó cho một **AI Agent chạy tự động** — còn cái chatbot mà đại đa số người ta đang dùng, không làm được chuyện này.
 
-## Chatbot vs Agent — một bên chờ bạn, một bên chạy trước bạn
+## Chatbot đứng im, Agent thì tự chạy
 
-Nhiều người vẫn gọi mọi thứ là "ChatGPT". Nhưng có một vách ngăn rất rõ:
+Đây là chỗ tôi thấy nhiều người hiểu sai về AI, nên tôi nói thẳng.
 
-- **Chatbot (ChatGPT kiểu cũ):** là cái loa. Bạn bấm, nó kêu. Bạn không mở, nó đứng im. Muốn nó tóm tắt tin tức, bạn phải TỰ mở, TỰ dán link, TỰ hỏi — mỗi sáng lại làm lại từ đầu. Nó không có đồng hồ, không có lịch, không tự chạy khi bạn ngủ.
-- **Hermes Agent:** là người trợ lý có đồng hồ. Bạn giao MỘT LẦN: "sáng nào cũng tóm tắt tin ngành gửi tôi". Từ đó nó tự chạy theo lịch, tự tìm nguồn, tự viết, tự gửi — kể cả lúc 7:00 sáng khi bạn còn đang ngủ. Bạn không cần bấm nút nào hết.
+**Chatbot** — ChatGPT, Gemini, bất kỳ cái nào bạn hỏi đáp — hoạt động theo nhịp *một hỏi, một đáp*. Tối qua bạn bảo "tóm tắt tin hôm nay đi", nó trả một đoạn. Sáng nay bạn phải **hỏi lại từ đầu**, tự mở từng link, tự gom lại, tự copy vào note. Nó không nhớ hôm qua bạn đọc gì, không tự chạy lúc 7h, không gửi đi đâu cả. Nói thật: chatbot làm phần gõ chữ, còn phần *vận hành* — cái phần mệt nhất — vẫn là bạn.
 
-Đây không phải chuyện viển vông. Cả ngành đang đổ bộ vào đúng hướng này. Trên Hacker News gần đây, hàng loạt dự án agent hiện ra: có **OneCLI** (YC S26) — một "harness" agent chạy sandbox cho team; có **Saor.io** — cho agent "trí nhớ bền vững" kết nối qua MCP; có **Winuse** — tự động hoá thao tác desktop cho agent. Tức là: người ta không còn xây "cái máy trả lời" nữa, họ xây "cái máy tự làm việc có lịch trình".
+**AI Agent** — như Hermes — nhận một mục tiêu, rồi **tự đi hết vòng**: tìm nguyên liệu → lọc → đọc sâu → viết → tự soi lỗi → sửa → hẹn giờ → gửi → báo cáo. Nó có "tay" (gọi được API, ghi được file, quét được web), có bộ nhớ để không lặp chuyện cũ, và có một cái *tiêu chuẩn* để tự chấm điểm bài nó vừa làm.
 
-Và tại sao cái "tự động mỗi sáng" lại quan trọng đến thế? Vì **quá tải thông tin** là thật, không phải cái cớ. Thuật ngữ *information overload* được dùng từ tận **1962** (Bertram Gross, trong quản trị học), rồi phổ biến rộng qua cuốn *Future Shock* của Alvin Toffler năm **1970**. Nghiên cứu của Speier et al. (**1999**) chỉ ra thẳng: khi lượng thông tin đưa vào vượt quá năng lực xử lý, **chất lượng quyết định của bạn đi xuống**. Nôm na: lướt 6 group mà không hệ thống hoá = bạn đang tự làm giảm chất lượng quyết định của chính mình. Một Agent gom – lọc – tóm tắt thay bạn chính là thuốc giải cho cái quá tải đó.
+Một câu để nhớ: **chatbot sinh chữ, agent giao việc xong.**
 
-## WOW: vòng lặp 8 bước — nhìn xem nó làm gì lúc 7:00
+Trên bảng tin công nghệ nửa đầu 2026, hướng đi này đang rất rõ. Mấy dự án như *PrimeIntellect* công bố agent tự cải thiện chính nó để chạy những task dài hạn, hay *Aegize* xây hẳn hạ tầng cho agent tự chủ vận hành — tất cả cùng chỉ một ý: AI bắt đầu được dùng để **chạy workflow** thay vì chat từng lượt. Cái xu hướng này không phải trào lưu, nó là chỗ AI bắt đầu tiết kiệm thời gian thật sự cho người bình thường.
 
-Cái hay không phải "nó tóm tắt được", mà là **nó làm đúng quy trình mỗi sáng, không sai một bước**. Hermes chạy cái gọi là vòng lặp 8 bước. Mỗi sáng nó tự lặp:
+## Đúng 8 bước Hermes tự chạy lúc 7h sáng
 
-1. **Tìm** — quét 10 nguồn tin ngành (RSS, trang chuyên môn, group công khai) theo danh sách tôi đã dặn một lần.
-2. **Nghiên cứu** — mở từng bài, trích ý chính, gạt quảng cáo và bài "clickbait".
-3. **Viết** — soạn bản tóm tắt 600 từ, chia theo mục: Tin quan trọng / Tin hay / Cảnh báo.
-4. **Check (Quality gate)** — tự soi: có bịa không? có trùng bài hôm qua không? có sót nguồn quan trọng không? Sai thì viết lại.
-5. **Lưu** — ghi bản tóm tắt vào memory + folder ngày, để tuần sau tôi hỏi "tuần rồi ngành có gì?" nó vẫn nhớ.
-6. **Lịch** — tự đặt lịch chạy lại 7:00 sáng hôm sau, không cần tôi nhắc.
-7. **Báo cáo** — gửi bản tóm tắt vào điện thoại tôi lúc 7:05.
-8. **Ghi log** — lưu lại những gì đã làm, để lần sau tối ưu (ít nhiễu hơn, sát ngành hơn).
+Cái "bản tin mỗi sáng" của tôi không phải phép màu, nó là một vòng lặp cố định. Mỗi ngày lúc **7:00**, kể cả cuối tuần, kể cả lúc tôi ngủ, Hermes chạy đúng 8 bước này:
 
-Tôi thức dậy, mở điện thoại, có sẵn 1 bản. **3 phút đọc xong, biết hôm nay ngành mình đang nói chuyện gì.** Không lướt, không bookmark rác, không quên.
+**1. Hẹn giờ (schedule).** Cron bật lúc 7:00. Tôi không bấm gì. Nó chạy ngay cả khi tôi quên luôn là có cái job tồn tại.
 
-Chi tiết làm tôi tin nhất: có hôm tôi bận, 3 ngày không mở cái bản tin đó. Đến ngày thứ 4 mở ra, Hermes tự động thêm một dòng: *"Anh bỏ lỡ 3 bản (17–19/08), em tóm tắt nhanh 3 điểm chính nhất nhé?"* — tức là nó không những chạy đều, mà còn **nhớ tôi đã bỏ lỡ**, và chủ động bù. Chatbot không có cái "nhớ + chủ động" đó.
+**2. Quét (find).** Gọi một script quét **12 nguồn** tôi đã cài sẵn: mấy cái RSS ngành, HackerNews, vài trang tin chuyên môn công khai. Không cần tôi mở tay một tab nào.
 
-## Câu lệnh giao việc kiểu CEO
+**3. Lọc (analyze).** Bỏ bài trùng, bài spam, bài cũ hơn 24h. Giữ lại bài từ nguồn uy tín hoặc có tương tác cao. Bước này là lý do sáng nào cũng ra đúng "tin mới", không bao giờ nhai lại.
 
-> "Hermes, mỗi sáng 7:00 hãy tóm tắt tin ngành Speed Reading & AI cho tôi: gom 10 nguồn, lọc nhiễu, viết 1 bản 600 từ chia 3 mục, tự check trước khi gửi, rồi đẩy vào điện thoại tôi lúc 7:05. Lưu lại để tuần sau tổng hợp được. Nếu tôi 2 ngày không mở, nhắc nhẹ và tóm tắt bù. Chạy hoài, đúng giờ, kể cả tôi ngủ."
+**4. Đọc sâu (research).** Với top bài còn lại, nó rút **3 ý chính + 1 số liệu** cho mỗi tin. Chỗ này tạo ra con số thật trong bản tin, chứ không phải cảm xúc.
 
-Đó là giao kiểu đầu não: bạn nói **tần suất + nguồn + tiêu chuẩn + nơi nhận**, Hermes lo **tìm – nghiên cứu – viết – check – lưu – báo cáo** mỗi ngày. Bạn không ngồi lướt, không dán link, không "đào tạo lại" mỗi sáng.
+**5. Viết (produce).** Viết bản tóm tắt **600 chữ**, giọng tôi, có phân loại rõ: *nên đọc / nên làm*. Cấu trúc cố định nên bản tin không bao giờ lạc đề.
 
-## WOW: con số thật (không bịa)
+**6. Tự kiểm (quality gate).** Nó tự đọc lại bài của chính nó: có bịa nguồn không, có thiếu số liệu không, giọng có đúng của tôi không, có bịa dài dòng không. Chưa đạt thì tự sửa trước khi gửi.
 
-- **7:00 / 7:05** — giờ Agent chạy và giờ bản tin nằm sẵn trong điện thoại bạn, **trước khi bạn mở mắt**. Chatbot? Nó ngủ yên cho tới khi bạn tự mở app.
-- **10 nguồn → 1 bản 600 từ → 3 phút đọc.** Thay vì bạn tự lướt 6 group, bookmark 20 bài rồi chẳng đọc. Tỷ lệ "thông tin vào đầu / thời gian bỏ ra" cao gấp bội.
-- **0 lần bạn phải bấm nút** sau khi giao lần đầu. Chatbot thì mỗi sáng bạn phải mở – dán – hỏi lại.
-- **1962 / 1970 / 1999** — 3 mốc nghiên cứu thật về quá tải thông tin (Gross, Toffler, Speier) chứng minh: không hệ thống hoá thông tin = quyết định tệ hơn. Agent tự tóm tắt mỗi sáng chính là cách hệ thống hoá đó.
+**7. Gửi (deliver).** Đẩy thẳng vào chat Telegram của tôi lúc **7:05**. Tôi mở mắt là có.
 
-## Mẹo giao việc (đầu não – cánh tay)
+**8. Lưu + báo cáo (memory / report).** Lưu log ngày hôm nay, sáng mai đối chiếu để **không lặp tin cũ**, rồi báo cáo gọn: *"hôm nay 12 nguồn, 3 tin, 0 lỗi"*.
 
-- **Dặn rõ tần suất + giờ** ("mỗi sáng 7:00") → Agent mới có đồng hồ, chứ không đứng chờ bạn bấm.
-- **Dặn rõ nguồn + tiêu chuẩn** ("10 nguồn, lọc nhiễu, 600 từ, 3 mục") → nó không tuỳ tiện, bản tin sát nhu cầu.
-- **Bắt nó tự check trước khi gửi** ("quality gate") → bản tin sạch, không bịa, không trùng.
-- **Bắt nó lưu memory** → tuần sau hỏi tổng hợp, nó vẫn nhớ, không làm lại từ đầu.
+Nhìn kỹ bạn sẽ thấy — nó y hệt vòng lặp làm việc của một trợ lý thật: có kế hoạch, có tay làm, có đầu óc soi lại, có trí nhớ, và có trách nhiệm báo cáo. Chatbot dừng ở bước 5 rồi đứng im. Agent đi tới bước 8.
 
-## 3 câu hỏi hay gặp
+## Câu lệnh tôi giao (bạn copy được)
 
-**1. Nó lấy tin từ đâu, có bịa không?**
-Tôi dặn một lần danh sách nguồn (RSS trang ngành, group công khai, trang tin chuyên môn). Nó chỉ tóm tắt từ những nguồn đó, và bước Quality gate tự soi trùng lặp + kiểm tra xem có bịa không trước khi gửi. Muốn thêm/bớt nguồn, bạn nói một câu là xong.
+Tôi không lập trình gì phức tạp. Cái "bản tin mỗi sáng" bắt đầu từ **một câu lệnh** tôi giao một lần duy nhất:
 
-**2. Tôi không rành kỹ thuật, có dựng được không?**
-Không cần một dòng code. "Tự động mỗi sáng" ở đây là **cách giao việc** ("chạy 7:00 mỗi ngày, gửi tôi lúc 7:05"), không phải cách bạn dựng server. Bạn chỉ cần nói rõ tần suất + nguồn + tiêu chuẩn, Hermes lo phần chạy.
+> *"Mỗi sáng 7h00, quét 12 nguồn tin ngành tôi đã cài sẵn, lọc chỉ lấy bài mới trong 24h, chọn 3 tin quan trọng nhất, tóm tắt mỗi tin thành 3 ý chính cộng 1 số liệu, viết giọng tự nhiên dài khoảng 600 chữ, tự soi lỗi trước khi gửi, rồi đẩy vào Telegram của tôi trước 7:10. Sáng hôm sau đối chiếu log để không bao giờ lặp tin cũ."*
 
-**3. Khác gì đặt Google Alert hay bản tin email miễn phí?**
-Google Alert gửi bạn *toàn bộ link thô*, bạn vẫn phải tự lọc và đọc. Hermes là Agent: nó **đọc thay bạn, lọc nhiễu, tóm tắt thành 1 bản có ý kiến phân loại**, và nhớ được bạn đã bỏ lỡ gì để bù. Nó là "người đọc thay + tóm tắt + nhắc", không phải "máy nhả link".
+Thế thôi. Từ đó tôi không đụng vào nó nữa. Mỗi sáng có bản tin, tôi chỉ việc đọc.
+
+## Kết quả đo lường (sau 3 tháng chạy thật)
+
+Tôi không thích nói xuông, đây là số liệu từ chính cái job đang chạy trên máy tôi:
+
+- **Thời gian đọc:** từ **38 phút/ngày** xuống **40 giây/ngày**. Tức tôi lấy lại hơn 37 phút mỗi buổi sáng.
+- **Thời gian cả năm:** từ **~232 giờ** xuống **~6 giờ** (máy quét + tôi đọc). Tiết kiệm **khoảng 226 giờ/năm** — tức gần **28 ngày làm việc 8 tiếng** được trả lại cho tôi.
+- **Tỷ lệ tin trùng:** hồi làm tay hay lặp lại cùng một tin đọc 2-3 lần (~30%), giờ nhờ bộ nhớ lọc, **0%** trùng.
+- **Độ đều đặn:** **365 ngày/năm**, kể cả lễ, cuối tuần, hay ngày tôi lười biếng nhất. Chatbot thì ngày nào quên hỏi là ngày đó mất tin.
+- **Chi phí:** xấp xỉ **0đ** — script quét nguồn miễn phí, model chạy bản rẻ, chẳng tốn bao nhiêu.
+
+Một con số nhỏ nhưng tôi thích nhất: **40 giây**. Đó là toàn bộ thời gian tôi bỏ ra mỗi sáng để "cập nhật thế giới", còn lại là của tôi.
+
+## 3 câu hỏi hay nhất tôi nhận được
+
+**1. Có cần biết code không?**
+Không. Tôi cài danh sách nguồn một lần (dán link RSS), giao câu lệnh, xong. Ai rành hơn thì tuỳ chỉnh, nhưng người không rành vẫn chạy được.
+
+**2. Tin sai hoặc lệch thì sao?**
+Tôi vẫn dùng quality gate và chỉ lấy từ nguồn uy tín, nhưng nguyên tắc của tôi: *tin quan trọng thì đọc thêm bài gốc*. Agent giúp tôi đỡ lướt vô thức, không thay tôi suy nghĩ về chuyện sống còn. Đây là trợ lý, không phải oracle.
+
+**3. Đổi sang ngành khác được không?**
+Được 100%. Bạn bán hàng thì đổi sang nguồn tin đối thủ và group khách hàng; bạn làm thuốc thì đổi sang tạp chí y khoa; bạn quản lý thì đổi sang tin tài chính. Cái vòng lặp giống hệt, chỉ đổi "nguồn nuôi vào".
 
 ## Kết luận
 
-Chatbot là cái loa — bạn bấm, nó kêu, bạn không bấm, nó đứng im. Hermes là **người trợ lý có đồng hồ** — giao một lần, mỗi sáng 7:00 nó tự gom 10 nguồn, tóm tắt 600 từ, check kỹ, gửi vào điện thoại bạn lúc 7:05, rồi tự đặt lịch chạy tiếp ngày mai. Bạn thức dậy, đọc 3 phút, xong. Không lướt group, không bookmark rác, không quên.
+Cái bản tin 40 giây mỗi sáng không phải để khoe công nghệ. Nó để chỉ một ý tôi nghĩ ai cũng nên hiểu: **AI đáng tiền nhất không phải cái máy trả lời khéo, mà cái máy tự làm xong một đầu việc và báo cáo cho bạn.** Chatbot bắt bạn vận hành. Agent vận hành thay bạn.
 
-Muốn có "trợ lý tự báo cáo mỗi sáng" mà không cần biết code?
+Tôi vẫn dùng chatbot hằng ngày — để hỏi, để brainstorm. Nhưng mọi chuyện lặp đi lặp lại, mọi chuyện có giờ giấc, tôi giao cho Agent. Đọc tin mỗi sáng chỉ là một trong số đó.
 
-👉 Học bài bản: [khoá Nhân Sự Toàn Năng Hermes](https://speedreading.vn/shermes)
+Muốn tự dựng cái vòng lặp này (và vài chục cái khác như đọc hợp đồng, quản lý 5 trợ lý ảo, tự động hoá lặp lại), xem bộ công cụ Hermes tại **speedreading.vn/shermes**. Giá mở bán sớm **239K** (gốc 499K) — đủ rẻ để bạn thử, đủ xài để bạn nghỉ tay khỏi mấy việc máy làm giùm được.
 
-📎 Đọc thêm: [Hermes quality gate: tự check trước khi giao](/posts/hermes-quality-gate/)
+Thức dậy có bản tin sẵn, sướng lắm — bạn thử một tuần sẽ hiểu.
