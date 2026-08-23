@@ -6,3 +6,4 @@
 16|Hermes tóm tắt tin tức ngành mỗi sáng
 37|Hermes đọc 300 trang hợp đồng trích điều quan trọng
 40|Hermes quản lý 5 nhân sự ảo cùng lúc
+26|Hermes dự báo tồn kho: đọc lịch sử bán, báo trước 2 tuần hết hàng
