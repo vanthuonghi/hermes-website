@@ -289,7 +289,17 @@
       "t": "1 Người – 4 Việc – 60 Phút",
       "topic": "phan-than",
       "f": "/covers/auto-phan-than-1nguoi4viec.webp"
+    },
+    {
+      "t": "1 LAN GIAO - 8 BUOC TU CHAY",
+      "topic": "vong-lap",
+      "f": "/covers/auto-vong-lap-8buoc.webp"
+    },
+    {
+      "t": "AI TU SOI LOI TRUOC KHI GIAO",
+      "topic": "quality",
+      "f": "/covers/auto-quality-gate.webp"
     }
   ],
-  "count": 58
+  "count": 60
 }
