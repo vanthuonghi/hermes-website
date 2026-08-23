@@ -2,3 +2,4 @@
 32|Hermes tự động hoá: giao 1 lần chạy hoài, đúng giờ kể cả ngủ
 34|Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
 31|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
+35|Hermes quality gate: tự check trước khi giao
