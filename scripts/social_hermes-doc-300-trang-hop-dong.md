@@ -1,4 +1,4 @@
-# 📢 SOCIAL DRAFT — Hermes đọc 300 trang hợp đồng, trích ngay điều quan trọng — 8 phút xong, chatbot đọc tới trang 3 đã quên
+# 📢 SOCIAL DRAFT — Hermes đọc 300 trang hợp đồng: gạch ra điều quan trọng trong 3 phút, bạn chỉ việc duyệt
 
 🔗 Link bài (dán ở COMMENT ĐẦU TIÊN, không để trong post): https://vanthuonghi.github.io/hermes-website/posts/hermes-doc-300-trang-hop-dong/
 
@@ -6,11 +6,10 @@
 
 ## 📘 FACEBOOK / ZALO — POST CHÍNH (copy y nguyên, KHÔNG kèm link)
 
-Hỉ từng nhận 1 cọc hồ sơ hợp đồng đối tác — hơn 300 trang PDF. Ngồi đọc thủ công, Hỉ mất 2,5 ngày, đọc đến trang 200 thì mắt hoa, sợ nhất là sót mấy cái điều khoản phạt vô lý. Mệt. 😩
-Đêm đó Hỉ thử giao nguyên file cho Hermes (AI Agent, không phải chatbot). Sáng ra, 8 phút, nó trả lại 1 bản: 12 điều khoản quan trọng, 3 chỗ rủi ro gạch đỏ, kèm luôn đoạn gốc để đối chiếu. Không lọt 1 clause nào. 😮
-Chatbot làm được không? Không. Chatbot chỉ đọc được cái bạn copy-paste — 300 trang bạn phải dán từng đoạn, hết token nó quên đầu, đọc tới trang 3 đã không nhớ trang 1. Còn Agent tự nuốt nguyên file, tự trích, tự soi, tự báo cáo.
-Đây là điểm khác biệt cốt lõi: chatbot là AI sinh chữ chờ bạn hỏi, Agent là AI đi làm việc thay bạn.
-👉 Hermes đang làm cái này rất mượt — chi tiết + link ở BÌNH LUẬN nhé, ai hay phải lật từng trang hợp đồng sợ sót clause thì xem thử.
+Hỉ kể thật: tuần trước một chị chủ shop thuê mặt bằng gửi mình file hợp đồng 18 trang, nhờ "đọc hộ xem có cái bẫy nào không". Mình mất đúng 1 tiếng rưỡi, vừa đọc vừa gạch. Nhân lên 300 trang là cả tuần ngồi không xong. 😩
+Chatbot (kiểu ChatGPT) làm được gì? Bạn copy 1 trang paste vào, nó tóm tắt giúp. Nhưng 300 trang? Bạn phải tự bấm, tự dán, tự đọc lại xem nó có bỏ sót không. Mệt vẫn mệt.
+Còn AI Agent (Hermes) làm khác: mình chỉ đưa đường dẫn file, nó TỰ mở, tự lật hết 300 trang, tự gạch ra 12 nhóm điều khoản, tự đánh dấu chỗ rủi ro (tự động gia hạn, phạt vượt trần, mất quyền sở hữu nội dung...), rồi xuất bảng tóm tắt 1 trang cho mình duyệt. Mình bấm đồng hồ: máy chạy 3 phút, mình chỉ mất 5 phút đọc bảng.
+Đấy là lý do mình bảo "AI Agent là làm việc thật, không phải máy trả lời". Chi tiết + link mình để ở BÌNH LUẬN nhé, ai hay ký hợp đồng dài mà sợ sót điều khoản thì nên đọc.
 
 #Hermes #AIAgent #TuDongHoa #NhanSuAo #KinhDoanhOnline
 
