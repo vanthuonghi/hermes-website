@@ -309,7 +309,12 @@
       "t": "TIẾT KIỆM 40 PHÚT MỖI SÁNG",
       "topic": "bao-cao",
       "f": "/covers//home/ubuntu/hermes-website/static/covers/ai-tom-tat-tin-tuc-moi-sang.webp"
+    },
+    {
+      "t": "Đọc 300 trang hợp đồng trong 3 phút",
+      "topic": "default",
+      "f": "/covers/hermes-doc-300-trang-hop-dong.webp"
     }
   ],
-  "count": 62
+  "count": 63
 }
