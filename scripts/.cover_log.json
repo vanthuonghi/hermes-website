@@ -344,7 +344,12 @@
       "t": "Gom mọi API vào 1 Agent",
       "topic": "api",
       "f": "/covers/auto-api-ketnoi.webp"
+    },
+    {
+      "t": "Nhớ 100% Mọi Lần Giao Việc",
+      "topic": "memory",
+      "f": "/covers/auto-memory-b4ee8711.webp"
     }
   ],
-  "count": 69
+  "count": 70
 }
