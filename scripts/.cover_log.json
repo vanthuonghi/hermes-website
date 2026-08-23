@@ -319,7 +319,17 @@
       "t": "1 LỆNH — 5 NHÂN SỰ ẢO",
       "topic": "phan-than",
       "f": "/covers/auto-phan-than-088b3524.webp"
+    },
+    {
+      "t": "Vòng lặp 8 bước: AI Agent tự làm việc",
+      "topic": "vong-lap",
+      "f": "/covers/auto-vong-lap-5fdefcf7.webp"
+    },
+    {
+      "t": "Agent báo trước 2 tuần hết hàng",
+      "topic": "khac-chatgpt",
+      "f": "/covers/auto-khac-chatgpt-f05d8bb7.webp"
     }
   ],
-  "count": 64
+  "count": 66
 }
