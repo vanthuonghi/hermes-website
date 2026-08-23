@@ -334,7 +334,12 @@
       "t": "1 AGENT - 8 BUOC TU LAM",
       "topic": "vong-lap",
       "f": "/covers/auto-vong-lap-33b30d0f.webp"
+    },
+    {
+      "t": "1 Người – 4 Việc – 60 Phút",
+      "topic": "phan-than",
+      "f": "/covers/auto-phan-than-4viec.webp"
     }
   ],
-  "count": 67
+  "count": 68
 }
