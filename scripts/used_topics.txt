@@ -1,6 +1,8 @@
-31|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
-33|Hermes kết nối API: gom mọi Key vào 1 mối
-34|Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
-27|Hermes viết status ngay Black Friday
-38|Hermes vòng lặp 8 bước: tìm nghiên cứu viết check lưu lịch báo cáo
-32|Hermes tự động hoá: giao 1 lần chạy hoài, đúng giờ kể cả ngủ
+1|31|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
+2|33|Hermes kết nối API: gom mọi Key vào 1 mối
+3|34|Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
+4|27|Hermes viết status ngay Black Friday
+5|38|Hermes vòng lặp 8 bước: tìm nghiên cứu viết check lưu lịch báo cáo
+6|32|Hermes tự động hoá: giao 1 lần chạy hoài, đúng giờ kể cả ngủ
+7|7|Hermes tạo quiz khảo sát khách hàng
+8|35|Hermes quality gate: tự check trước khi giao
