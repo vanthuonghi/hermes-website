@@ -364,7 +364,32 @@
       "t": "Giao 1 lan - chay 12 lan/ngay",
       "topic": "tiet-kiem",
       "f": "/covers/auto-tiet-kiem-5c749c16.webp"
+    },
+    {
+      "t": "TEST",
+      "topic": "quality",
+      "f": "/covers//tmp/test_cover.webp"
+    },
+    {
+      "t": "TỰ SOI LỖI TRƯỚC KHI GIAO",
+      "topic": "quality",
+      "f": "/covers/hermes-quality-gate-tu-check-truoc-khi-giao.webp"
+    },
+    {
+      "t": "1 LỆNH - 5 NHÂN SỰ ẢO CHẠY SONG SONG",
+      "topic": "phan-than",
+      "f": "/covers/auto-phan-than-f58b6a63.webp"
+    },
+    {
+      "t": "1 LỆNH - 5 NHÂN SỰ ẢO CHẠY SONG SONG",
+      "topic": "phan-than",
+      "f": "/covers/auto-phan-than-f58b6a63.webp"
+    },
+    {
+      "t": "Tu00ednh check tru01b0u1edbc khi giao: 0 lu1ed7i lu1ed9t",
+      "topic": "quality",
+      "f": "/covers/auto-quality-701d7e1f.webp"
     }
   ],
-  "count": 73
+  "count": 78
 }
