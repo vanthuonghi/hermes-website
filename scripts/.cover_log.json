@@ -354,7 +354,17 @@
       "t": "1 Y TUONG -> 10 STATUS BLACK FRIDAY",
       "topic": "content",
       "f": "/covers/ai-content-blackfriday.webp"
+    },
+    {
+      "t": "Vòng lặp 8 bước: AI tự chạy 24/7",
+      "topic": "vong-lap",
+      "f": "/covers/hermes-vong-lap-8-buoc-chay-khong-ngung.webp"
+    },
+    {
+      "t": "Giao 1 lan - chay 12 lan/ngay",
+      "topic": "tiet-kiem",
+      "f": "/covers/auto-tiet-kiem-5c749c16.webp"
     }
   ],
-  "count": 71
+  "count": 73
 }
