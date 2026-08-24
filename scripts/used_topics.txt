@@ -6,3 +6,4 @@
 6|32|Hermes tự động hoá: giao 1 lần chạy hoài, đúng giờ kể cả ngủ
 7|7|Hermes tạo quiz khảo sát khách hàng
 8|35|Hermes quality gate: tự check trước khi giao
+9|40|Hermes quản lý 5 nhân sự ảo cùng lúc
