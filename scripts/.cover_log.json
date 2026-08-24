@@ -394,7 +394,12 @@
       "t": "1 NGUOI DIEU KHIEN 5 AGENT AO",
       "topic": "phan-than",
       "f": "/covers/ai-quan-ly-5-nhan-su-ao.webp"
+    },
+    {
+      "t": "1 lệnh – AI chạy 24/7 không nghỉ",
+      "topic": "tiet-kiem",
+      "f": "/covers/hermes-lam-lien-tuc-khong-met-khong-than.webp"
     }
   ],
-  "count": 79
+  "count": 80
 }
