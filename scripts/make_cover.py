@@ -69,9 +69,9 @@ def make(title, topic, out_name=None, badge=None):
     # badge góc
     try: f_badge=ImageFont.truetype(f"{FONT_DIR}/DejaVuSans-Bold.ttf",34)
     except: f_badge=ImageFont.load_default()
-    bw=len(tag)*20+40
+    bw=int(d.textlength(tag, font=f_badge))+44
     d.rounded_rectangle([60,55,60+bw,55+60],radius=12,fill=accent)
-    d.text((85,68),tag,font=f_badge,fill=bg)
+    d.text((60+22,69),tag,font=f_badge,fill=bg)
     # tiêu đề (2-3 dòng)
     try: f_t=ImageFont.truetype(f"{FONT_DIR}/DejaVuSans-Bold.ttf",48)
     except: f_t=ImageFont.load_default()
