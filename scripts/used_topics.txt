@@ -3,3 +3,4 @@
 34|Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
 27|Hermes viết status ngay Black Friday
 38|Hermes vòng lặp 8 bước: tìm nghiên cứu viết check lưu lịch báo cáo
+32|Hermes tự động hoá: giao 1 lần chạy hoài, đúng giờ kể cả ngủ
