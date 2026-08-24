@@ -41,4 +41,4 @@ Khác chỗ này: ChatGPT trả lời rồi nghỉ — bạn hỏi mới nói. A
 
 ---
 
-⚠️ Hình đi kèm: dùng cover của bài (static/covers/hermes-quality-gate-tu-check-truoc-khi-giao.webp) — ảnh KHÔNG chữ, chữ overlay thêm ở Canva.
+⚠️ Hình đi kèm: dùng cover của bài (static/covers/auto-quality-701d7e1f.webp — ảnh đã có sẵn badge "KIỂM ĐỊNH CHẤT LƯỢNG" + tiêu đề + brand, đăng trực tiếp được, không cần Canva).
