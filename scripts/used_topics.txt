@@ -1,4 +1,5 @@
 31|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
 33|Hermes kết nối API: gom mọi Key vào 1 mối
 34|Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
-27|Hermes viết status ngày Black Friday
+27|Hermes viết status ngay Black Friday
+38|Hermes vòng lặp 8 bước: tìm nghiên cứu viết check lưu lịch báo cáo
