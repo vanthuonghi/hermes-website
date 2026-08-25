@@ -459,7 +459,12 @@
       "t": "Giao 1 câu, Agent tự chạy 8 bước",
       "topic": "vong-lap",
       "f": "/covers/auto-vong-lap-207d4fae.webp"
+    },
+    {
+      "t": "Thả 30 việc – Agent tự xếp thứ tự 8 phút",
+      "topic": "ke-hoach",
+      "f": "/covers/auto-ke-hoach-2c2695da.webp"
     }
   ],
-  "count": 92
+  "count": 93
 }
