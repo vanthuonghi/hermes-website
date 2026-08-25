@@ -5,3 +5,4 @@
 5|33|Hermes kết nối API: gom mọi Key vào 1 mối
 6|11|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
 7|13|Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
+8|32|Hermes tự động hoá: giao 1 lần chạy hoài, đúng giờ kể cả ngủ
