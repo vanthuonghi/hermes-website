@@ -7,3 +7,4 @@
 7|13|Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
 8|32|Hermes tự động hoá: giao 1 lần chạy hoài, đúng giờ kể cả ngủ
 9|4|Hermes viết mô tả sản phẩm shop đẹp
+10|25|Hermes quality gate: tự soi lỗi trước khi giao
