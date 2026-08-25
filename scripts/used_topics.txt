@@ -1,2 +1,3 @@
 40|Hermes quản lý 5 nhân sự ảo cùng lúc
 38|Hermes vòng lặp 8 bước: tìm nghiên cứu viết check lưu lịch báo cáo
+18|Hermes phân loại ưu tiên công việc
