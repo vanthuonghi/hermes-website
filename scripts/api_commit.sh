@@ -95,3 +95,9 @@ if [ -n "$FAILED" ]; then
 fi
 
 echo "API_PUSH_DONE_$TODAY"
+
+# Đồng bộ local git sau khi push qua API, để các lần sau CHỈ push file MỚI
+# (tránh mỗi lượt re-push toàn bộ 98+ file gây timeout).
+git add -A 2>/dev/null
+git commit -q -m "Daily sync after API push $TODAY" 2>/dev/null || true
+echo "LOCAL_COMMIT_DONE"
