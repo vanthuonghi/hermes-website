@@ -1,10 +1,1 @@
-1|37|Hermes đọc 300 trang hợp đồng trích điều quan trọng
-2|39|Hermes thay bạn nghĩ tối ưu đóng gói
-3|6|Hermes lên thực đơn tuần giảm cân
-4|07|Hermes viết kịch bản video TikTok từ ý tưởng
-5|33|Hermes kết nối API: gom mọi Key vào 1 mối
-6|11|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
-7|13|Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
-8|32|Hermes tự động hoá: giao 1 lần chạy hoài, đúng giờ kể cả ngủ
-9|4|Hermes viết mô tả sản phẩm shop đẹp
-10|25|Hermes quality gate: tự soi lỗi trước khi giao
+40|Hermes quản lý 5 nhân sự ảo cùng lúc
