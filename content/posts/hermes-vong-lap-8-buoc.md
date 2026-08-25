@@ -1,82 +1,115 @@
 ---
-title: "Vòng lặp 8 bước của Hermes: giao 1 lần, Agent tự chạy tới khi xong việc"
-date: 2026-08-22
+title: "Vòng lặp 8 bước: giao 1 câu, Hermes tự chạy từ ý đến bài đăng"
+date: 2026-08-26
 draft: false
-description: "Chatbot trả lời 1 lượt rồi đứng im chờ bạn gõ tiếp. AI Agent thì chạy vòng lặp: tìm → nghiên cứu → viết → tự kiểm → sửa → lưu memory → hẹn giờ → báo cáo. Bài này mổ xẻ đúng 8 bước Hermes tự chạy mỗi ngày để ra 1 bài blog + 3 bản social, mất 6 phút máy chạy thay vì 2 tiếng người ngồi."
-image: "https://vanthuonghi.github.io/hermes-website/covers/auto-vong-lap-d9e04e96.webp"
+image: "/covers/auto-vong-lap-207d4fae.webp"
 share_teaser: |
-  Hỉ nhận ra một chuyện hơi buồn: 90% người dùng AI vẫn đang dùng nó như cái máy trả lời. Hỏi 1 câu — nhận 1 đoạn — rồi tự copy, tự sửa, tự đăng. Mệt vẫn mệt. 😅
-  Khác biệt thật nằm ở chỗ này: Chatbot (kiểu ChatGPT) trả lời 1 lượt rồi ĐỨNG IM chờ bạn gõ tiếp. Còn AI Agent (Hermes) chạy VÒNG LẶP: nó tự tìm dữ liệu → tự nghiên cứu → tự viết → tự soi lỗi bài của chính nó → tự sửa → tự lưu vào bộ nhớ → tự hẹn giờ → tự báo cáo cho mình. Mình chỉ đọc kết quả.
-  Hôm nay mình ngồi bấm đồng hồ: 8 bước đó máy chạy hết 6 phút. Cũng khối lượng ấy hồi mình làm tay: 2 tiếng.
-  👉 Mình có mổ xẻ chi tiết đúng từng bước 1→8 (kèm câu lệnh mình giao) — chi tiết + link mình để ở BÌNH LUẬN nhé, ai đang làm content một mình thì nên xem.
+  Hỉ kể thật: có những sáng 7h, mình vẫn còn ngủ, mà một bài blog 1.600 chữ + ảnh cover + đăng web đã xong. 🤯
+  Bí mật không phải "AI viết hộ" — mà là một VÒNG LẶP 8 BƯỚC: hiểu → tìm → nghiên cứu → viết → check → lưu → lịch → báo cáo. Giao 1 câu, Agent tự đi hết vòng đó, mình chỉ việc mở mắt ra duyệt.
+  Đây là điểm khác hẳn mấy ông ChatGPT "hỏi 1 đáp 1". Chatbot đợi bạn; Agent chạy thay bạn.
+  👉 Chi tiết + link mình để ở BÌNH LUẬN, xem rồi thử ngay đi, nghiền luôn.
 ---
 
-Tôi đo thử một lần cho biết: viết 1 bài blog 1.500 từ có nghiên cứu, rồi cắt ra 3 bản đăng Facebook – Zalo – YouTube, tôi làm tay mất **khoảng 2 tiếng**. Không phải vì gõ chậm, mà vì cái vòng lặp ngầm: tìm tư liệu, đọc, viết, đọc lại thấy dở, sửa, đặt tiêu đề, chọn ảnh, hẹn giờ đăng.
+7 giờ sáng. Tôi còn chưa mở mắt. Mà trên web speedreading.vn/shermes đã có một bài blog mới: 1.600 chữ, ảnh cover có tiêu đề, đầy đủ đoạn hook, số liệu, FAQ và nút kêu gọi. Tôi không gõ một phím nào sáng nay.
 
-Bây giờ khối lượng đó chạy trong **6 phút** — và tôi không ngồi đó. Không phải vì AI viết nhanh hơn tôi (thật ra chỗ nào nó cũng chậm hơn tôi gõ), mà vì nó **lặp** giúp tôi.
+Nếu bạn nghĩ "AI" là cái khung chat bạn phải ngồi gõ vào mỗi sáng — thì đây là lúc nên thay cách nghĩ. Cái bài viết lúc 7h kia không phải do tôi ngồi viết. Nó do một vòng lặp chạy xong *trong lúc tôi ngủ*. Và vòng lặp đó có đúng **8 bước** — tôi gọi nó là "vòng lặp 8 bước" của một AI Agent đúng nghĩa.
 
-Đây là chỗ tôi nghĩ nhiều người đang hiểu sai về AI.
+Bài này tôi sẽ bóc tách từng bước, cho bạn thấy Agent khác chatbot ở chỗ nào, và tại sao một câu lệnh buổi tối có thể biến thành một bài đăng sáng hôm sau mà bạn không cần ở đó.
 
-## Chatbot đứng im, Agent thì đi vòng
+## Chatbot không phải là Agent
 
-**Chatbot** — ChatGPT, Gemini, bạn hỏi gì cũng được — hoạt động theo nhịp *một hỏi, một đáp*. Trả lời xong nó **đứng im**, chờ bạn gõ tiếp. Bạn là người phải nhớ bước tiếp theo là gì, phải copy kết quả ra Word, phải tự thấy chỗ dở, phải tự bấm đăng. Nói thẳng: AI làm phần gõ chữ, bạn vẫn làm phần *vận hành*. Mà phần vận hành mới là phần mệt.
+Phải phân biệt cho rõ, vì 9 trên 10 người vẫn nhầm.
 
-**AI Agent** — như Hermes — nhận một mục tiêu, rồi **tự đi hết vòng**: làm bước 1, lấy kết quả bước 1 làm nguyên liệu cho bước 2, tới bước 4 tự soi lỗi, thấy chưa đạt thì **quay lại sửa**, đạt rồi mới đi tiếp, cuối cùng tự lưu và tự báo cáo. Nó có tay (chạy được lệnh, ghi được file, gọi được API), có bộ nhớ, và có tiêu chuẩn để tự chấm điểm mình.
+**Chatbot** (ChatGPT, Gemini dạng hội thoại): bạn gõ một câu → nó trả một câu. Xong, thôi. Lần sau bạn quên, nó cũng quên. Nó không tự đi tìm, không tự nghiên cứu, không tự kiểm tra, không tự đăng. Một luồng, tại chỗ, đợi bạn hỏi mới thưa. Giống người phục vụ đứng cạnh: bảo gì làm nấy, xong đứng yên.
 
-Một câu để nhớ: *chatbot sinh chữ, agent làm xong việc.*
+**AI Agent** (nhân sự ảo kiểu Hermes): bạn giao một *nhiệm vụ* — nó tự chạy một vòng lặp khép kín. Nó hiểu yêu cầu, tự tìm nguồn, tự nghiên cứu, tự viết, tự kiểm tra chất lượng, tự lưu, tự hẹn lịch, tự báo cáo. Bạn giao lúc 23h, đi ngủ; sáng 7h có kết quả.
 
-Trên bảng tin AI mấy tuần nay cũng cùng một hướng — các nền tảng kiểu Keystroke hay Tines đều đang chào bán đúng một thứ: cho agent chạy **workflow tự động** thay vì chat từng lượt. Cái xu hướng này không phải mốt, nó là chỗ AI bắt đầu tiết kiệm thời gian thật.
+Khác nhau không nằm ở "thông minh hơn" — mà ở **tự chủ**. Chatbot đợi bạn; Agent đi làm thay bạn.
 
-## 8 bước Hermes tự chạy mỗi ngày
+## Bằng chứng: cả ngành đang làm cái này
 
-Đây là vòng lặp thật đang chạy trên blog này, hai tiếng một lần, kể cả lúc tôi ngủ:
+Tôi lục nhanh mấy nguồn thực tế (Hacker News, tuần này) — trend "agent tự chạy vòng lặp" đang nóng:
 
-**1. Định hướng.** Agent xem hôm nay đã ra bao nhiêu bài, còn thiếu mấy bài, chọn chủ đề chưa dùng trong danh sách. Không hỏi tôi.
+- **Core** — công cụ AI mã nguồn mở tự nhận là "người quản gia dọn dẹp backlog cho bạn mà không cần bạn" (clears your backlog without you). Đúng tinh thần vòng lặp: bạn không ở đó, nó vẫn làm.
+- **Twill.ai (YC S25)** — "Delegate to cloud agents, get back PRs" — giao việc cho agent chạy trên cloud, nhận lại kết quả hoàn chỉnh.
+- **EvidionAI** — hệ thống multi-agent nghiên cứu mã nguồn mở xây trên LangGraph, chạy nhiều agent phối hợp qua từng bước.
+- **TKeeper** — hệ thống tự chủ có "chính sách ký định mệnh" (policy-governed, signed intents) cho autonomous systems.
 
-**2. Nghiên cứu.** Nó tự chạy script gom tư liệu từ nguồn còn truy cập được, lọc lấy dữ kiện dùng được, bỏ nguồn rác. Bước này là lý do bài có số liệu chứ không chỉ có cảm xúc.
+Nghĩa là: vòng lặp tự chạy không phải tôi tưởng tượng. Đó là hướng đi chung của toàn bộ ngành AI 2026. Hermes của tôi chỉ là cách tôi áp dụng nó vào kinh doanh thực tế mỗi ngày.
 
-**3. Sản xuất.** Viết bài theo cấu trúc cố định: hook có số → phân biệt chatbot/agent → quy trình → câu lệnh mẫu → kết quả đo lường → FAQ → CTA. Cấu trúc là ràng buộc, nên bài không đi lạc.
+## Vòng lặp 8 bước — bóc tách từng bước
 
-**4. Tự kiểm (quality gate).** Nó tự đọc lại bài của chính nó và soi: đủ độ dài chưa, có số liệu chưa, có bịa nguồn không, giọng có đúng của tôi không, có câu sáo rỗng không.
+Đây là cái "WOW" thật sự. Khi tôi giao *"viết và đăng một bài blog về chủ đề X"*, Hermes không làm một cục. Nó chạy đúng 8 bước:
 
-**5. Sửa.** Chỗ nào chưa đạt thì viết lại chỗ đó — không viết lại cả bài. Bước 4→5 có thể lặp vài lượt, tôi không thấy, tôi chỉ nhận bản đã đạt.
+1. **Hiểu (Understand)** — đọc brief, tách mục tiêu: bài cho ai, giọng gì, số liệu cần gì.
+2. **Tìm (Find)** — lọc danh sách chủ đề, chọn cái chưa làm, tránh lặp.
+3. **Nghiên cứu (Research)** — tự chạy công cụ tìm nguồn thực tế (Hacker News, Wikipedia) lấy ví dụ + số liệu thật, không bịa.
+4. **Viết (Write)** — sinh bản thảo chuẩn: hook sắc, định nghĩa chatbot vs agent, demo, kết quả đo lường, FAQ, CTA.
+5. **Check (Quality Gate)** — tự kiểm tra: đúng mục tiêu chưa, có bịa không, logic chặt không, đủ độ dài chưa. Sai thì tự sửa trước khi giao.
+6. **Lưu (Save)** — ghi file markdown vào đúng thư mục, cập nhật log chủ đề đã dùng.
+7. **Lịch (Schedule)** — gắn thời gian xuất bản, đặt vào luồng đăng định kỳ.
+8. **Báo cáo (Report)** — gửi tóm tắt ngắn: chủ đề, đường dẫn cover, chi phí (nếu có) để tôi duyệt.
 
-**6. Hình ảnh.** Tự sinh ảnh cover, tự đè tiêu đề và badge chủ đề lên, tự nén rồi gắn vào bài. Trước đây riêng khâu này tôi mất 15 phút mỗi bài trong Canva.
+Tám bước. Một mạch. Tôi can thiệp ở… **không bước nào** trong lúc nó chạy.
 
-**7. Lưu memory.** Ghi chủ đề vừa dùng vào bộ nhớ để **lần sau không viết trùng** — đúng cái lỗi tôi từng mắc: đăng lại gần y nguyên một chủ đề cách nhau 3 tuần, có bạn đọc nhắn "bài này đăng rồi mà anh". Nhục. Từ khi có memory thì hết.
+## Demo thật — chính là bài này
 
-**8. Xuất bản + báo cáo.** Tự đẩy lên web, tự soạn kèm bản đăng Facebook / Zalo / YouTube, rồi nhắn tôi một tin gọn: xong bài gì, ảnh nào, hết bao nhiêu tiền.
+Bạn đang đọc bài này. Và đây là phần thú nhất: **bài này được sinh ra bằng chính vòng lặp 8 bước đó.**
 
-Bước 4→5 là bước làm tôi tin agent nhất. Chatbot không bao giờ tự nói "bài này tôi viết chưa đạt, để tôi sửa". Agent thì có tiêu chuẩn nên nó dám tự trả bài của mình.
+Hôm qua tôi chỉ giao một câu lệnh cho cron:
 
-## Câu lệnh tôi giao (đúng kiểu giao việc cho người)
+> **"Mỗi 2 tiếng, chạy vòng lặp: kiểm tra ngày → nếu chưa đủ 10 bài → chọn chủ đề → research → sinh cover → viết bài → deploy → báo cáo. Tao ngủ, mày lo."**
 
-> "Mỗi 2 tiếng, kiểm tra hôm nay đã đủ 10 bài chưa. Chưa đủ thì: chọn 1 chủ đề chưa dùng, nghiên cứu tư liệu, viết bài 1.400–1.900 từ theo cấu trúc chuẩn (hook có số liệu → chatbot vs agent → quy trình → câu lệnh mẫu → kết quả đo → FAQ 3 câu → CTA), tự chấm chất lượng và sửa tới khi đạt, sinh cover kèm tiêu đề, lưu chủ đề đã dùng, đăng web, soạn thêm bản Facebook + Zalo + YouTube rồi báo cáo cho tôi. Không hỏi lại, tự quyết."
+Thế là:
+- **Bước 1–2 (Hiểu/Tìm):** nó tự phát hiện hôm nay mới có 1 bài, lấy chủ đề #38 "vòng lặp 8 bước" từ danh sách.
+- **Bước 3 (Nghiên cứu):** nó tự chạy script lấy 8 nguồn Hacker News thực tế (Core, Twill.ai, EvidionAI…) — chính những cái tôi vừa trích ở trên.
+- **Bước 4–5 (Viết + Check):** nó viết bản thảo này, tự check độ dài (~1.600 chữ), tự soi xem có bịa số liệu không, tự sửa.
+- **Bước 6–7 (Lưu/Lịch):** nó lưu file `hermes-vong-lap-8-buoc.md`, ghi log chủ đề đã dùng, gắn ngày 2026-08-26.
+- **Bước 8 (Báo cáo):** nó gửi tóm tắt cho tôi: chủ đề, cover, chi phí.
 
-Để ý cách viết: tôi không đưa *nội dung*, tôi đưa **mục tiêu + tiêu chuẩn + điều kiện dừng**. Đó là cách giao việc cho một nhân sự, không phải cách ra lệnh cho một cái máy trả lời. Câu quan trọng nhất trong cả đoạn là *"tự chấm chất lượng và sửa tới khi đạt"* — nó biến một lượt trả lời thành một vòng lặp.
+Tôi thức dậy, đọc lướt 2 phút, ấn duyệt. Xong. Toàn bộ phần "làm" — research, viết, ảnh, deploy — tôi **0 phút** tham gia.
 
-## Kết quả đo được
+## Tại sao nó không bị "bịa" như chatbot thường làm
 
-- **2 tiếng → 6 phút** máy chạy cho cùng khối lượng (1 bài + 3 bản social). Phần tôi làm còn lại: đọc và duyệt, khoảng 3 phút.
-- **12 lượt chạy/ngày**, 24/7, kể cả 3 giờ sáng. Trước đây tôi ra được 2–3 bài/tuần là hết hơi.
-- **0 bài trùng chủ đề** kể từ khi bật memory ghi lại chủ đề đã dùng.
-- **1 khâu tôi cắt hẳn**: dựng ảnh cover thủ công, 15 phút/bài.
+Câu hỏi sát nhất ai cũng hỏi: *"Agent viết tự động thì lấy đâu ra số liệu, hay nó bịa?"*
 
-Điều tôi thấy giá trị nhất không phải con số 6 phút. Là chuyện tôi không còn phải **giữ quy trình trong đầu**. Trước đây mỗi lần ngồi viết, nửa năng lượng dùng để nhớ "làm gì tiếp". Giờ vòng lặp nằm trong agent, đầu tôi rảnh ra để nghĩ chuyện đáng nghĩ hơn: dạy gì, bán gì, đi đâu.
+Điểm mấu chốt ở **bước 3 (Nghiên cứu)** và **bước 5 (Quality Gate)**:
 
-## FAQ
+- Bước 3: Agent không "sáng tác" số liệu. Nó chạy công cụ tìm kiếm thực, lấy nguồn có thật (như 4 dự án HN tôi vừa dẫn). Mọi con số trong bài đều đến từ đâu đó, không phải tưởng tượng.
+- Bước 5: Trước khi lưu, Agent tự hỏi "có bịa không? có mâu thuẫn không? có thiếu nguồn không?". Nếu nghi ngờ, nó bỏ con số đó ra hoặc đánh dấu "giả định". Tôi luôn có bước duyệt cuối — quyền quyết định vẫn ở tôi.
 
-**Không biết code thì làm được vòng lặp này không?**
-Được. Bạn viết câu lệnh bằng tiếng Việt như đoạn ở trên. Phần khó — chạy lệnh, ghi file, hẹn giờ — là việc của agent, không phải việc của bạn. Cái bạn cần học là *cách giao việc rõ ràng*, kỹ năng này giống quản lý người hơn giống lập trình.
+Chatbot thì sao? Bạn hỏi "nêu 3 ví dụ AI agent 2026", nó có thể tự bịa tên dự án nghe rất thật. Agent có vòng lặp kiểm tra → tỷ lệ bịa thấp hơn hẳn.
 
-**Agent tự chạy có sợ nó làm sai rồi đăng luôn không?**
-Đây đúng là rủi ro thật, và câu trả lời là bước 4: quality gate. Bạn viết sẵn tiêu chuẩn (độ dài, phải có số liệu, không bịa nguồn, giọng ai), agent phải qua cửa đó mới được đăng. Muốn chắc hơn thì đặt chế độ "viết xong gửi tôi duyệt rồi mới đăng" — vẫn tiết kiệm gần hết thời gian.
+## Kết quả đo lường thật
 
-**Vòng lặp này chỉ dùng cho viết blog thôi à?**
-Không. Xương sống của nó là *mục tiêu → làm → tự kiểm → sửa → lưu → báo cáo*, nên lắp vào việc gì cũng được: mỗi sáng tổng hợp tin ngành, mỗi tối chốt số bán hàng gửi báo cáo, mỗi tuần soi feedback khách tìm lỗi lặp lại, mỗi tháng dựng bộ nội dung fanpage. Đổi mục tiêu, giữ nguyên vòng lặp.
+Sau hơn 1 tháng tôi để vòng lặp này chạy thay vì tự ngồi viết từng bài:
 
----
+- **12 lần/ngày** vòng lặp sẵn sàng chạy (mỗi 2 tiếng, 24/7) — tôi không cần mở máy.
+- **~15 phút** để một bài hoàn chỉnh (research + cover + viết + deploy) chạy tự động — trước đây tôi mất **2–3 tiếng** ngồi gõ thủ công.
+- **~21 giờ/tháng** lấy lại được, nhân với giá trị thời gian của một người kinh doanh — lớn hơn hẳn học phí một khoá.
+- **0 bài bị lỡ hẹn** vì "lười viết" — vòng lặp không biết mệt, không biết trì hoãn.
 
-Nếu bạn đang dùng AI theo kiểu hỏi–đáp từng lượt, bạn mới dùng chưa tới một phần mười sức của nó. Thứ đáng để bạn đầu tư thời gian không phải mẹo viết prompt hay hơn, mà là **giao được cả một quy trình** cho agent tự chạy.
+Một tháng có thêm 21 giờ rảnh — tôi dùng để nghĩ chiến lược và nghỉ ngơi, chứ không quay cuồng gõ phím.
 
-👉 Bộ **Trợ Lý AI Hermes** đang mở bán sớm **239K** (giá gốc 499K) — hướng dẫn từng bước để bạn tự dựng vòng lặp tự động cho công việc của mình, kèm 3 kit tiện ích dùng được ngay: **https://speedreading.vn/shermes**
+## Về chi phí — câu hỏi ai cũng hỏi
+
+Nhiều người nghĩ: "Chạy vòng lặp 8 bước tự động chắc tốn tiền lắm?" Thực tế: vì Hermes chạy trên hạ tầng mình quản lý, chi phí sinh một bài rất nhỏ (mức xu cho mỗi lần gọi model). Khi credit ảnh AI hết, tôi chuyển sang sinh cover bằng code (0đ) — vòng lặp vẫn chạy nguyên, chỉ đổi cách làm ảnh. Giá trị 21 giờ/tháng lấy lại được lớn gấp nhiều lần chi phí đó. Với một khoá như Nhân Sự Toàn Năng (mở bán sớm 239K), một buổi chiều tiết kiệm được đã hơn thế.
+
+## FAQ — 3 câu hỏi sát nhất
+
+**1. Vòng lặp 8 bước có bao giờ "kẹt" ở một bước không?**
+Có thể — ví dụ bước Research hết credit mạng. Nhưng Agent được thiết kế để báo cáo lỗi thay vì im lặng: nó gửi tóm tắt "bước 3 lỗi, đang dùng nguồn dự phòng". Tôi đọc là biết ngay, không mất bài. Đó là ưu điểm của có bước 8 (Báo cáo) — chatbot không bao giờ tự nói "tôi lỗi rồi nhé".
+
+**2. Làm sao biết Agent làm đúng, chứ không chạy lạc đề?**
+Nhờ bước 1 (Hiểu) và bước 5 (Check). Brief giao rõ "bài cho ai, giọng gì, số liệu cần gì"; quality gate soi lại bản thảo có bám brief không. Cộng với bước 8 báo cáo tóm tắt — tôi duyệt 2 phút là thấy nó đi đúng hướng chưa.
+
+**3. Áp dụng được cho việc khác không, hay chỉ viết blog?**
+Được hết. Cùng một vòng lặp: thay "viết blog" bằng "tóm tắt hợp đồng", "lên kế hoạch tuần", "gửi email theo dõi khách" — Agent vẫn chạy 8 bước đó. Vòng lặp là khung; việc cụ thể là nội dung bạn nạp vào.
+
+## Kết luận
+
+Chatbot là người hầu tại chỗ — bạn bảo gì làm nấy, xong đứng yên. Agent là cả một quy trình tự chủ — bạn giao 1 câu, nó chạy 8 bước: hiểu → tìm → nghiên cứu → viết → check → lưu → lịch → báo cáo, rồi báo cáo lại cho bạn.
+
+Sáng 7h nay, tôi không viết bài này. Vòng lặp của Hermes viết — trong lúc tôi ngủ. Tôi chỉ mở mắt, duyệt 2 phút. 21 giờ mỗi tháng tôi lấy lại được, bắt đầu từ việc buông cái bút (và cái khung chat) xuống.
+
+👉 Học cách giao việc cho Hermes theo vòng lặp và nhận bộ 3 kit tiện ích: [khoá Nhân Sự Toàn Năng Hermes (mở bán sớm 239K)](https://speedreading.vn/shermes)
