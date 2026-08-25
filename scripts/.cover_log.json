@@ -454,7 +454,12 @@
       "t": "1 NGƯỜI ĐIỀU 5 NHÂN SỰ ẢO",
       "topic": "phan-than",
       "f": "/covers/ai-phan-than-5nv.webp"
+    },
+    {
+      "t": "Giao 1 câu, Agent tự chạy 8 bước",
+      "topic": "vong-lap",
+      "f": "/covers/auto-vong-lap-207d4fae.webp"
     }
   ],
-  "count": 91
+  "count": 92
 }
