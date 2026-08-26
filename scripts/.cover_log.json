@@ -509,7 +509,17 @@
       "t": "MỖI SÁNG 1 BÁO CÁO TỰ ĐỘNG",
       "topic": "bao-cao",
       "f": "/covers/2026-08-26-hermes-tom-tat-tin-nganh-moi-sang.webp"
+    },
+    {
+      "t": "PHÂN THÂN: 4 VIỆC / 1 GIỜ",
+      "topic": "phan-than",
+      "f": "/covers/auto-phan-than-b62ca9cf.webp"
+    },
+    {
+      "t": "300 TRANG – TRÍCH 10 ĐIỀU QUAN TRỌNG",
+      "topic": "default",
+      "f": "/covers/auto-default-15812180.webp"
     }
   ],
-  "count": 102
+  "count": 104
 }
