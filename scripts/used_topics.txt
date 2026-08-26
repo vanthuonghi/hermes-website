@@ -1,5 +1,6 @@
-40|Hermes quản lý 5 nhân sự ảo cùng lúc
-38|Hermes vòng lặp 8 bước: tìm nghiên cứu viết check lưu lịch báo cáo
-18|Hermes phân loại ưu tiên công việc
-13|Hermes lên kế hoạch du lịch tiết kiệm
-34|Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
+1|40|Hermes quản lý 5 nhân sự ảo cùng lúc
+2|38|Hermes vòng lặp 8 bước: tìm nghiên cứu viết check lưu lịch báo cáo
+3|18|Hermes phân loại ưu tiên công việc
+4|13|Hermes lên kế hoạch du lịch tiết kiệm
+5|34|Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
+6|33|Hermes kết nối API: gom mọi Key vào 1 mối
