@@ -7,3 +7,4 @@
 7|31|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
 8|25|Hermes tự động hoá: giao 1 lần chạy hoài, đúng giờ kể cả ngủ
 9|42|Hermes quality gate: tự check trước khi giao
+10|16|Hermes tóm tắt tin tức ngành mỗi sáng
