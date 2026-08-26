@@ -504,7 +504,12 @@
       "t": "Agent tự check 10 lỗi",
       "topic": "quality",
       "f": "/covers/2026-08-26-hermes-quality-gate-tu-check-truoc-khi-giao.webp"
+    },
+    {
+      "t": "MỖI SÁNG 1 BÁO CÁO TỰ ĐỘNG",
+      "topic": "bao-cao",
+      "f": "/covers/2026-08-26-hermes-tom-tat-tin-nganh-moi-sang.webp"
     }
   ],
-  "count": 101
+  "count": 102
 }
