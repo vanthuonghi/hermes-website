@@ -2,3 +2,4 @@
 38|Hermes vòng lặp 8 bước: tìm nghiên cứu viết check lưu lịch báo cáo
 18|Hermes phân loại ưu tiên công việc
 13|Hermes lên kế hoạch du lịch tiết kiệm
+34|Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
