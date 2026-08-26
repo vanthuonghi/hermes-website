@@ -4,3 +4,4 @@
 4|13|Hermes lên kế hoạch du lịch tiết kiệm
 5|34|Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
 6|33|Hermes kết nối API: gom mọi Key vào 1 mối
+7|31|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
