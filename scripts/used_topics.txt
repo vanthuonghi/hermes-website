@@ -1,10 +1,1 @@
-1|40|Hermes quản lý 5 nhân sự ảo cùng lúc
-2|38|Hermes vòng lặp 8 bước: tìm nghiên cứu viết check lưu lịch báo cáo
-3|18|Hermes phân loại ưu tiên công việc
-4|13|Hermes lên kế hoạch du lịch tiết kiệm
-5|34|Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
-6|33|Hermes kết nối API: gom mọi Key vào 1 mối
-7|31|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
-8|25|Hermes tự động hoá: giao 1 lần chạy hoài, đúng giờ kể cả ngủ
-9|42|Hermes quality gate: tự check trước khi giao
-10|16|Hermes tóm tắt tin tức ngành mỗi sáng
+1|37|Hermes đọc 300 trang hợp đồng trích điều quan trọng
