@@ -494,7 +494,17 @@
       "t": "GIAO 1 LẦN - CHẠY HOÀI 24/7",
       "topic": "tiet-kiem",
       "f": "/covers/2026-08-26-hermes-tu-dong-hoa-agent-chay-24-7.webp"
+    },
+    {
+      "t": "Hermes tự gạch đỏ 6 lỗi trước khi giao",
+      "topic": "quality",
+      "f": "/covers/hermes-quality-gate.webp"
+    },
+    {
+      "t": "Agent tự check 10 lỗi",
+      "topic": "quality",
+      "f": "/covers/2026-08-26-hermes-quality-gate-tu-check-truoc-khi-giao.webp"
     }
   ],
-  "count": 99
+  "count": 101
 }
