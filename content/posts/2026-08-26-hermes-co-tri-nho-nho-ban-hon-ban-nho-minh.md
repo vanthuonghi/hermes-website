@@ -52,6 +52,16 @@ Không nói lý thuyết suông. Dưới đây là đúng cái Hermes đang ch�
 
 Điểm mấu chốt nằm ở **Bước 0** và **Bước 7**. Nó **NHỚ trước khi làm**, và **CẬP NHẬT sau khi làm**. Đó là lý do 12 chu kỳ/ngày nó không bao giờ "lẫn" bài, không bao giờ hỏi lại — vì trí nhớ của nó là một file có thật, không phải ảo ảnh trong RAM.
 
+## 3 việc trí nhớ thay bạn nhớ (thực tế, không lý thuyết)
+
+Để thấy memory "có thật" chứ không phải slogan, đây là 3 việc Hermes đang nhớ giùm Hỉ ngay lúc này:
+
+1. **Nhớ giọng và brand.** Hỉ viết tiếng Việt, giọng gần gũi, hay dùng từ "mệt", "xịn", "ngon". Hermes không cần mỗi bài một brief — nó mở memory ra là biết. Nhờ vậy 40 bài trong danh sách đều nhất quán một giọng, dù viết cách nhau cả tuần.
+2. **Nhớ lịch sử đã làm.** Sáng nay nó đọc `used_topics.txt`, biết 4 bài hôm qua (quản lý 5 nhân sự, vòng lặp 8 bước, phân loại ưu tiên, du lịch tiết kiệm) → tự chọn bài thứ 5 là trí nhớ, không trùng. Con số 5/10 hôm nay là do memory giữ, không phải người canh.
+3. **Nhớ quy tắc cá nhân.** Hỉ ghét link trần trên Facebook (bị giảm reach), nên Hermes tự để link ở BÌNH LUẬN. Hỉ thích ảnh cover có chữ badge WOW-Agent, nên mỗi cover đều đè badge. Tất cả nằm trong memory — nói 1 lần, áp dụng vĩnh viễn.
+
+Đó là lý do Hỉ nói *"nhớ bạn hơn bạn nhớ mình"*: nhiều khi Hỉ quên mình đã dặn gì tuần trước, Hermes vẫn giữ nguyên.
+
 ## Câu lệnh CEO (bạn chỉ cần nói đúng 1 lần)
 
 > "Từ giờ, mỗi sáng nhớ gửi cho tôi 1 bản tóm tắt 3 việc ưu tiên, đúng giọng Speed Reading, và đừng bao giờ hỏi lại tôi những gì tôi đã nói tuần trước."
