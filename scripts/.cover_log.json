@@ -529,7 +529,17 @@
       "t": "Hết hàng đúng lúc đông? Biết trước 14 ngày",
       "topic": "bao-cao",
       "f": "/covers/2026-08-27-hermes-du-bao-ton-kho-tu-lich-su-ban.webp"
+    },
+    {
+      "t": "Gom 7 API vào 1 mối: Hermes tự gọi, tự nối, tự báo",
+      "topic": "api",
+      "f": "/covers/auto-api-26ec444e.webp"
+    },
+    {
+      "t": "Phân thân: 1 người giao 4 việc, xong trong 1 giờ",
+      "topic": "phan-than",
+      "f": "/covers/auto-phan-than-4ab36142.webp"
     }
   ],
-  "count": 106
+  "count": 108
 }
