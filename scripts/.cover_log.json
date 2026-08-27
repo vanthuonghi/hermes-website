@@ -579,7 +579,17 @@
       "t": "Xin lỗi khách giận trong 5 phút",
       "topic": "email",
       "f": "/covers/ai-email-2026-08-28-apology.webp"
+    },
+    {
+      "t": "Gom moi Key vao 1 Agent: 5 app, 1 lenh",
+      "topic": "api",
+      "f": "/covers/ai-api-20260828.webp"
+    },
+    {
+      "t": "1 câu lệnh = kịch bản live 90 phút",
+      "topic": "content",
+      "f": "/covers/ai-content-livestream.webp"
     }
   ],
-  "count": 116
+  "count": 118
 }
