@@ -539,7 +539,27 @@
       "t": "Phân thân: 1 người giao 4 việc, xong trong 1 giờ",
       "topic": "phan-than",
       "f": "/covers/auto-phan-than-4ab36142.webp"
+    },
+    {
+      "t": "Quality Gate: Agent tự chấm điểm 3 vòng trước khi giao",
+      "topic": "quality",
+      "f": "/covers/auto-quality-605747b5.webp"
+    },
+    {
+      "t": "Giao 1 lần, chạy hoài: 7 việc tự động mỗi ngày",
+      "topic": "tiet-kiem",
+      "f": "/covers/auto-tiet-kiem-4aeeef42.webp"
+    },
+    {
+      "t": "Giao 1 Lần, Chạy Hoài: Hermes Làm Đúng Giờ Kể Cả Khi Bạn Ngủ",
+      "topic": "tiet-kiem",
+      "f": "/covers/hermes-giao-1-lan-chay-hoai.webp"
+    },
+    {
+      "t": "Giao 1 lần, chạy hoài: tự động hoá 24/7",
+      "topic": "tiet-kiem",
+      "f": "/covers/auto-tiet-kiem-714df704.webp"
     }
   ],
-  "count": 108
+  "count": 112
 }
