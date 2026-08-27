@@ -569,7 +569,17 @@
       "t": "1 Agent - Mọi API",
       "topic": "api",
       "f": "/covers/auto-api-23fcc1c3.webp"
+    },
+    {
+      "t": "BOT QUÊN SÁNG SAU, AGENT NHỚ MÃI",
+      "topic": "memory",
+      "f": "/covers/auto-memory-4a8e6bc7.webp"
+    },
+    {
+      "t": "Xin lỗi khách giận trong 5 phút",
+      "topic": "email",
+      "f": "/covers/ai-email-2026-08-28-apology.webp"
     }
   ],
-  "count": 114
+  "count": 116
 }
