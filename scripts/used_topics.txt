@@ -1,6 +1,1 @@
-1|37|Hermes đọc 300 trang hợp đồng trích điều quan trọng
-2|5|Hermes tóm tắt cuộc họp thành biên bản
-3|26|Hermes dự báo tồn kho từ lịch sử bán
-4|31|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
-5|32|Hermes tự động hoá: giao 1 lần chạy hoài, đúng giờ kể cả ngủ
-6|33|Hermes kết nối API: gom mọi Key vào 1 mối
+1|4|Hermes viết email xin lỗi khách giận
