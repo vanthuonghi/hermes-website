@@ -6,3 +6,4 @@
 6|12|Hermes viết bài PR gửi báo
 7|33|Hermes kết nối API: gom mọi Key vào 1 mối
 8|34|Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
+9|35|Hermes quality gate: tự check trước khi giao
