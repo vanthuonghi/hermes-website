@@ -604,7 +604,12 @@
       "t": "1 người, 4 việc, xong trong 60 phút",
       "topic": "phan-than",
       "f": "/covers/ai-phan-than-2026-08-28.webp"
+    },
+    {
+      "t": "Chạy 24/7: bạn ngủ, Agent vẫn làm",
+      "topic": "khac-chatgpt",
+      "f": "/covers//home/ubuntu/hermes-website/static/covers/ai-khac-chatgpt-2026-08-28.webp"
     }
   ],
-  "count": 121
+  "count": 122
 }
