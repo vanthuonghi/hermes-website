@@ -609,7 +609,17 @@
       "t": "Chạy 24/7: bạn ngủ, Agent vẫn làm",
       "topic": "khac-chatgpt",
       "f": "/covers//home/ubuntu/hermes-website/static/covers/ai-khac-chatgpt-2026-08-28.webp"
+    },
+    {
+      "t": "1 lệnh gom 12 API",
+      "topic": "api",
+      "f": "/covers/2026-08-28-hermes-ket-noi-api.webp"
+    },
+    {
+      "t": "1 lệnh, 5 tờ báo nhận PR",
+      "topic": "content",
+      "f": "/covers/2026-08-28-hermes-viet-bai-pr-gui-bao.webp"
     }
   ],
-  "count": 122
+  "count": 124
 }
