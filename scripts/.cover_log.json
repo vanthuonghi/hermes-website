@@ -619,7 +619,12 @@
       "t": "1 lệnh, 5 tờ báo nhận PR",
       "topic": "content",
       "f": "/covers/2026-08-28-hermes-viet-bai-pr-gui-bao.webp"
+    },
+    {
+      "t": "1 lệnh — Hermes tự nối mọi API, bạn rảnh tay",
+      "topic": "api",
+      "f": "/covers/hermes-ket-noi-tat-ca-api.webp"
     }
   ],
-  "count": 124
+  "count": 125
 }
