@@ -3,3 +3,5 @@
 3|38|Hermes vòng lặp 8 bước: tìm nghiên cứu viết check lưu lịch báo cáo
 4|31|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
 5|36|Hermes làm liên tục không mệt không than
+6|12|Hermes viết bài PR gửi báo
+7|33|Hermes kết nối API: gom mọi Key vào 1 mối
