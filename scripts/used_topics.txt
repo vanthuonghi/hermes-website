@@ -1,2 +1,3 @@
 1|4|Hermes viết email xin lỗi khách giận
 2|15|Hermes tạo kịch bản livestream bán hàng
+3|38|Hermes vòng lặp 8 bước: tìm nghiên cứu viết check lưu lịch báo cáo
