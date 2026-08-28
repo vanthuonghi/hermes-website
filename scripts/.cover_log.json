@@ -629,7 +629,12 @@
       "t": "Nhớ 100% khách - Agent không bao giờ quên",
       "topic": "memory",
       "f": "/covers/auto-memory-efb4d81c.webp"
+    },
+    {
+      "t": "Agent tu check: 0 loi truoc khi giao",
+      "topic": "quality",
+      "f": "/covers/2026-08-28-hermes-quality-gate-tu-check-truoc-khi-giao.webp"
     }
   ],
-  "count": 126
+  "count": 127
 }
