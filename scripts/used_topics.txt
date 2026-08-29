@@ -1,10 +1,1 @@
-1|22|Hermes viết content chuẩn SEO cho web
-2|11|Hermes phân tích feedback khách tìm lỗi
-3|8|Hermes soạn câu hỏi phỏng vấn nhân viên
-4|1|Hermes viết kịch bản video TikTok từ ý tưởng
-5|33|Hermes kết nối API: gom mọi Key vào 1 mối
-6|6|31|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
-7|19|Hermes viết kịch bản chatbot chăm sóc khách
-8|37|Hermes đọc 300 trang hợp đồng trích điều quan trọng
-9|9|34|Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
-10|19|Hermes tự động hoá: giao 1 lần chạy hoài, đúng giờ kể cả ngủ
+1|38|Hermes vòng lặp 8 bước: tìm nghiên cứu viết check lưu lịch báo cáo
