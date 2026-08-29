@@ -674,7 +674,17 @@
       "t": "1 LỆNH - XONG 50 INBOX/NGÀY",
       "topic": "khac-chatgpt",
       "f": "/covers/2026-08-29-hermes-agent-cham-soc-khach-khac-chatbot.webp"
+    },
+    {
+      "t": "NHỚ BẠN QUA 365 NGÀY",
+      "topic": "memory",
+      "f": "/covers/auto-memory-36036c78.webp"
+    },
+    {
+      "t": "ĐỌC 300 TRANG HỢP ĐỒNG TRONG 3 PHÚT",
+      "topic": "tiet-kiem",
+      "f": "/covers/auto-tiet-kiem-763ce759.webp"
     }
   ],
-  "count": 135
+  "count": 137
 }
