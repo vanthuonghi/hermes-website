@@ -3,3 +3,5 @@
 3|8|Hermes soạn câu hỏi phỏng vấn nhân viên
 4|1|Hermes viết kịch bản video TikTok từ ý tưởng
 5|33|Hermes kết nối API: gom mọi Key vào 1 mối
+6|6|31|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
+7|19|Hermes viết kịch bản chatbot chăm sóc khách
