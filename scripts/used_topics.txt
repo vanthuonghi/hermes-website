@@ -1,2 +1,4 @@
 1|1|38|Hermes vòng lặp 8 bước: tìm nghiên cứu viết check lưu lịch báo cáo
 2|2|31|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
+3|3|35|Hermes quality gate: tự check trước khi giao
+4|4|33|Hermes kết nối API: gom mọi Key vào 1 mối
