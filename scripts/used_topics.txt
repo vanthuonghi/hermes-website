@@ -1,10 +1,1 @@
-1|1|38|Hermes vòng lặp 8 bước: tìm nghiên cứu viết check lưu lịch báo cáo
-2|2|31|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
-3|3|35|Hermes quality gate: tự check trước khi giao
-4|4|33|Hermes kết nối API: gom mọi Key vào 1 mối
-5|5|60|Hermes tự động hoá: giao 1 lần, chạy hoài đúng giờ kể cả ngủ
-6|6|40|Hermes quản lý 5 nhân sự ảo cùng lúc
-7|7|42|Hermes phân loại ưu tiên công việc
-8|8|8|8|4|Hermes viết email xin lỗi khách giận
-9|9|9|16|Hermes tóm tắt tin tức ngành mỗi sáng
-10|10|40|Hermes viết caption hashtag viral
+1|34|42|Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
