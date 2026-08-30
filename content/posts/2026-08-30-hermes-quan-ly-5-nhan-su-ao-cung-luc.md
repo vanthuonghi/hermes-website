@@ -39,6 +39,8 @@ Quay lại sáng nay. Hỉ gõ: *"Làm 1 bài blog về AI Agent, kèm cover, đ
 
 Còn một chi tiết WOW hơn nữa mà ít ai để ý: **mỗi agent có "vùng nhớ" riêng**. Researcher không bị tràn context chỉ vì Writer đang viết dài dòng. QA check độc lập, không bị "mù" như thể chính nó là người viết bài. Đó là lý do một chatbot ôm cả 5 việc dễ hỏng — nó phải gồng hết vào một luồng nhớ duy nhất, đến đoạn thứ 4 nó đã quên đoạn thứ 1. Còn 5 agent, mỗi đứa ôm đúng 1 việc, nên sắc và sạch.
 
+Cho nên sáng nay, khi Hỉ mở máy ra, những gì hiện lên không phải là "một đống nháp lộn xộn" như lúc tự bơi. Mà là **5 món đã được phân loại gọn ghẽ**: bài blog nằm sẵn trong file, ảnh cover nằm trong thư mục, báo cáo nằm trong tin nhắn, và web đã chuyển sang trạng thái "đã đăng". Nhìn kỹ từng đứa giao nộp: **Researcher** để lại 3 nguồn thật làm ví dụ; **Writer** để lại 1 bài hoàn chỉnh đủ số; **Designer** để lại 1 ảnh đúng chuẩn blog; **QA** để lại dòng "PASS — không bịa, không lỗi, đủ yêu cầu"; **Deployer** để lại cái link kèm giờ đăng. Hỉ chỉ việc đọc lướt 30 giây, gật gù, rồi xách xe đi cafe. Cả quy trình không cần Hỉ đứng ngay sau lưng chỉ việc một lần nào.
+
 ## Câu lệnh CEO
 
 > "Đừng hỏi AI viết hộ 1 đoạn văn. Hãy giao 1 mục tiêu và để nó tự chia team. Sếp giỏi không tự cầm bút — sếp giao việc cho đúng người, rồi ngồi uống cafe." — *Văn Hỉ*
