@@ -4,3 +4,4 @@
 4|4|33|Hermes kết nối API: gom mọi Key vào 1 mối
 5|5|60|Hermes tự động hoá: giao 1 lần, chạy hoài đúng giờ kể cả ngủ
 6|6|40|Hermes quản lý 5 nhân sự ảo cùng lúc
+7|7|42|Hermes phân loại ưu tiên công việc
