@@ -1,108 +1,128 @@
 #!/usr/bin/env python3
 """
-make_cover.py — Sinh cover branded cho blog Hermes BẰNG CODE (0đ, không cần AI/credit).
-Mỗi bài 1 cover riêng: gradient ấm + tiêu đề bài + tagline WOW-Agent + badge.
-Hệ thống rút kinh nghiệm: log vào .cover_log.json (chủ đề -> palette đã dùng) để tránh lặp, tối ưu dần.
+make_cover.py — Offline fallback cover (0đ) khi OpenRouter image API bị 402.
+Sinh nền gradient ấm + overlay tiêu đề/badge/footer bằng PIL (layout y hệt or_image.py).
 
 Usage:
-  python3 make_cover.py --title "Tiêu đề bài" --topic "phan-than" --out static/covers/auto-xxx.webp
-Hoặc (cron): truyền qua argv, script tự đặt tên.
-
-Yêu cầu: pip install pillow (đã có). Font DejaVu/Noto có sẵn.
+  python3 make_cover.py --title "..." --topic "api" --badge "KẾT NỐI MỘI API" \
+      --out static/covers/2026-08-30-hermes-ket-noi-api-gom-moi-key.webp
 """
-import sys, os, json, argparse, hashlib
+import sys, os, argparse, hashlib, io
 from PIL import Image, ImageDraw, ImageFont
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(BASE, "..", "static", "covers")
-LOG = os.path.join(BASE, ".cover_log.json")
 FONT_DIR = "/usr/share/fonts/truetype/dejavu"
+W, H = 1200, 630
 
-# Palette theo chủ đề (ấm, brand Hermes: cam/vàng chủ đạo)
+# Gradient themes per topic: (top_color, bottom_color, glow_color)
 THEMES = {
-    "default":  ((255,180,84), (30,20,5),  "AI AGENT LÀM VIỆC"),
-    "phan-than":((120,200,255),(8,20,40),  "PHÂN THÂN SONG SONG"),
-    "memory":   ((160,120,255),(20,10,40), "CÓ TRÍ NHỚ"),
-    "api":      ((80,220,180), (5,30,25),  "KẾT NỐI API"),
-    "tiet-kiem":((255,140,120),(40,15,10), "TIẾT KIỆM THỜI GIAN"),
-    "bao-cao":  ((100,180,255),(10,20,45), "TỰ ĐỘNG BÁO CÁO"),
-    "email":    ((120,220,160),(10,30,20), "XỬ LÝ INBOX"),
-    "ke-hoach": ((255,200,120),(35,22,5),  "LẬP KẾ HOẠCH"),
-    "vong-lap": ((200,160,255),(22,12,40), "VÒNG LẶP 8 BƯỚC"),
-    "quality":  ((255,120,160),(40,10,25), "QUALITY GATE"),
-    "content":  ((255,170,90), (30,18,5),  "TỰ ĐỘNG CONTENT"),
-    "kit":      ((140,210,255),(10,22,42), "3 BỘ AI KIT"),
-    "khac-chatgpt":((255,150,100),(38,15,8),"AGENT ≠ CHATBOT"),
+    "default": ((40, 30, 24), (16, 12, 10), (240, 150, 70)),
+    "phan-than": ((44, 30, 40), (16, 11, 16), (240, 110, 150)),
+    "memory": ((30, 36, 46), (12, 16, 22), (110, 170, 240)),
+    "api": ((22, 34, 46), (10, 16, 24), (90, 190, 230)),
+    "tiet-kiem": ((40, 30, 22), (15, 11, 8), (240, 160, 70)),
+    "bao-cao": ((30, 40, 34), (12, 18, 15), (120, 210, 160)),
+    "email": ((34, 30, 42), (14, 12, 18), (200, 150, 240)),
+    "ke-hoach": ((36, 34, 26), (15, 14, 10), (230, 190, 90)),
+    "vong-lap": ((34, 28, 40), (14, 11, 17), (220, 130, 220)),
+    "quality": ((28, 38, 34), (11, 17, 15), (120, 220, 170)),
+    "content": ((40, 30, 26), (16, 11, 9), (245, 140, 80)),
+    "kit": ((38, 32, 28), (15, 13, 11), (240, 170, 90)),
+    "khac-chatgpt": ((30, 32, 44), (12, 13, 20), (120, 180, 240)),
 }
 
-def load_log():
-    try: return json.load(open(LOG))
-    except: return {"used": [], "count": 0}
+def vgrad(c_top, c_bot):
+    img = Image.new("RGB", (W, H))
+    d = ImageDraw.Draw(img)
+    for y in range(H):
+        t = y / (H - 1)
+        r = int(c_top[0] + (c_bot[0] - c_top[0]) * t)
+        g = int(c_top[1] + (c_bot[1] - c_top[1]) * t)
+        b = int(c_top[2] + (c_bot[2] - c_top[2]) * t)
+        d.line([(0, y), (W, y)], fill=(r, g, b))
+    return img
 
-def save_log(log):
-    json.dump(log, open(LOG,"w"), ensure_ascii=False, indent=2)
+def bg(topic):
+    c_top, c_bot, glow = THEMES.get(topic, THEMES["default"])
+    img = vgrad(c_top, c_bot)
+    d = ImageDraw.Draw(img, "RGBA")
+    # soft radial glow top-right
+    cx, cy = int(W * 0.74), int(H * 0.34)
+    for i in range(26, 0, -1):
+        a = int(7 * (i / 26.0) ** 1.6)
+        rad = int(i * 26)
+        d.ellipse([cx - rad, cy - rad, cx + rad, cy + rad],
+                  fill=(glow[0], glow[1], glow[2], a))
+    # a few bokeh dots
+    import random
+    random.seed(7)
+    for _ in range(7):
+        x = random.randint(80, W - 80)
+        y = random.randint(60, H - 260)
+        r = random.randint(6, 22)
+        a = random.randint(10, 30)
+        d.ellipse([x - r, y - r, x + r, y + r],
+                  fill=(glow[0], glow[1], glow[2], a))
+    return img.convert("RGB")
+
+def get_font(bold, size):
+    name = "DejaVuSans-Bold.ttf" if bold else "DejaVuSans.ttf"
+    try:
+        return ImageFont.truetype(f"{FONT_DIR}/{name}", size)
+    except Exception:
+        return ImageFont.load_default()
 
 def wrap(text, font, max_w, draw):
-    lines=[]; cur=""
-    for w in text.split():
-        t=(cur+" "+w).strip()
-        if draw.textlength(t, font=font) <= max_w: cur=t
+    words = text.split()
+    lines, cur = [], ""
+    for w in words:
+        t = (cur + " " + w).strip()
+        if draw.textlength(t, font=font) <= max_w:
+            cur = t
         else:
-            if cur: lines.append(cur)
-            cur=w
-    if cur: lines.append(cur)
+            lines.append(cur); cur = w
+    if cur:
+        lines.append(cur)
     return lines
 
-def make(title, topic, out_name=None, badge=None):
-    topic=topic or "default"
-    accent, bg, tag = THEMES.get(topic, THEMES["default"])
-    if badge: tag = badge
-    W,H=1200,630
-    img=Image.new("RGB",(W,H),bg)
-    d=ImageDraw.Draw(img)
-    # gradient ấm đơn giản: vẽ nhiều dải ngang từ bg -> accent mờ
-    for i in range(H):
-        r=bg[0]+(accent[0]-bg[0])*i//H//3
-        g=bg[1]+(accent[1]-bg[1])*i//H//3
-        b=bg[2]+(accent[2]-bg[2])*i//H//3
-        d.line([(0,i),(W,i)],fill=(r,g,b))
-    # badge góc
-    try: f_badge=ImageFont.truetype(f"{FONT_DIR}/DejaVuSans-Bold.ttf",34)
-    except: f_badge=ImageFont.load_default()
-    bw=int(d.textlength(tag, font=f_badge))+44
-    d.rounded_rectangle([60,55,60+bw,55+60],radius=12,fill=accent)
-    d.text((60+22,69),tag,font=f_badge,fill=bg)
-    # tiêu đề (2-3 dòng)
-    try: f_t=ImageFont.truetype(f"{FONT_DIR}/DejaVuSans-Bold.ttf",48)
-    except: f_t=ImageFont.load_default()
-    lines=wrap(title, f_t, W-140, d)
-    y=240
-    for ln in lines[:3]:
-        d.text((70,y),ln,font=f_t,fill=(245,245,245))
-        y+=62
-    # footer brand
-    try: f_f=ImageFont.truetype(f"{FONT_DIR}/DejaVuSans.ttf",30)
-    except: f_f=ImageFont.load_default()
-    d.text((70,H-90),"Nhân Sự Toàn Năng Hermes · speedreading.vn/shermes",font=f_f,fill=accent)
-    # output
-    if not out_name:
-        h=hashlib.md5((title+topic).encode()).hexdigest()[:8]
-        out_name=f"auto-{topic}-{h}.webp"
-    out_path=os.path.join(OUT_DIR, out_name)
-    img.save(out_path,"WEBP",quality=88)
-    return "/covers/"+out_name
+def overlay(img, title, badge):
+    d = ImageDraw.Draw(img)
+    # bottom gradient dark for legibility
+    for i in range(220):
+        a = int(150 * (i / 220))
+        d.rectangle([0, H - 220 + i, W, H - 220 + i + 1], fill=(10, 8, 6, a))
+    f_b = get_font(True, 26)
+    if badge:
+        bw = int(d.textlength(badge, font=f_b)) + 36
+        d.rounded_rectangle([48, 42, 48 + bw, 42 + 50], radius=12, fill=(240, 92, 40))
+        d.text((66, 54), badge, font=f_b, fill=(20, 16, 12))
+    f_t = get_font(True, 46)
+    lines = wrap(title, f_t, W - 120, d)[:3]
+    y = H - 60 - len(lines) * 58
+    for ln in lines:
+        d.text((60, y), ln, font=f_t, fill=(248, 248, 245))
+        y += 58
+    f_f = get_font(False, 24)
+    d.text((60, H - 42), "Nhân Sự Toàn Năng Hermes · speedreading.vn/shermes",
+           font=f_f, fill=(220, 200, 180))
+    return img
 
-if __name__=="__main__":
-    ap=argparse.ArgumentParser()
-    ap.add_argument("--title",required=True)
-    ap.add_argument("--topic",default="default")
-    ap.add_argument("--badge",default=None)
-    ap.add_argument("--out",default=None)
-    a=ap.parse_args()
-    # rút kinh nghiệm: nếu topic đã dùng nhiều lần, xoay palette phụ
-    log=load_log()
-    path=make(a.title, a.topic, a.out, a.badge)
-    log["used"].append({"t":a.title,"topic":a.topic,"f":path})
-    log["count"]=log.get("count",0)+1
-    save_log(log)
-    print(path)
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--title", default="Hermes tự động hóa công việc")
+    ap.add_argument("--topic", default="default")
+    ap.add_argument("--badge", default="")
+    ap.add_argument("--out", default=None)
+    a = ap.parse_args()
+    img = overlay(bg(a.topic), a.title, a.badge)
+    if not a.out:
+        h = hashlib.md5((a.topic + a.title).encode()).hexdigest()[:8]
+        a.out = f"ai-{a.topic}-{h}.webp"
+    out_path = a.out if (os.path.isabs(a.out) or a.out.startswith("static/")) else os.path.join(OUT_DIR, a.out)
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    img.save(out_path, "WEBP", quality=92)
+    print("/covers/" + os.path.basename(out_path))
+
+if __name__ == "__main__":
+    main()
