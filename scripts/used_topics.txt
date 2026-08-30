@@ -5,4 +5,5 @@
 5|5|60|Hermes tự động hoá: giao 1 lần, chạy hoài đúng giờ kể cả ngủ
 6|6|40|Hermes quản lý 5 nhân sự ảo cùng lúc
 7|7|42|Hermes phân loại ưu tiên công việc
-8|8|8|4|Hermes viết email xin lỗi khách giận
+8|8|8|8|4|Hermes viết email xin lỗi khách giận
+9|9|9|16|Hermes tóm tắt tin tức ngành mỗi sáng
