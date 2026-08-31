@@ -5,3 +5,4 @@
 5|31|42|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
 6|32|42|Hermes tự động hoá: giao 1 lần chạy hoài, đúng giờ kể cả ngủ
 7|33|42|Hermes kết nối API: gom mọi Key vào 1 mối
+8|39|42|Hermes thay bạn nghĩ tối ưu đóng gói
