@@ -2,3 +2,4 @@
 2|17|42|Hermes viết tiêu đề email tỷ lệ mở cao
 3|11|42|Hermes phân tích feedback khách tìm lỗi
 4|18|42|Hermes phân loại ưu tiên công việc
+5|31|42|Hermes phân thân: 1 người giao 4 việc xong trong 1 giờ
