@@ -1,3 +1,4 @@
 1|34|42|Hermes có trí nhớ: nhớ bạn hơn bạn nhớ mình
 2|17|42|Hermes viết tiêu đề email tỷ lệ mở cao
 3|11|42|Hermes phân tích feedback khách tìm lỗi
+4|18|42|Hermes phân loại ưu tiên công việc
