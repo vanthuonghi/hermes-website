@@ -1,4 +1,4 @@
-baseURL = "https://vanthuonghi.github.io/hermes-website/"
+baseURL = "https://ai.vanhi.id.vn/"
 languageCode = "vi-vn"
 title = "Nhân Sự Toàn Năng Hermes"
 theme = "hermes-minimal"
@@ -11,7 +11,7 @@ buildFuture = true
 [params]
   description = "Đội Trợ Lý AI Hermes làm việc 24/7 thay bạn — sắp xếp lịch, soạn email, tóm tắt báo cáo. Không cần biết code. Mở bán sớm 239K."
   author = "Văn Hỉ"
-  ogImage = "https://vanthuonghi.github.io/hermes-website/og-image.webp"
+  ogImage = "https://ai.vanhi.id.vn/og-image.webp"
   favicon = "favicon.svg"
 
 [menu]
@@ -39,4 +39,4 @@ buildFuture = true
 
 [robots]
   userAgent = "*"
-  sitemap = "https://vanthuonghi.github.io/hermes-website/sitemap.xml"
+  sitemap = "https://ai.vanhi.id.vn/sitemap.xml"
